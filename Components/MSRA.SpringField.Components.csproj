@@ -1,0 +1,169 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1BECC7DF-6E19-439D-9C85-A1FD16E6C1B5}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MSRA.Springfield.Components</RootNamespace>
+    <AssemblyName>MSRA.Springfield.Components</AssemblyName>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BizObjects\CheckoutSurvey.cs" />
+    <Compile Include="CheckInFormResourceManager.cs" />
+    <Compile Include="BizObjects\CashedApplicantInfo.cs" />
+    <Compile Include="BizObjects\CheckInForm.cs" />
+    <Compile Include="BizObjects\Comment.cs" />
+    <Compile Include="BizObjects\Email.cs" />
+    <Compile Include="BizObjects\EmailTemplate.cs" />
+    <Compile Include="BizObjects\InternPublication.cs" />
+    <Compile Include="BizObjects\PerformanceAssessment.cs" />
+    <Compile Include="BizObjects\SiteContext.cs" />
+    <Compile Include="BizObjects\SiteGeneralInfo.cs" />
+    <Compile Include="BizObjects\SiteUser.cs" />
+    <Compile Include="BizObjects\Advisor.cs" />
+    <Compile Include="BizObjects\Document.cs" />
+    <Compile Include="BizObjects\Favorite.cs" />
+    <Compile Include="BizObjects\Feedback.cs" />
+    <Compile Include="BizObjects\Applicant.cs" />
+    <Compile Include="BizObjects\ApplicantRelatedInfo.cs" />
+    <Compile Include="BizObjects\ApplicantBasicInfo.cs" />
+    <Compile Include="BizObjects\ApplicantEduBackground.cs" />
+    <Compile Include="BizObjects\Interview.cs" />
+    <Compile Include="BizObjects\RelatedReferrer.cs" />
+    <Compile Include="BizObjects\Referral.cs" />
+    <Compile Include="Configuration\DataProviderConfiguration.cs" />
+    <Compile Include="Configuration\SiteConfiguration.cs" />
+    <Compile Include="Configuration\SiteConfigurationHandler.cs" />
+    <Compile Include="PAResourceManager.cs" />
+    <Compile Include="DataProvider\DataProviderFactory.cs" />
+    <Compile Include="DataProvider\EmailQueueProvider.cs" />
+    <Compile Include="DataProvider\IDataProvider.cs" />
+    <Compile Include="Enumerations\ApplicationStatus.cs" />
+    <Compile Include="Enumerations\CollegeEnum.cs" />
+    <Compile Include="Enumerations\CountryEnum.cs" />
+    <Compile Include="Enumerations\DegreeEnum.cs" />
+    <Compile Include="Enumerations\EmailFormatEnum.cs" />
+    <Compile Include="Enumerations\FeedbackSuggestionEnum.cs" />
+    <Compile Include="Enumerations\InfoSourceDetailEnum.cs" />
+    <Compile Include="Enumerations\DocumentType.cs" />
+    <Compile Include="Enumerations\InternshipType.cs" />
+    <Compile Include="Enumerations\GenderEnum.cs" />
+    <Compile Include="Enumerations\InfoSourceEnum.cs" />
+    <Compile Include="Enumerations\GroupsEnum.cs" />
+    <Compile Include="Enumerations\InterviewStatusEnum.cs" />
+    <Compile Include="Enumerations\MailType.cs" />
+    <Compile Include="Enumerations\MajorCategoryType.cs" />
+    <Compile Include="Enumerations\PositionTypeEnum.cs" />
+    <Compile Include="Enumerations\RankEnum.cs" />
+    <Compile Include="Enumerations\ReferralType.cs" />
+    <Compile Include="Enumerations\ResearchApproachType.cs" />
+    <Compile Include="Enumerations\RoleType.cs" />
+    <Compile Include="EnumHelper.cs" />
+    <Compile Include="Exceptions\CustomException.cs" />
+    <Compile Include="FilterGenerator.cs" />
+    <Compile Include="GlobalHelper.cs" />
+    <Compile Include="HttpModule\SiteSecurityModule.cs" />
+    <Compile Include="InfoSourceMapping.cs" />
+    <Compile Include="JSUtility.cs" />
+    <Compile Include="MailHelper.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ResourceManager.cs" />
+    <Compile Include="SiteCache.cs" />
+    <Compile Include="StaticData.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram.cd" />
+    <None Include="Springfield.Components.cd" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="InfoSourceMapping.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="HttpHandler\" />
+    <Folder Include="Report\" />
+    <Folder Include="Search\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

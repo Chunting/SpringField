@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PAResource>
+  <Type name="PaperStatus">
+    <Item name="Unknown" id="0" display="true" />
+    <Item name="Pending for submission" id="1" display="true" />
+    <Item name="Submitted but not published" id="2" display="true" />
+    <Item name="Published" id="3" display="true" />
+  </Type>
+  <Type name="PerformanceLevel">
+    <Item name="Excellent" id="5" display="true" />
+    <Item name="Good" id="4" display="true" />
+    <Item name="Fair" id="3" display="true" />
+    <Item name="Poor" id="2" display="true" />
+    <Item name="Very Bad" id="1" display="true" />
+    <Item name="N/A" id="6" display="true" />
+  </Type>
+  <Type name="HiredAsFTE">
+    <Item name="Yes  (please answer Q2)" id="1" display="true" />
+    <Item name="No   (please answer Q4) " id="2" display="true" />
+  </Type>
+  <Type name="HiredAsFTE_MSRA">
+    <Item name="Yes  (I strongly recommended this intern as FTE candidate and pass to HR for recruiting  process.)" id="1" display="true" />
+    <Item name="No   (I do not recommended this intern as future FTE candidate.)" id="2" display="true" />
+    <Item name="N/A (This intern can be considered as future FTE candidate, but he/she is not ready for on-site interview now.)" id="3" display="true" />
+  </Type>
+  <Type name="OnsiteInterviewNow">
+    <Item name="Yes  (Note: we suggest you have an informational interview first. If pass, please notify us,  
+                       we will arrange formal onsite-interview accordingly.)" id="1" display="true" />
+    <Item name="No   (please answer Q3)" id="2" display="true" />
+  </Type>
+  <Type name="ProjectBasedorFTEPipeline">
+    <Item name="Unknown" id="0" display="true" />
+    <Item name="Project-based" id="1" display="true" />
+    <Item name="FTE pipeline" id="2" display="true" />
+  </Type>
+  <Type name="InternPosition">
+    <Item name="Unknown" id="0" display="true" />
+    <Item name="FullTime" id="1" display="true" />
+    <Item name="PartTime" id="2" display="true" />
+  </Type>
+  <Type name="Department">
+    <Item name="MSRA" id="1" display="true" />
+    <Item name="STC" id="2" display="true" />
+  </Type>
+</PAResource>

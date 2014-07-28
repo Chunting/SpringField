@@ -1,0 +1,202 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Applicant>
+
+	<ApplicantBasicInfo control="Node">
+
+		<FirstName mapping="TextBox1" control="TextBox" type="System.String" required="true"></FirstName>
+		<LastName mapping="TextBox2" control="TextBox" type="System.String" required="true"></LastName>
+		<NameInChinese mapping="TextBox4" control="TextBox" type="System.String" required="false"></NameInChinese>
+		<Email mapping="TextBox5" control="TextBox" type="System.String" required="true"></Email>
+		<!--Gender not required, should check control?-->
+		<Gender type="MSRA.SpringField.Components.Enumerations.GenderEnum, MSRA.SpringField.Components" control="OptionGroup" required="false" defaultValue="Unknown">
+			<Item value="Male" control="OptionButton" mapping="OptionButton1" type="Enum"></Item>
+			<Item value="Female" control="OptionButton" mapping="OptionButton2" type="Enum"></Item>
+		</Gender>
+		<Nationality mapping="ComboBox1" control="ComboBox" type="System.String" required="true"></Nationality>
+		<IdentityNumber mapping="TextBox3" control="TextBox" type="System.String" required="false"></IdentityNumber>
+		<WebPage mapping="TextBox7" control="TextBox" type="System.String" required="false"></WebPage>
+		<Address mapping="TextBox9" control="TextBox" type="System.String" required="false"></Address>
+		<PhoneNumber mapping="TextBox22" control="TextBox" type="System.String" required="true"></PhoneNumber>
+		<CurrentCity mapping="TextBox6" control="TextBox" type="System.String" required="false"></CurrentCity>		
+		<CurrentCountry mapping="ComboBox2" control="ComboBox" type="System.String" required="true"></CurrentCountry>
+	</ApplicantBasicInfo>
+
+	<ApplicantEduBackground control="Node">
+		<HighestEduInstitution control="CollegeSelector" type="System.String" required="true">
+			<List control="ComboBox" mapping="ComboBox5" type="System.String"></List>
+			<Other control="TextBox" mapping="TextBox20" type="System.String"></Other>
+		</HighestEduInstitution>
+		<MajorCategory control="EnumComboBox" type="MSRA.SpringField.Components.Enumerations.MajorCategoryEnum, MSRA.SpringField.Components" required="true" mapping="ComboBox11">
+			<Item value="ComputerEERelated" mapping="Computer, EE Related"></Item>
+			<Item value="AutomationRelated" mapping="Automation Related"></Item>
+			<Item value="MathRelated" mapping="Math Related"></Item>
+			<Item value="PhysicalRelated" mapping="Physical Related"></Item>
+			<Item value="LiberalRelated" mapping="Liberal Related"></Item>
+			<Item value="Other" mapping="Other"></Item>
+		</MajorCategory>
+		<Major mapping="TextBox23" control="TextBox" type="System.String" required="true"></Major>		
+		<InternAdvisor control="InternAdvisorObject" type="Advisor" required="false">
+			<FirstName control="TextBox" mapping="TextBox26" type="System.String"></FirstName>
+			<LastName control="TextBox" mapping="TextBox24" type="System.String"></LastName>
+			<Email control="TextBox" mapping="TextBox27" type="System.String"></Email>
+			<Organization control="TextBox" mapping="TextBox25" type="System.String"></Organization>
+		</InternAdvisor>
+		<EnrollDate mapping="TextBox8" control="TextBox" type="System.DateTime" required="true"></EnrollDate>
+
+		<GraduateDate mapping="TextBox21" control="TextBox" type="System.DateTime" required="true"></GraduateDate>
+
+		<!--This is removed-->
+		<!--ResearchApproach mapping="ComboBox7" control="EnumComboBox" type="Springfield.Components.ResearchApproachEnum, Springfield.Components" required="false">
+      <Item value="Practice" mapping="Practice"></Item>
+      <Item value="Theory" mapping="Theory"></Item>
+    </ResearchApproach-->
+
+		<Degree mapping="ComboBox12" control="EnumComboBox" type="MSRA.SpringField.Components.Enumerations.DegreeEnum, MSRA.SpringField.Components" required="true">
+			<Item value="BS" mapping="BS"></Item>
+			<Item value="MS" mapping="MS"></Item>
+			<Item value="PHD" mapping="PhD"></Item>
+			<Item value="MBA" mapping="MBA"></Item>
+			<Item value="DoubleBS" mapping="Double BS"></Item>
+			<Item value="MSPHD" mapping="MS+PhD"></Item>
+			<Item value="Diploma" mapping="Diploma"></Item>
+			<Item value="Other" mapping="Other"></Item>
+		</Degree>
+
+		<!--This is removed, not appear in application form-->
+		<!--20090326 this correspond to Grade in the application form, so I recover it (Yi Shao)-->
+		<YearOfStudy mapping="ComboBox13" control="ComboBox" type="System.Int32" required="true"></YearOfStudy>
+
+		<Resume mapping="TextBox28" control="ResumeUploader" type="MSRA.SpringField.Components.Enumerations.DocumentEnum,MSRA.SpringField.Components" required="true"></Resume>
+
+		<Papers control="PaperUploader" type="MSRA.SpringField.Components.Enumerations.DocumentEnum,MSRA.SpringField.Components" required="false">
+			<Item mapping="TextBox29"></Item>
+			<Item mapping="TextBox30"></Item>
+		</Papers>
+	</ApplicantEduBackground>
+
+	<ApplicantRelatedInfo control="Node">
+
+		<PreferredAvailStartDate mapping="TextBox10" control="TextBox" type="System.DateTime" required="true"></PreferredAvailStartDate>
+		<SecondaryAvailStartDate mapping="TextBox11" control="TextBox" type="System.DateTime" required="true"></SecondaryAvailStartDate>
+
+		<PreferredPosition mapping="ComboBox7" control="EnumComboBox" type="MSRA.SpringField.Components.Enumerations.PositionTypeEnum, MSRA.SpringField.Components" required="false" defaultValue="Unknown">
+			<Item value="ResearchIntern" mapping="Research Intern"></Item>
+			<Item value="EngineeringIntern" mapping="Engineering Intern"></Item>
+		</PreferredPosition>
+
+		<!--Should check how to deal with other-->
+		<InterestedGroup control="StringCheckBoxGroup" type="System.String" required="false">
+			<Item mapping="CheckBox1" value="Human Computer Interaction Group" control="CheckBox" type="System.String"></Item>
+			<Item mapping="CheckBox2" value="Innovation Engineering Group" control="CheckBox" type="System.String"></Item>
+			<Item mapping="CheckBox3" value="Internet Graphics Group" control="CheckBox" type="System.String"></Item>
+			<Item mapping="CheckBox4" value="Internet Economics and Computational Advertising Group" control="CheckBox" type="System.String"></Item>
+      
+			<Item mapping="CheckBox5" value="Internet Media Group" control="CheckBox" type="System.String"></Item>
+			<Item mapping="CheckBox6" value="Knowledge Mining Group" control="CheckBox" type="System.String"></Item>
+			<Item mapping="CheckBox7" value="Machine Learning Group" control="CheckBox" type="System.String"></Item>
+			<Item mapping="CheckBox8" value="Media Computing Group" control="CheckBox" type="System.String"></Item>
+			
+			<Item mapping="CheckBox9" value="Mobile and Sensing Systems Group" control="CheckBox" type="System.String"></Item>
+			<Item mapping="CheckBox10" value="Natural Language Computing Group" control="CheckBox" type="System.String"></Item>
+			<Item mapping="CheckBox11" value="Software Analytics Group" control="CheckBox" type="System.String"></Item>
+			<Item mapping="CheckBox13" value="System Algorithms Group" control="CheckBox" type="System.String"></Item>
+			
+			<Item mapping="CheckBox14" value="Theory Group" control="CheckBox" type="System.String"></Item>
+			<Item mapping="CheckBox15" value="Visual Computing Group" control="CheckBox" type="System.String"></Item>
+			<Item mapping="CheckBox16" value="Wireless and Networking Group" control="CheckBox" type="System.String"></Item>
+			<Item mapping="CheckBox17" value="Hardware Computing Group" control="CheckBox" type="System.String"></Item>
+			<Item mapping="CheckBox18" value="Web Search and Data Management Group" control="CheckBox" type="System.String"></Item>
+			<Item mapping="CheckBox19" value="Speech Group" control="CheckBox" type="System.String"></Item>
+			<Item mapping="CheckBox20" value="Multimedia Search and Mining Group" control="CheckBox" type="System.String"></Item>
+			
+			<Item mapping="CheckBox32" value="Research Connections Group" control="CheckBox" type="System.String"></Item>
+			<Item mapping="CheckBox33" value="Public Relations Group" control="CheckBox" type="System.String"></Item>
+      <!-- Added on 2010-1-5 for group updating -->
+     
+      <!-- Modify Feng's Group to Mobile and Sensing Systems Group on 2011-2-17 for group updating 
+      <Item mapping="CheckBox34" value="Mobile and Sensing Systems Group" control="CheckBox" type="System.String"></Item> 
+            
+			<Item mapping="CheckBox30" value="IT Group" control="CheckBox" type="System.String"> -->
+			<Item mapping="CheckBox21" value="Others" control="CheckBox" type="System.String">
+			<Other mapping="TextBox14" type="System.String" control="TextBox"></Other>
+			</Item>
+		</InterestedGroup>
+
+		<InterestedAreas mapping="TextBox12" control="TextBox" type="System.String" required="false"></InterestedAreas>
+
+		<InternshipType control="EnumComboBox" mapping="ComboBox6" type="MSRA.SpringField.Components.Enumerations.InternshipTypeEnum, MSRA.SpringField.Components" required="false" defaultValue="Unknown">
+			<Item value="FullTime" mapping="Full-Time"></Item>
+			<Item value="PartTime" mapping="Part-Time"></Item>
+		</InternshipType>
+
+		<JobInfoSource control="JobInfoSource" type="System.String" required="true">
+			<Item value="Web Site" mapping="OptionButton4" control="OptionButton" type="System.String"></Item>
+			<Item value="Referral" mapping="OptionButton3" control="OptionButton" type="System.String"></Item>
+			<Item value="Promotion" mapping="OptionButton9" control="OptionButton" type="System.String"></Item>
+			<Item value="Talent Program" mapping="OptionButton5" control="OptionButton" type="System.String"></Item>
+
+			<!--
+      <Item value="Referral" mapping="OptionButton3" control="OptionButton" type="System.String"></Item>
+      <Item value="Job Fair" mapping="OptionButton4" control="OptionButton" type="System.String"></Item>
+      <Item value="Newsletter" mapping="OptionButton5" control="OptionButton" type="System.String"></Item>
+      <Item value="Contest" mapping="OptionButton13" control="OptionButton" type="System.String"></Item>
+      <Item value="Student Technical Club" mapping="OptionButton8" control="OptionButton" type="System.String"></Item>
+      <Item value="Campus Event" mapping="OptionButton12" control="OptionButton" type="System.String"></Item>
+      <Item value="Campus Poster" mapping="OptionButton7" control="OptionButton" type="System.String"></Item>
+      <Item value="Internship Program Flyer" mapping="OptionButton6" control="OptionButton" type="System.String"></Item>
+      <Item value="BBS" mapping="OptionButton10" control="OptionButton" type="System.String"></Item>
+      <Item value="Web Site" mapping="OptionButton11" control="OptionButton" type="System.String"></Item>
+      <Item value="Other" mapping="OptionButton14" control="OptionButton" type="System.String"></Item>
+      -->
+		</JobInfoSource>
+
+		<!-- Here we should add code for special programs-->
+	<!--	<SpecialProgram control="StringCheckBoxGroup" type="System.String" required="false">
+			<Item mapping="CheckBox22" value="None of the above" control="CheckBox" type="System.String"></Item>
+			<Item mapping="CheckBox25" value="Microsoft Jointlab Program" control="CheckBox" type="System.String"></Item>
+			<Item mapping="CheckBox23" value="Microsoft Internship Program" control="CheckBox" type="System.String"></Item>
+			<Item mapping="CheckBox26" value="MS Young Fellowship Program" control="CheckBox" type="System.String"></Item>
+			<Item mapping="CheckBox24" value="MS Fellowship Program" control="CheckBox" type="System.String"></Item>
+			<Item mapping="CheckBox27" value="MSRA Student Exchange Program" control="CheckBox" type="System.String"></Item>
+			<Item mapping="CheckBox28" value="MSRA Undergraduate Research Prog" control="CheckBox" type="System.String"></Item>
+			<Item mapping="CheckBox29" value="IJARC Program" control="CheckBox" type="System.String"></Item>
+			<Item mapping="CheckBox31" value="MS PhD Program" control="CheckBox" type="System.String"></Item>
+			<Item mapping="CheckBox30" value="MSRA Fuji Program" control="CheckBox" type="System.String"></Item>
+		</SpecialProgram>
+
+-->
+		<JobInfoChannel control="JobInfoChannel" type="System.String" required="false">
+			<Item value="Web Site" mapping="ComboBox8" type="System.String" control="ComboBox" required="true"></Item>
+			<Item value="Referral" mapping="ComboBox10" type="System.String" control="ComboBox" required="true"></Item>
+			<Item value="Promotion" mapping="ComboBox3" type="System.String" control="ComboBox" required="true"></Item>
+			<Item value="Talent Program" mapping="ComboBox4" type="System.String" control="ComboBox" required="true"></Item>
+			<!--removed-->
+			<!--
+      <Item value="Referral"  mapping="ComboBox10" type="System.String" control="ComboBox" required="true"></Item>
+      <Item value="Job Fair" mapping="TextBox19" type="System.String" control="TextBox" required="true"></Item>
+      <Item value="BBS" mapping="ComboBox9" type="System.String" control="ComboBox" required="true"></Item>
+      <Item value="Web Site" mapping="ComboBox8" type="System.String" control="ComboBox" required="true"></Item>
+      <Item value="Campus Event" mapping="TextBox18" type="System.String" control="TextBox" required="true"></Item>
+      <Item value="Contest" mapping="TextBox17" type="System.String" control="TextBox" required="true"></Item>
+      <Item value="Other" mapping="TextBox15" type="System.String" control="TextBox" required="true"></Item>
+      -->
+		</JobInfoChannel>
+
+		<JobInfoDetail control="JobInfoDetail" type="System.String">
+			
+			<Item value="Referral" mapping="TextBox13" type="System.String" control="TextBox" required="false"></Item>
+			
+			<!--removed-->
+			<!--
+			<Item value="Promotion" mapping="TextBox14" type="System.String" control="TextBox" required="false"></Item>
+			<Item value="Talent Program" mapping="TextBox14" type="System.String" control="TextBox" required="false"></Item>
+			<Item value="Web Site" mapping="TextBox14" type="System.String" control="TextBox" required="false"></Item>
+			
+      <Item value="BBS" mapping="TextBox16" type="System.String" control="TextBox" required="false"></Item> -->
+
+      
+		</JobInfoDetail>
+
+	</ApplicantRelatedInfo>
+
+</Applicant>

@@ -1,0 +1,179 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{BE6280F1-C2A3-43AD-8F50-6F184BF49C04}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ResumeCollector</RootNamespace>
+    <AssemblyName>ResumeCollector</AssemblyName>
+    <StartupObject>ResumeCollector.Program</StartupObject>
+    <ApplicationIcon>RubikCube.ico</ApplicationIcon>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRules>
+    </CodeAnalysisRules>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" />
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AboutBox.Designer.cs">
+      <DependentUpon>AboutBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Exception\CustomExceptions.cs" />
+    <Compile Include="Lib\AppConfiguration.cs" />
+    <Compile Include="Lib\CollectionTask.cs" />
+    <Compile Include="Lib\DurationSpanEnum.cs" />
+    <Compile Include="Lib\EmailSender.cs" />
+    <Compile Include="Lib\EntryTypeEnum.cs" />
+    <Compile Include="Lib\TaskReport.cs" />
+    <Compile Include="ResumeHelper\PropertyHandler\StringCheckBoxGroupHandler.cs" />
+    <Compile Include="ResumeHelper\PropertyHandler\PaperUploaderHandler.cs" />
+    <Compile Include="ResumeHelper\PropertyHandler\ResumeUploaderHandler.cs" />
+    <Compile Include="ResumeHelper\PropertyHandler\ComboBoxHandler.cs" />
+    <Compile Include="ResumeHelper\PropertyHandler\GradeObjectHandler.cs" />
+    <Compile Include="ResumeHelper\PropertyHandler\OptionGroupHandler.cs" />
+    <Compile Include="ResumeHelper\PropertyHandler\CollegeSelectorHandler.cs" />
+    <Compile Include="ResumeHelper\PropertyHandler\EnumComboBoxHandler.cs" />
+    <Compile Include="ResumeHelper\PropertyHandler\StringComboBoxHandler.cs" />
+    <Compile Include="ResumeHelper\PropertyHandler\InternAdvisorObjectHandler.cs" />
+    <Compile Include="ResumeHelper\IPropertyHandler.cs" />
+    <Compile Include="Lib\TaskLog.cs" />
+    <Compile Include="ResumeCollector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ResumeCollector.Designer.cs">
+      <DependentUpon>ResumeCollector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AboutBox.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AboutBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ResumeCollector.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ResumeCollector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TaskProcessor.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>TaskProcessor.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="App.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="ResumeMappingSchema.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ResumeMappingSchema.xsx">
+      <DependentUpon>ResumeMappingSchema.xsd</DependentUpon>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="ResumeHelper\ExcelApplication.cs" />
+    <Compile Include="ResumeHelper\PropertyHandler\JobInfoChannelHandler.cs" />
+    <Compile Include="ResumeHelper\PropertyHandler\JobInfoDetailHandler.cs" />
+    <Compile Include="ResumeHelper\PropertyHandler\JobInfoSourceHandler.cs" />
+    <!--Compile Include="ResumeHelper\PropertyHandler\GenderOptionGroupHandler.cs" /-->
+    <Compile Include="ResumeHelper\PropertyHandlerFactory.cs" />
+    <Compile Include="ResumeHelper\PropertyStruct.cs" />
+    <Compile Include="ResumeHelper\ResumeMapping.cs" />
+    <Compile Include="ResumeHelper\ResumeScheme.cs" />
+    <Compile Include="ResumeHelper\ResumeWrapper.cs" />
+    <Compile Include="Lib\TaskState.cs" />
+    <Compile Include="ResumeHelper\PropertyHandler\TextBoxHandler.cs" />
+    <Compile Include="TaskProcessor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TaskProcessor.Designer.cs">
+      <DependentUpon>TaskProcessor.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="MSForms">
+      <Guid>{0D452EE1-E08F-101A-852E-02608C4D0BB4}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ResumeMapping.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="RubikCube.ico" />
+    <!--Content Include="SiteResource.xml"-->
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="taru.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Components\Components.csproj">
+      <Project>{1BECC7DF-6E19-439D-9C85-A1FD16E6C1B5}</Project>
+      <Name>Components</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataProviders\DataProviders.csproj">
+      <Project>{C3B1CDC2-E084-42D0-A68E-74AC0A515D83}</Project>
+      <Name>DataProviders</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

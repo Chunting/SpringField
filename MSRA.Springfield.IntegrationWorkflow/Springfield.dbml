@@ -1,0 +1,173 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Database Name="dev_springfield_0930" Class="SpringfieldDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=msra-spfield01;Initial Catalog=dev_springfield_0930;Persist Security Info=True;User ID=compass" SettingsObjectName="MSRA.Springfield.Workflows.Properties.Settings" SettingsPropertyName="dev_springfield_0930ConnectionString1" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.ImportLog" Member="ImportLogs">
+    <Type Name="ImportLog">
+      <Column Name="RowID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="IsMatched" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="BatchNo" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ApplicantID" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="InternNo" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.PERSONHuman" Member="PERSONHumans">
+    <Type Name="PERSONHuman">
+      <Column Name="InternNo" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="Gender" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Nationality" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="CertificationType" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="IdentityNumber" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="Address" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="PhoneNumber" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="CurrentCity" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="Email" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="FirstName" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="LastName" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="[FirstName LastName]" Member="FirstName_LastName" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="NameInChinese" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="Position" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="[Start Date]" Member="Start_Date" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="[End Date]" Member="End_Date" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="GroupId" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="MentorName" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="MentorAlias" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="HighestEducationalInstitution" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="Major" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="YearOfStudy" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="GraduationDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="AdvisorFirstName" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="AdvisorLastName" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="AdvisorFullName" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="AdvisorEmail" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="AdvisorOrganization" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="Degree" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="DegreeType" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="College" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="EnrollDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.aspnet_Membership" Member="aspnet_Memberships">
+    <Type Name="aspnet_Membership">
+      <Column Name="ApplicationId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="UserId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Password" Type="System.String" DbType="NVarChar(128) NOT NULL" CanBeNull="false" />
+      <Column Name="PasswordFormat" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="PasswordSalt" Type="System.String" DbType="NVarChar(128) NOT NULL" CanBeNull="false" />
+      <Column Name="MobilePIN" Type="System.String" DbType="NVarChar(16)" CanBeNull="true" />
+      <Column Name="Email" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="LoweredEmail" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="PasswordQuestion" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="PasswordAnswer" Type="System.String" DbType="NVarChar(128)" CanBeNull="true" />
+      <Column Name="IsApproved" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="IsLockedOut" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="CreateDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="LastLoginDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="LastPasswordChangedDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="LastLockoutDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="FailedPasswordAttemptCount" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="FailedPasswordAttemptWindowStart" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="FailedPasswordAnswerAttemptCount" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="FailedPasswordAnswerAttemptWindowStart" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="Comment" Type="System.String" DbType="NText" CanBeNull="true" UpdateCheck="Never" />
+    </Type>
+  </Table>
+  <Table Name="dbo.sf_ApplicantBasicInfo" Member="BasicInfos">
+    <Type Name="BasicInfo">
+      <Column Name="ApplicantId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Gender" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Nationality" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="IdentityNumber" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="Webpage" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="Address" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="PhoneNumber" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="CurrentCity" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="CurrentProvince" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="CurrentCountry" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="Status" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Priority" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ApplicationDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Email" Type="System.String" DbType="NVarChar(256) NOT NULL" CanBeNull="false" />
+      <Column Name="FirstName" Type="System.String" DbType="NVarChar(256) NOT NULL" CanBeNull="false" />
+      <Column Name="LastName" Type="System.String" DbType="NVarChar(256) NOT NULL" CanBeNull="false" />
+      <Column Name="ReferralId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="NameInChinese" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.sf_ApplicantEduBackground" Member="EduBackgrounds">
+    <Type Name="EduBackground">
+      <Column Name="ApplicantId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="HighestEducationalInstitution" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="MajorCategory" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Major" Type="System.String" DbType="NVarChar(256) NOT NULL" CanBeNull="false" />
+      <Column Name="YearOfStudy" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Rank" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ResumeId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ResumeImage" Type="System.Data.Linq.Binary" DbType="Image" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="ResumeExt" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="PaperAId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="PaperBId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="GraduatedDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="AdvisorFirstName" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="AdvisorLastName" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="AdvisorFullName" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="AdvisorEmail" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="AdvisorOrganization" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="ResearchApproach" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Degree" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="College" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="EnrollDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.sf_PerformanceAssessment" Member="sf_PerformanceAssessments">
+    <Type Name="sf_PerformanceAssessment">
+      <Column Name="id" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ApplicantId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="InternName" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="InternPhone" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="InternEmail" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="InternPosition" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CheckInDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="CheckOutDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="GroupId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Department" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="MentorName" Type="System.String" DbType="NChar(50)" CanBeNull="true" />
+      <Column Name="MentorAlias" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="GroupMgrId" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="ProjectId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="GraduationDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Discipline" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Pipeline" Type="System.String" DbType="NChar(100)" CanBeNull="true" />
+      <Column Name="Objective" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="SelfEvaluation" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="StrengthsAndWeaknesses" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="OverrallEvaluation" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CodingSkill" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="AnalyticalSkill" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ProblemSolving" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Innovation" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DrivingForResults" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DealingWithAmbiguity" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="QuickOnLearing" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="English" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Communication" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TeamWork" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Attitude" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IntegrityHonesty" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="OpenRespectful" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="BigChallenges" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Passion" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Accountable" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="SelfCritical" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="MentorComments" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="MentorStrength" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="MentorWeakness" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="HiredAsFTE" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="OnsiteInterviewNow" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ExpectedOnsiteInterviewDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ExtendPeriod" Type="System.Decimal" DbType="Decimal(4,2)" CanBeNull="true" />
+      <Column Name="InsertDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ModifyDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="IsApproved" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>

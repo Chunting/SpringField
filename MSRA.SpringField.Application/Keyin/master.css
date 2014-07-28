@@ -1,0 +1,208 @@
+﻿img {border: 0px;}
+body{
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px;
+	margin-bottom: 20px;
+	padding: 0px; 
+	border: 0px;
+	color: #333333;
+	font-size: 9pt;
+	line-height: 150%;
+	text-align: center;
+	background: white;
+	font-family: verdana,arial,sans-serif,'Lucida Grande','Lucida Sans Unicode','黑体';
+}
+table
+{
+    font-size: 9pt;    
+}
+
+#container
+{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#menu
+{
+    text-align: right;
+    margin: 0px;
+    padding-right: 20px;
+}
+
+#filter
+{
+    z-index: 0;
+    margin: 0px;
+    margin-top: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
+    padding: 0px;
+}
+
+#content{
+	margin-left: 15px;
+	margin-right: 15px;
+	padding: 0px;
+	text-align: left;
+}
+
+.split_line
+{
+	padding: 0px;
+	margin-left: auto;
+	margin-right: auto;
+	border: 3px dashed #cccccc;
+	height: 3px;
+	width: 96%;
+	text-align: center;
+}
+
+.mask
+{
+    z-index: 1000;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    background: #cccccc;
+    display: none;
+    width: 100%;
+    height: 100%;
+    filter:progid:DXImageTransform.Microsoft.Alpha(opacity=50);
+
+}
+
+.module_window
+{
+    background: white;
+    z-index: 2000;
+    position: absolute;
+    top: 200px;
+    left: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    display: none;
+    width: 60%;
+}
+
+.bold_font
+{
+    font-size: 10pt;
+    font-weight: bold;
+    text-align: left;
+}
+
+.applicants_table
+{
+    border: solid 1px #cccccc;
+	padding: 0px;
+	margin: 0px;
+	font-size: 9pt;
+	width: 100%;
+	border-collapse: collapse;
+	border-spacing: 0px; 
+}
+
+.applicants_table td
+{
+    border: solid 1px #cccccc;
+	margin: 0px;
+	padding: 5px;
+}
+
+.panel_title_expand{
+	margin: 0px;
+	padding: 0px;
+	text-align: center;
+	height: 20px;
+	background: url("images/arrow_down.gif") #cccccc no-repeat 8px;
+	border: 1px solid #999999;
+	color: #528f52;
+	font-size: 12pt;
+	font-weight: bold;
+	cursor: hand;
+	width: 100%;
+}
+
+.panel_title_close{
+	margin: 0px;
+	padding: 0px;
+	text-align: center;
+	height: 20px;
+	background: url("images/arrow_up.gif") #ffffff no-repeat 8px;
+	border: 1px solid #999999;
+	color: #333333;
+	font-size: 12pt;
+	font-weight: bold;
+	cursor: hand;
+	width: 100%;
+}
+
+.panel_content{
+	margin: 0px;
+	padding: 0px;
+	text-align: left;
+	border: 1px solid #999999;
+	border-top: 0px;
+	font-size: 10pt;
+	overflow: auto;
+	width: 100%;
+}
+
+/*
+.chose_style
+{
+    width: 3%;    
+}
+
+.name_style
+{
+    width: 7%;    
+}
+
+.degree_style
+{
+    width: 5%;        
+}
+
+.status_style
+{
+    width: 10%;    
+}
+
+.date_style
+{
+    width: 5%;    
+}
+
+.interview_style
+{
+    width: 10%;    
+}
+
+.institution_style
+{
+    width: 20%;    
+}
+
+.major_style
+{
+    width: 15%;    
+}
+
+.operation_style
+{
+    width: 25%;    
+}
+*/
+
+input
+{
+    border: solid 1px #cccccc;
+    background: #e8e8e8;
+    padding: 0px;
+    margin: 0px;
+}

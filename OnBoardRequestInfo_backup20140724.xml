@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<OnBoardRequest>
+  <Type name="Groups">
+    <Item name="HCI" id="1" display="true" />
+    <Item name="IEG " id="2" display="true" />
+    <Item name="IG" id="3" display="true" />
+    <Item name="IECA" id="4" display="true" />
+    <Item name="Systems Group" id="20" display="true" />
+    <Item name="KM" id="6" display="true" />
+    <Item name="ML" id="7" display="true" />
+    <Item name="MC" id="8" display="true" />
+    <Item name="MASS" id="9" display="true" />
+    <Item name="Speech Group" id="27" display="true" />
+    <Item name="IT" id="18" display="true" />
+    <Item name="SA" id="19" display="true" />
+    <Item name="IM" id="5" display="true" />
+
+    <Item name="W&amp;N" id="24" display="true" />
+
+    <Item name="Theory Group" id="22" display="true" />
+    <Item name="VC" id="23" display="true" />
+    <Item name="SysAlgo" id="21" display="true" />
+    <Item name="HCG" id="25" display="true" />
+    <Item name="NLC" id="18" display="true" />
+    <Item name="Research Connections" id="29" display="true" />
+
+
+    <Item name="MSM" id="28" display="true" />
+    <Item name="WSDM" id="26" display="true" />
+
+    <Item name="PR" id="30" display="true" />
+    <Item name="Other" id="38" display="true" />
+  </Type>
+  <Type name="Projects">
+    <Item name="General MSRA Project" id="0" display="true" />
+    <Item name="Point Source Project" id="1" display="true" />
+    <Item name="Hon's Project" id="2" display="true" />
+    <Item name="IG\Separate" id="3" display="true" />
+    <Item name="Sigma Project" id="4" display="true" />
+    <Item name="UR Project" id="5" display="true" />
+  </Type>
+  <Type name="Positions">
+    <Item name="Research Intern" id="1" display="true" />
+    <Item name="PM" id="2" display="true" />
+    <Item name="SDE (DEV)" id="3" display="true" />
+    <Item name="SDET (Test)" id="4" display="true" />
+    <Item name="Product Planning" id="5" display="true" />
+    <Item name="Designer" id="6" display="true" />
+    <Item name="Other intern" id="7" display="true" />
+  </Type>
+</OnBoardRequest>

@@ -1,0 +1,1665 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{EC5ED30B-8F90-4DF6-8CF8-B67CA98E8731}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MSRA.SpringField.Application</RootNamespace>
+    <AssemblyName>MSRA.SpringField.Application</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <SignAssembly>true</SignAssembly>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=3.0.30930.28736, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib, Version=0.85.5.452, Culture=neutral, PublicKeyToken=1b03e6acf1164f73, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Extensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Controls\ApplicantInfoPanel.ascx" />
+    <Content Include="Controls\ApplicantsList.ascx" />
+    <Content Include="Controls\BasicInfo.ascx" />
+    <Content Include="Controls\CheckInFormEdit.ascx" />
+    <Content Include="Controls\CheckInFormView.ascx" />
+    <Content Include="Controls\CollegeSelector.ascx" />
+    <Content Include="Controls\Comment.ascx" />
+    <Content Include="Controls\ConfirmPanel.ascx" />
+    <Content Include="Controls\HiringReport.ascx" />
+    <Content Include="Controls\IncompleteInterviewList.ascx" />
+    <Content Include="Controls\InfoSourceGenerator.ascx" />
+    <Content Include="Controls\InterviewFeedback.ascx" />
+    <Content Include="Controls\InterviewHistory.ascx" />
+    <Content Include="Controls\InterviewPanel.ascx" />
+    <Content Include="Controls\InterviewReport.ascx" />
+    <Content Include="Controls\ManagerApproval.ascx" />
+    <Content Include="Controls\ManagerResult.ascx" />
+    <Content Include="Controls\MentorResult.ascx" />
+    <Content Include="Controls\MentorSuggestion.ascx" />
+    <Content Include="Controls\PerformanceAssessment.ascx" />
+    <Content Include="Controls\SRChannelSource.ascx" />
+    <Content Include="Controls\SRDegree.ascx" />
+    <Content Include="Controls\SRPreferredPosition.ascx" />
+    <Content Include="Controls\SRResearchGroup.ascx" />
+    <Content Include="Controls\SRSpecialProgram.ascx" />
+    <Content Include="Controls\TopMenu.ascx" />
+    <Content Include="Controls\UploadingManagerApproval.ascx" />
+    <Content Include="Controls\UploadingMentorSuggestion.ascx" />
+    <Content Include="help_files\colorschememapping.xml" />
+    <Content Include="help_files\filelist.xml" />
+    <Content Include="help_files\header.htm" />
+    <Content Include="help_files\image001.jpg" />
+    <Content Include="help_files\image001.png" />
+    <Content Include="help_files\image002.jpg" />
+    <Content Include="help_files\image003.jpg" />
+    <Content Include="help_files\image003.png" />
+    <Content Include="help_files\image004.gif" />
+    <Content Include="help_files\image004.jpg" />
+    <Content Include="help_files\image005.jpg" />
+    <Content Include="help_files\image005.png" />
+    <Content Include="help_files\image006.gif" />
+    <Content Include="help_files\image006.jpg" />
+    <Content Include="help_files\image007.gif" />
+    <Content Include="help_files\image007.jpg" />
+    <Content Include="help_files\image008.gif" />
+    <Content Include="help_files\image008.jpg" />
+    <Content Include="help_files\image009.jpg" />
+    <Content Include="help_files\image010.jpg" />
+    <Content Include="help_files\image011.jpg" />
+    <Content Include="help_files\image012.jpg" />
+    <Content Include="help_files\image013.jpg" />
+    <Content Include="help_files\image013.png" />
+    <Content Include="help_files\image014.gif" />
+    <Content Include="help_files\image014.jpg" />
+    <Content Include="help_files\image015.jpg" />
+    <Content Include="help_files\image015.png" />
+    <Content Include="help_files\image016.gif" />
+    <Content Include="help_files\image016.jpg" />
+    <Content Include="help_files\image017.jpg" />
+    <Content Include="help_files\image017.png" />
+    <Content Include="help_files\image018.gif" />
+    <Content Include="help_files\image018.jpg" />
+    <Content Include="help_files\image019.jpg" />
+    <Content Include="help_files\image019.png" />
+    <Content Include="help_files\image020.jpg" />
+    <Content Include="help_files\image021.jpg" />
+    <Content Include="help_files\image021.png" />
+    <Content Include="help_files\image022.jpg" />
+    <Content Include="help_files\image023.jpg" />
+    <Content Include="help_files\image023.png" />
+    <Content Include="help_files\image024.jpg" />
+    <Content Include="help_files\image025.jpg" />
+    <Content Include="help_files\image025.png" />
+    <Content Include="help_files\image026.jpg" />
+    <Content Include="help_files\image027.jpg" />
+    <Content Include="help_files\image027.png" />
+    <Content Include="help_files\image028.jpg" />
+    <Content Include="help_files\image029.jpg" />
+    <Content Include="help_files\image029.png" />
+    <Content Include="help_files\image030.jpg" />
+    <Content Include="help_files\image031.jpg" />
+    <Content Include="help_files\image031.png" />
+    <Content Include="help_files\image032.jpg" />
+    <Content Include="help_files\image033.jpg" />
+    <Content Include="help_files\image033.png" />
+    <Content Include="help_files\image034.jpg" />
+    <Content Include="help_files\image035.jpg" />
+    <Content Include="help_files\image035.png" />
+    <Content Include="help_files\image036.jpg" />
+    <Content Include="help_files\image037.jpg" />
+    <Content Include="help_files\image037.png" />
+    <Content Include="help_files\image038.jpg" />
+    <Content Include="help_files\image039.jpg" />
+    <Content Include="help_files\image039.png" />
+    <Content Include="help_files\image040.gif" />
+    <Content Include="help_files\image040.jpg" />
+    <Content Include="help_files\image041.gif" />
+    <Content Include="help_files\image041.png" />
+    <Content Include="help_files\image042.jpg" />
+    <Content Include="help_files\image043.png" />
+    <Content Include="help_files\image044.jpg" />
+    <Content Include="help_files\image045.png" />
+    <Content Include="help_files\image046.jpg" />
+    <Content Include="help_files\image047.png" />
+    <Content Include="help_files\image048.jpg" />
+    <Content Include="help_files\image049.png" />
+    <Content Include="help_files\image050.jpg" />
+    <Content Include="help_files\image051.png" />
+    <Content Include="help_files\image052.jpg" />
+    <Content Include="help_files\image053.png" />
+    <Content Include="help_files\image054.jpg" />
+    <Content Include="help_files\image055.png" />
+    <Content Include="help_files\image056.jpg" />
+    <Content Include="help_files\image057.png" />
+    <Content Include="help_files\image058.jpg" />
+    <Content Include="help_files\image059.png" />
+    <Content Include="help_files\image060.jpg" />
+    <Content Include="help_files\image061.png" />
+    <Content Include="help_files\image062.jpg" />
+    <Content Include="help_files\image063.png" />
+    <Content Include="help_files\image064.jpg" />
+    <Content Include="help_files\image065.jpg" />
+    <Content Include="help_files\image066.jpg" />
+    <Content Include="help_files\image067.jpg" />
+    <Content Include="help_files\image068.jpg" />
+    <Content Include="help_files\image069.jpg" />
+    <Content Include="help_files\image070.jpg" />
+    <Content Include="help_files\image071.jpg" />
+    <Content Include="help_files\image072.png" />
+    <Content Include="help_files\image073.jpg" />
+    <Content Include="help_files\image074.png" />
+    <Content Include="help_files\image075.jpg" />
+    <Content Include="help_files\image076.png" />
+    <Content Include="help_files\image077.jpg" />
+    <Content Include="help_files\image078.png" />
+    <Content Include="help_files\image079.jpg" />
+    <Content Include="help_files\image080.png" />
+    <Content Include="help_files\image081.jpg" />
+    <Content Include="help_files\image082.png" />
+    <Content Include="help_files\image083.jpg" />
+    <Content Include="help_files\image084.png" />
+    <Content Include="help_files\image085.jpg" />
+    <Content Include="images\arrow_down.gif" />
+    <Content Include="images\arrow_up.gif" />
+    <Content Include="images\favorite.ico" />
+    <Content Include="images\interview.ico" />
+    <Content Include="images\LibC.gif" />
+    <Content Include="images\liquid_image.jpg" />
+    <Content Include="images\microsoft.jpg" />
+    <Content Include="images\sf.gif" />
+    <Content Include="images\Title.JPG" />
+    <Content Include="images\vision.gif" />
+    <Content Include="images\Vision.JPG" />
+    <Content Include="Resource\Scripts\tiny_mce\langs\en.js" />
+    <Content Include="Resource\Scripts\tiny_mce\license.txt" />
+    <Content Include="Resource\Scripts\tiny_mce\plugins\advhr\css\advhr.css" />
+    <Content Include="Resource\Scripts\tiny_mce\plugins\advhr\editor_plugin.js" />
+    <Content Include="Resource\Scripts\tiny_mce\plugins\advhr\editor_plugin_src.js" />
+    <Content Include="Resource\Scripts\tiny_mce\plugins\advhr\js\rule.js" />
+    <Content Include="Resource\Scripts\tiny_mce\plugins\advhr\langs\en_dlg.js" />
+    <Content Include="Resource\Scripts\tiny_mce\plugins\advhr\rule.htm" />
+    <Content Include="Resource\Scripts\tiny_mce\plugins\advimage\css\advimage.css" />
+    <Content Include="Resource\Scripts\tiny_mce\plugins\advimage\editor_plugin.js" />
+    <Content Include="Resource\Scripts\tiny_mce\plugins\advimage\editor_plugin_src.js" />
+    <Content Include="Resource\Scripts\tiny_mce\plugins\advimage\image.htm" />
+    <Content Include="Resource\Scripts\tiny_mce\plugins\advimage\img\sample.gif" />
+    <Content Include="Resource\Scripts\tiny_mce\plugins\advimage\js\image.js" />
+    <Content Include="Resource\Scripts\tiny_mce\plugins\advimage\langs\en_dlg.js" />
+    <Content Include="Resource\Scripts\tiny_mce\plugins\advlink\css\advlink.css" />
+    <Content Include="Resource\Scripts\tiny_mce\plugins\advlink\editor_plugin.js" />
+    <Content Include="Resource\Scripts\tiny_mce\plugins\advlink\editor_plugin_src.js" />
+    <Content Include="Resource\Scripts\tiny_mce\plugins\advlink\js\advlink.js" />
+    <Content Include="Resource\Scripts\tiny_mce\plugins\advlink\langs\en_dlg.js" />
+    <Content Include="Resource\Scripts\tiny_mce\plugins\advlink\link.htm" />
+    <Content Include="Resource\Scripts\tiny_mce\plugins\autosave\editor_plugin.js" />
+    <Content Include="Resource\Scripts\tiny_mce\plugins\autosave\editor_plugin_src.js" />
+    <Content Include="Resource\Scripts\tiny_mce\plugins\bbcode\editor_plugin.js" />
+    <Content Include="Resource\Scripts\tiny_mce\plugins\bbcode\editor_plugin_src.js" />
+    <Content Include="Resource\Scripts\tiny_mce\plugins\compat2x\editor_plugin.js" />
+    <Content Include="Resource\Scripts\tiny_mce\plugins\compat2x\editor_plugin_src.js" />
+    <Content Include="Resource\Scripts\tiny_mce\plugins\contextmenu\editor_plugin.js" />
+    <Content Include="Resource\Scripts\tiny_mce\plugins\contextmenu\editor_plugin_src.js" />
+    <Content Include="Resource\Scripts\tiny_mce\plugins\directionality\editor_plugin.js" />
+    <Content Include="Resource\Scripts\tiny_mce\plugins\directionality\editor_plugin_src.js" />
+    <Content Include="Resource\Scripts\tiny_mce\plugins\emotions\editor_plugin.js" />
+    <Content Include="Resource\Scripts\tiny_mce\plugins\emotions\editor_plugin_src.js" />
+    <Content Include="Resource\Scripts\tiny_mce\plugins\emotions\emotions.htm" />
+    <Content Include="Resource\Scripts\tiny_mce\plugins\emotions\img\smiley-cool.gif" />
+    <Content Include="Resource\Scripts\tiny_mce\plugins\emotions\img\smiley-cry.gif" />
+    <Content Include="Resource\Scripts\tiny_mce\plugins\emotions\img\smiley-embarassed.gif" />
+    <Content Include="Resource\Scripts\tiny_mce\plugins\emotions\img\smiley-foot-in-mouth.gif" />
+    <Content Include="Resource\Scripts\tiny_mce\plugins\emotions\img\smiley-frown.gif" />
+    <Content Include="Resource\Scripts\tiny_mce\plugins\emotions\img\smiley-innocent.gif" />
+    <Content Include="Resource\Scripts\tiny_mce\plugins\emotions\img\smiley-kiss.gif" />
+    <Content Include="Resource\Scripts\tiny_mce\plugins\emotions\img\smiley-laughing.gif" />
+    <Content Include="Resource\Scripts\tiny_mce\plugins\emotions\img\smiley-money-mouth.gif" />
+    <Content Include="Resource\Scripts\tiny_mce\plugins\emotions\img\smiley-sealed.gif" />
+    <Content Include="Resource\Scripts\tiny_mce\plugins\emotions\img\smiley-smile.gif" />
+    <Content Include="Resource\Scripts\tiny_mce\plugins\emotions\img\smiley-surprised.gif" />
+    <Content Include="Resource\Scripts\tiny_mce\plugins\emotions\img\smiley-tongue-out.gif" />
+    <Content Include="Resource\Scripts\tiny_mce\plugins\emotions\img\smiley-undecided.gif" />
+    <Content Include="Resource\Scripts\tiny_mce\plugins\emotions\img\smiley-wink.gif" />
+    <Content Include="Resource\Scripts\tiny_mce\plugins\emotions\img\smiley-yell.gif" />
+    <Content Include="Resource\Scripts\tiny_mce\plugins\emotions\js\emotions.js" />
+    <Content Include="Resource\Scripts\tiny_mce\plugins\emotions\langs\en_dlg.js" />
+    <Content Include="Resource\Scripts\tiny_mce\plugins\example\dialog.htm" />
+    <Content Include="Resource\Scripts\tiny_mce\plugins\example\editor_plugin.js" />
+    <Content Include="Resource\Scripts\tiny_mce\plugins\example\editor_plugin_src.js" />
+    <Content Include="Resource\Scripts\tiny_mce\plugins\example\img\example.gif" />
+    <Content Include="Resource\Scripts\tiny_mce\plugins\example\js\dialog.js" />
+    <Content Include="Resource\Scripts\tiny_mce\plugins\example\langs\en.js" />
+    <Content Include="Resource\Scripts\tiny_mce\plugins\example\langs\en_dlg.js" />
+    <Content Include="Resource\Scripts\tiny_mce\plugins\fullpage\css\fullpage.css" />
+    <Content Include="Resource\Scripts\tiny_mce\plugins\fullpage\editor_plugin.js" />
+    <Content Include="Resource\Scripts\tiny_mce\plugins\fullpage\editor_plugin_src.js" />
+    <Content Include="Resource\Scripts\tiny_mce\plugins\fullpage\fullpage.htm" />
+    <Content Include="Resource\Scripts\tiny_mce\plugins\fullpage\js\fullpage.js" />
+    <Content Include="Resource\Scripts\tiny_mce\plugins\fullpage\langs\en_dlg.js" />
+    <Content Include="Resource\Scripts\tiny_mce\plugins\fullscreen\editor_plugin.js" />
+    <Content Include="Resource\Scripts\tiny_mce\plugins\fullscreen\editor_plugin_src.js" />
+    <Content Include="Resource\Scripts\tiny_mce\plugins\fullscreen\fullscreen.htm" />
+    <Content Include="Resource\Scripts\tiny_mce\plugins\iespell\editor_plugin.js" />
+    <Content Include="Resource\Scripts\tiny_mce\plugins\iespell\editor_plugin_src.js" />
+    <Content Include="Resource\Scripts\tiny_mce\plugins\inlinepopups\editor_plugin.js" />
+    <Content Include="Resource\Scripts\tiny_mce\plugins\inlinepopups\editor_plugin_src.js" />
+    <Content Include="Resource\Scripts\tiny_mce\plugins\inlinepopups\skins\clearlooks2\img\alert.gif" />
+    <Content Include="Resource\Scripts\tiny_mce\plugins\inlinepopups\skins\clearlooks2\img\button.gif" />
+    <Content Include="Resource\Scripts\tiny_mce\plugins\inlinepopups\skins\clearlooks2\img\buttons.gif" />
+    <Content Include="Resource\Scripts\tiny_mce\plugins\inlinepopups\skins\clearlooks2\img\confirm.gif" />
+    <Content Include="Resource\Scripts\tiny_mce\plugins\inlinepopups\skins\clearlooks2\img\corners.gif" />
+    <Content Include="Resource\Scripts\tiny_mce\plugins\inlinepopups\skins\clearlooks2\img\horizontal.gif" />
+    <Content Include="Resource\Scripts\tiny_mce\plugins\inlinepopups\skins\clearlooks2\img\vertical.gif" />
+    <Content Include="Resource\Scripts\tiny_mce\plugins\inlinepopups\skins\clearlooks2\window.css" />
+    <Content Include="Resource\Scripts\tiny_mce\plugins\inlinepopups\template.htm" />
+    <Content Include="Resource\Scripts\tiny_mce\plugins\insertdatetime\editor_plugin.js" />
+    <Content Include="Resource\Scripts\tiny_mce\plugins\insertdatetime\editor_plugin_src.js" />
+    <Content Include="Resource\Scripts\tiny_mce\plugins\layer\editor_plugin.js" />
+    <Content Include="Resource\Scripts\tiny_mce\plugins\layer\editor_plugin_src.js" />
+    <Content Include="Resource\Scripts\tiny_mce\plugins\media\css\content.css" />
+    <Content Include="Resource\Scripts\tiny_mce\plugins\media\css\media.css" />
+    <Content Include="Resource\Scripts\tiny_mce\plugins\media\editor_plugin.js" />
+    <Content Include="Resource\Scripts\tiny_mce\plugins\media\editor_plugin_src.js" />
+    <Content Include="Resource\Scripts\tiny_mce\plugins\media\img\flash.gif" />
+    <Content Include="Resource\Scripts\tiny_mce\plugins\media\img\flv_player.swf" />
+    <Content Include="Resource\Scripts\tiny_mce\plugins\media\img\quicktime.gif" />
+    <Content Include="Resource\Scripts\tiny_mce\plugins\media\img\realmedia.gif" />
+    <Content Include="Resource\Scripts\tiny_mce\plugins\media\img\shockwave.gif" />
+    <Content Include="Resource\Scripts\tiny_mce\plugins\media\img\trans.gif" />
+    <Content Include="Resource\Scripts\tiny_mce\plugins\media\img\windowsmedia.gif" />
+    <Content Include="Resource\Scripts\tiny_mce\plugins\media\js\embed.js" />
+    <Content Include="Resource\Scripts\tiny_mce\plugins\media\js\media.js" />
+    <Content Include="Resource\Scripts\tiny_mce\plugins\media\langs\en_dlg.js" />
+    <Content Include="Resource\Scripts\tiny_mce\plugins\media\media.htm" />
+    <Content Include="Resource\Scripts\tiny_mce\plugins\nonbreaking\editor_plugin.js" />
+    <Content Include="Resource\Scripts\tiny_mce\plugins\nonbreaking\editor_plugin_src.js" />
+    <Content Include="Resource\Scripts\tiny_mce\plugins\noneditable\editor_plugin.js" />
+    <Content Include="Resource\Scripts\tiny_mce\plugins\noneditable\editor_plugin_src.js" />
+    <Content Include="Resource\Scripts\tiny_mce\plugins\pagebreak\css\content.css" />
+    <Content Include="Resource\Scripts\tiny_mce\plugins\pagebreak\editor_plugin.js" />
+    <Content Include="Resource\Scripts\tiny_mce\plugins\pagebreak\editor_plugin_src.js" />
+    <Content Include="Resource\Scripts\tiny_mce\plugins\pagebreak\img\pagebreak.gif" />
+    <Content Include="Resource\Scripts\tiny_mce\plugins\pagebreak\img\trans.gif" />
+    <Content Include="Resource\Scripts\tiny_mce\plugins\paste\blank.htm" />
+    <Content Include="Resource\Scripts\tiny_mce\plugins\paste\css\blank.css" />
+    <Content Include="Resource\Scripts\tiny_mce\plugins\paste\css\pasteword.css" />
+    <Content Include="Resource\Scripts\tiny_mce\plugins\paste\editor_plugin.js" />
+    <Content Include="Resource\Scripts\tiny_mce\plugins\paste\editor_plugin_src.js" />
+    <Content Include="Resource\Scripts\tiny_mce\plugins\paste\js\pastetext.js" />
+    <Content Include="Resource\Scripts\tiny_mce\plugins\paste\js\pasteword.js" />
+    <Content Include="Resource\Scripts\tiny_mce\plugins\paste\langs\en_dlg.js" />
+    <Content Include="Resource\Scripts\tiny_mce\plugins\paste\pastetext.htm" />
+    <Content Include="Resource\Scripts\tiny_mce\plugins\paste\pasteword.htm" />
+    <Content Include="Resource\Scripts\tiny_mce\plugins\preview\editor_plugin.js" />
+    <Content Include="Resource\Scripts\tiny_mce\plugins\preview\editor_plugin_src.js" />
+    <Content Include="Resource\Scripts\tiny_mce\plugins\preview\example.html" />
+    <Content Include="Resource\Scripts\tiny_mce\plugins\preview\jscripts\embed.js" />
+    <Content Include="Resource\Scripts\tiny_mce\plugins\print\editor_plugin.js" />
+    <Content Include="Resource\Scripts\tiny_mce\plugins\print\editor_plugin_src.js" />
+    <Content Include="Resource\Scripts\tiny_mce\plugins\safari\blank.htm" />
+    <Content Include="Resource\Scripts\tiny_mce\plugins\safari\editor_plugin.js" />
+    <Content Include="Resource\Scripts\tiny_mce\plugins\safari\editor_plugin_src.js" />
+    <Content Include="Resource\Scripts\tiny_mce\plugins\save\editor_plugin.js" />
+    <Content Include="Resource\Scripts\tiny_mce\plugins\save\editor_plugin_src.js" />
+    <Content Include="Resource\Scripts\tiny_mce\plugins\searchreplace\css\searchreplace.css" />
+    <Content Include="Resource\Scripts\tiny_mce\plugins\searchreplace\editor_plugin.js" />
+    <Content Include="Resource\Scripts\tiny_mce\plugins\searchreplace\editor_plugin_src.js" />
+    <Content Include="Resource\Scripts\tiny_mce\plugins\searchreplace\js\searchreplace.js" />
+    <Content Include="Resource\Scripts\tiny_mce\plugins\searchreplace\langs\en_dlg.js" />
+    <Content Include="Resource\Scripts\tiny_mce\plugins\searchreplace\searchreplace.htm" />
+    <Content Include="Resource\Scripts\tiny_mce\plugins\spellchecker\css\content.css" />
+    <Content Include="Resource\Scripts\tiny_mce\plugins\spellchecker\editor_plugin.js" />
+    <Content Include="Resource\Scripts\tiny_mce\plugins\spellchecker\editor_plugin_src.js" />
+    <Content Include="Resource\Scripts\tiny_mce\plugins\spellchecker\img\wline.gif" />
+    <Content Include="Resource\Scripts\tiny_mce\plugins\style\css\props.css" />
+    <Content Include="Resource\Scripts\tiny_mce\plugins\style\editor_plugin.js" />
+    <Content Include="Resource\Scripts\tiny_mce\plugins\style\editor_plugin_src.js" />
+    <Content Include="Resource\Scripts\tiny_mce\plugins\style\js\props.js" />
+    <Content Include="Resource\Scripts\tiny_mce\plugins\style\langs\en_dlg.js" />
+    <Content Include="Resource\Scripts\tiny_mce\plugins\style\props.htm" />
+    <Content Include="Resource\Scripts\tiny_mce\plugins\table\cell.htm" />
+    <Content Include="Resource\Scripts\tiny_mce\plugins\table\css\cell.css" />
+    <Content Include="Resource\Scripts\tiny_mce\plugins\table\css\row.css" />
+    <Content Include="Resource\Scripts\tiny_mce\plugins\table\css\table.css" />
+    <Content Include="Resource\Scripts\tiny_mce\plugins\table\editor_plugin.js" />
+    <Content Include="Resource\Scripts\tiny_mce\plugins\table\editor_plugin_src.js" />
+    <Content Include="Resource\Scripts\tiny_mce\plugins\table\js\cell.js" />
+    <Content Include="Resource\Scripts\tiny_mce\plugins\table\js\merge_cells.js" />
+    <Content Include="Resource\Scripts\tiny_mce\plugins\table\js\row.js" />
+    <Content Include="Resource\Scripts\tiny_mce\plugins\table\js\table.js" />
+    <Content Include="Resource\Scripts\tiny_mce\plugins\table\langs\en_dlg.js" />
+    <Content Include="Resource\Scripts\tiny_mce\plugins\table\merge_cells.htm" />
+    <Content Include="Resource\Scripts\tiny_mce\plugins\table\row.htm" />
+    <Content Include="Resource\Scripts\tiny_mce\plugins\table\table.htm" />
+    <Content Include="Resource\Scripts\tiny_mce\plugins\template\blank.htm" />
+    <Content Include="Resource\Scripts\tiny_mce\plugins\template\css\template.css" />
+    <Content Include="Resource\Scripts\tiny_mce\plugins\template\editor_plugin.js" />
+    <Content Include="Resource\Scripts\tiny_mce\plugins\template\editor_plugin_src.js" />
+    <Content Include="Resource\Scripts\tiny_mce\plugins\template\js\template.js" />
+    <Content Include="Resource\Scripts\tiny_mce\plugins\template\langs\en_dlg.js" />
+    <Content Include="Resource\Scripts\tiny_mce\plugins\template\template.htm" />
+    <Content Include="Resource\Scripts\tiny_mce\plugins\visualchars\editor_plugin.js" />
+    <Content Include="Resource\Scripts\tiny_mce\plugins\visualchars\editor_plugin_src.js" />
+    <Content Include="Resource\Scripts\tiny_mce\plugins\xhtmlxtras\abbr.htm" />
+    <Content Include="Resource\Scripts\tiny_mce\plugins\xhtmlxtras\acronym.htm" />
+    <Content Include="Resource\Scripts\tiny_mce\plugins\xhtmlxtras\attributes.htm" />
+    <Content Include="Resource\Scripts\tiny_mce\plugins\xhtmlxtras\cite.htm" />
+    <Content Include="Resource\Scripts\tiny_mce\plugins\xhtmlxtras\css\attributes.css" />
+    <Content Include="Resource\Scripts\tiny_mce\plugins\xhtmlxtras\css\popup.css" />
+    <Content Include="Resource\Scripts\tiny_mce\plugins\xhtmlxtras\del.htm" />
+    <Content Include="Resource\Scripts\tiny_mce\plugins\xhtmlxtras\editor_plugin.js" />
+    <Content Include="Resource\Scripts\tiny_mce\plugins\xhtmlxtras\editor_plugin_src.js" />
+    <Content Include="Resource\Scripts\tiny_mce\plugins\xhtmlxtras\ins.htm" />
+    <Content Include="Resource\Scripts\tiny_mce\plugins\xhtmlxtras\js\abbr.js" />
+    <Content Include="Resource\Scripts\tiny_mce\plugins\xhtmlxtras\js\acronym.js" />
+    <Content Include="Resource\Scripts\tiny_mce\plugins\xhtmlxtras\js\attributes.js" />
+    <Content Include="Resource\Scripts\tiny_mce\plugins\xhtmlxtras\js\cite.js" />
+    <Content Include="Resource\Scripts\tiny_mce\plugins\xhtmlxtras\js\del.js" />
+    <Content Include="Resource\Scripts\tiny_mce\plugins\xhtmlxtras\js\element_common.js" />
+    <Content Include="Resource\Scripts\tiny_mce\plugins\xhtmlxtras\js\ins.js" />
+    <Content Include="Resource\Scripts\tiny_mce\plugins\xhtmlxtras\langs\en_dlg.js" />
+    <Content Include="Resource\Scripts\tiny_mce\themes\advanced\about.htm" />
+    <Content Include="Resource\Scripts\tiny_mce\themes\advanced\anchor.htm" />
+    <Content Include="Resource\Scripts\tiny_mce\themes\advanced\charmap.htm" />
+    <Content Include="Resource\Scripts\tiny_mce\themes\advanced\color_picker.htm" />
+    <Content Include="Resource\Scripts\tiny_mce\themes\advanced\editor_template.js" />
+    <Content Include="Resource\Scripts\tiny_mce\themes\advanced\editor_template_src.js" />
+    <Content Include="Resource\Scripts\tiny_mce\themes\advanced\image.htm" />
+    <Content Include="Resource\Scripts\tiny_mce\themes\advanced\img\colorpicker.jpg" />
+    <Content Include="Resource\Scripts\tiny_mce\themes\advanced\img\icons.gif" />
+    <Content Include="Resource\Scripts\tiny_mce\themes\advanced\js\about.js" />
+    <Content Include="Resource\Scripts\tiny_mce\themes\advanced\js\anchor.js" />
+    <Content Include="Resource\Scripts\tiny_mce\themes\advanced\js\charmap.js" />
+    <Content Include="Resource\Scripts\tiny_mce\themes\advanced\js\color_picker.js" />
+    <Content Include="Resource\Scripts\tiny_mce\themes\advanced\js\image.js" />
+    <Content Include="Resource\Scripts\tiny_mce\themes\advanced\js\link.js" />
+    <Content Include="Resource\Scripts\tiny_mce\themes\advanced\js\source_editor.js" />
+    <Content Include="Resource\Scripts\tiny_mce\themes\advanced\langs\en.js" />
+    <Content Include="Resource\Scripts\tiny_mce\themes\advanced\langs\en_dlg.js" />
+    <Content Include="Resource\Scripts\tiny_mce\themes\advanced\link.htm" />
+    <Content Include="Resource\Scripts\tiny_mce\themes\advanced\skins\default\content.css" />
+    <Content Include="Resource\Scripts\tiny_mce\themes\advanced\skins\default\dialog.css" />
+    <Content Include="Resource\Scripts\tiny_mce\themes\advanced\skins\default\img\buttons.png" />
+    <Content Include="Resource\Scripts\tiny_mce\themes\advanced\skins\default\img\items.gif" />
+    <Content Include="Resource\Scripts\tiny_mce\themes\advanced\skins\default\img\menu_arrow.gif" />
+    <Content Include="Resource\Scripts\tiny_mce\themes\advanced\skins\default\img\menu_check.gif" />
+    <Content Include="Resource\Scripts\tiny_mce\themes\advanced\skins\default\img\progress.gif" />
+    <Content Include="Resource\Scripts\tiny_mce\themes\advanced\skins\default\img\tabs.gif" />
+    <Content Include="Resource\Scripts\tiny_mce\themes\advanced\skins\default\ui.css" />
+    <Content Include="Resource\Scripts\tiny_mce\themes\advanced\skins\o2k7\content.css" />
+    <Content Include="Resource\Scripts\tiny_mce\themes\advanced\skins\o2k7\dialog.css" />
+    <Content Include="Resource\Scripts\tiny_mce\themes\advanced\skins\o2k7\img\button_bg.png" />
+    <Content Include="Resource\Scripts\tiny_mce\themes\advanced\skins\o2k7\img\button_bg_black.png" />
+    <Content Include="Resource\Scripts\tiny_mce\themes\advanced\skins\o2k7\img\button_bg_silver.png" />
+    <Content Include="Resource\Scripts\tiny_mce\themes\advanced\skins\o2k7\ui.css" />
+    <Content Include="Resource\Scripts\tiny_mce\themes\advanced\skins\o2k7\ui_black.css" />
+    <Content Include="Resource\Scripts\tiny_mce\themes\advanced\skins\o2k7\ui_silver.css" />
+    <Content Include="Resource\Scripts\tiny_mce\themes\advanced\source_editor.htm" />
+    <Content Include="Resource\Scripts\tiny_mce\themes\simple\editor_template.js" />
+    <Content Include="Resource\Scripts\tiny_mce\themes\simple\editor_template_src.js" />
+    <Content Include="Resource\Scripts\tiny_mce\themes\simple\img\icons.gif" />
+    <Content Include="Resource\Scripts\tiny_mce\themes\simple\langs\en.js" />
+    <Content Include="Resource\Scripts\tiny_mce\themes\simple\skins\default\content.css" />
+    <Content Include="Resource\Scripts\tiny_mce\themes\simple\skins\default\ui.css" />
+    <Content Include="Resource\Scripts\tiny_mce\themes\simple\skins\o2k7\content.css" />
+    <Content Include="Resource\Scripts\tiny_mce\themes\simple\skins\o2k7\img\button_bg.png" />
+    <Content Include="Resource\Scripts\tiny_mce\themes\simple\skins\o2k7\ui.css" />
+    <Content Include="Resource\Scripts\tiny_mce\tiny_mce.js" />
+    <Content Include="Resource\Scripts\tiny_mce\tiny_mce_popup.js" />
+    <Content Include="Resource\Scripts\tiny_mce\tiny_mce_src.js" />
+    <Content Include="Resource\Scripts\tiny_mce\utils\editable_selects.js" />
+    <Content Include="Resource\Scripts\tiny_mce\utils\form_utils.js" />
+    <Content Include="Resource\Scripts\tiny_mce\utils\mctabs.js" />
+    <Content Include="Resource\Scripts\tiny_mce\utils\validate.js" />
+    <Content Include="Keyin\ApplicantBasicInfo.aspx" />
+    <Content Include="Keyin\ApplicantEduBackground.aspx" />
+    <Content Include="Keyin\ApplicantInformationView.aspx" />
+    <Content Include="Keyin\ApplicantRegister.aspx" />
+    <Content Include="Keyin\ApplicantRelatedInfo.aspx" />
+    <Content Include="Keyin\ApplicationComplete.aspx" />
+    <Content Include="Keyin\css\master.css" />
+    <Content Include="Keyin\Default.aspx" />
+    <Content Include="Keyin\Error.aspx" />
+    <Content Include="Keyin\FloatWindow.css" />
+    <Content Include="Keyin\global.css" />
+    <Content Include="Keyin\images\arrow_down.gif" />
+    <Content Include="Keyin\images\arrow_up.gif" />
+    <Content Include="Keyin\images\calender\background-1.jpg" />
+    <Content Include="Keyin\images\calender\close.gif" />
+    <Content Include="Keyin\images\calender\drop1.gif" />
+    <Content Include="Keyin\images\calender\drop2.gif" />
+    <Content Include="Keyin\images\calender\left1.gif" />
+    <Content Include="Keyin\images\calender\left2.gif" />
+    <Content Include="Keyin\images\calender\right1.gif" />
+    <Content Include="Keyin\images\calender\right2.gif" />
+    <Content Include="Keyin\images\floatwindow\BtnSettings.gif" />
+    <Content Include="Keyin\images\floatwindow\BtnSettings_hover.gif" />
+    <Content Include="Keyin\images\floatwindow\close.gif" />
+    <Content Include="Keyin\images\floatwindow\close_hover.gif" />
+    <Content Include="Keyin\images\floatwindow\collapse.gif" />
+    <Content Include="Keyin\images\floatwindow\collapse_hover.gif" />
+    <Content Include="Keyin\images\floatwindow\header-opened.png" />
+    <Content Include="Keyin\images\floatwindow\header.png" />
+    <Content Include="Keyin\images\floatwindow\icons.gif" />
+    <Content Include="Keyin\images\floatwindow\pageoptions-hover.png" />
+    <Content Include="Keyin\images\floatwindow\plus.gif" />
+    <Content Include="Keyin\images\floatwindow\plus_hover.gif" />
+    <Content Include="Keyin\images\floatwindow\search_button_hover.gif" />
+    <Content Include="Keyin\images\liquid_image.jpg" />
+    <Content Include="Keyin\images\sf.gif" />
+    <Content Include="Keyin\images\Title.JPG" />
+    <Content Include="Keyin\images\vision.gif" />
+    <Content Include="Keyin\images\Vision.JPG" />
+    <Content Include="Keyin\install.aspx" />
+    <Content Include="Keyin\master.css" />
+    <Content Include="Keyin\RegisterComplete.aspx" />
+    <Content Include="Keyin\scripts\FloatWindow.js" />
+    <Content Include="Keyin\scripts\master.js" />
+    <Content Include="Keyin\scripts\popcalendar.js" />
+    <Content Include="Keyin\SetupSpringfield.aspx" />
+    <Content Include="Keyin\UserControls\CollegeSelector.ascx" />
+    <Content Include="Keyin\UserControls\CountrySelector.ascx" />
+    <Content Include="Keyin\UserControls\InfoSourceGenerator.ascx" />
+    <Content Include="Modules\Management\ChangeCurrentUser.aspx" />
+    <Content Include="Modules\Management\CheckInFormConfiguration.aspx" />
+    <Content Include="Modules\Management\EmailTemplateEditor.aspx" />
+    <Content Include="Modules\Management\MaintainGroup.aspx" />
+    <Content Include="Modules\Management\MaintainUniversity.aspx" />
+    <Content Include="Modules\Management\SiteAccessControl.aspx" />
+    <Content Include="Modules\Management\SiteRoleManager.aspx" />
+    <Content Include="Resource\CSS\global.css" />
+    <Content Include="ProUI\images\addfavorite.gif" />
+    <Content Include="ProUI\images\addnote.gif" />
+    <Content Include="ProUI\images\addnote.png" />
+    <Content Include="ProUI\images\appendnote.gif" />
+    <Content Include="ProUI\images\arrow_down.gif" />
+    <Content Include="ProUI\images\arrow_up.gif" />
+    <Content Include="ProUI\images\backup\addnote.png" />
+    <Content Include="ProUI\images\backup\changeinterview.png" />
+    <Content Include="ProUI\images\backup\declineoffer.png" />
+    <Content Include="ProUI\images\backup\edit.jpg" />
+    <Content Include="ProUI\images\backup\forward.jpg" />
+    <Content Include="ProUI\images\backup\interview.jpg" />
+    <Content Include="ProUI\images\backup\readnote.png" />
+    <Content Include="ProUI\images\backup\search.png" />
+    <Content Include="ProUI\images\calendar.gif" />
+    <Content Include="Resource\Images\calender\background-1.jpg" />
+    <Content Include="Resource\Images\calender\close.gif" />
+    <Content Include="Resource\Images\calender\drop1.gif" />
+    <Content Include="Resource\Images\calender\drop2.gif" />
+    <Content Include="Resource\Images\calender\left1.gif" />
+    <Content Include="Resource\Images\calender\left2.gif" />
+    <Content Include="Resource\Images\calender\right1.gif" />
+    <Content Include="Resource\Images\calender\right2.gif" />
+    <Content Include="ProUI\images\changeinterview.png" />
+    <Content Include="ProUI\images\check.gif" />
+    <Content Include="ProUI\images\close.gif" />
+    <Content Include="ProUI\images\declineoffer.png" />
+    <Content Include="ProUI\images\delete.gif" />
+    <Content Include="ProUI\images\edit.jpg" />
+    <Content Include="ProUI\images\favorite.ico" />
+    <Content Include="Resource\Images\floatwindow\BtnSettings.gif" />
+    <Content Include="Resource\Images\floatwindow\BtnSettings_hover.gif" />
+    <Content Include="Resource\Images\floatwindow\close.gif" />
+    <Content Include="Resource\Images\floatwindow\close_hover.gif" />
+    <Content Include="Resource\Images\floatwindow\collapse.gif" />
+    <Content Include="Resource\Images\floatwindow\collapse_hover.gif" />
+    <Content Include="Resource\Images\floatwindow\header-opened.png" />
+    <Content Include="Resource\Images\floatwindow\header.png" />
+    <Content Include="Resource\Images\floatwindow\icons.gif" />
+    <Content Include="Resource\Images\floatwindow\pageoptions-hover.png" />
+    <Content Include="Resource\Images\floatwindow\plus.gif" />
+    <Content Include="Resource\Images\floatwindow\plus_hover.gif" />
+    <Content Include="Resource\Images\floatwindow\search_button_hover.gif" />
+    <Content Include="ProUI\images\forward.jpg" />
+    <Content Include="ProUI\images\Intern-Tool-Masthead_01.jpg" />
+    <Content Include="ProUI\images\Intern-Tool-Masthead_02.jpg" />
+    <Content Include="ProUI\images\Intern-Tool-Masthead_04.jpg" />
+    <Content Include="ProUI\images\interview.gif" />
+    <Content Include="ProUI\images\interview.ico" />
+    <Content Include="ProUI\images\interview.jpg" />
+    <Content Include="ProUI\images\liquid_image.jpg" />
+    <Content Include="ProUI\images\microsoft.jpg" />
+    <Content Include="ProUI\images\readnote.png" />
+    <Content Include="ProUI\images\recommend.gif" />
+    <Content Include="ProUI\images\search.png" />
+    <Content Include="ProUI\images\sf.gif" />
+    <Content Include="ProUI\images\summary.png" />
+    <Content Include="ProUI\images\vision.gif" />
+    <Content Include="Resource\Scripts\FloatWindow.js" />
+    <Content Include="Resource\Scripts\master.js" />
+    <Content Include="Resource\Scripts\popcalendar.js" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddNote.aspx.cs">
+      <DependentUpon>AddNote.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddNote.aspx.designer.cs">
+      <DependentUpon>AddNote.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AddReferral.aspx.cs">
+      <DependentUpon>AddReferral.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddReferral.aspx.designer.cs">
+      <DependentUpon>AddReferral.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Applicants.aspx.cs">
+      <DependentUpon>Applicants.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Applicants.aspx.designer.cs">
+      <DependentUpon>Applicants.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ApprovingPAList.aspx.cs">
+      <DependentUpon>ApprovingPAList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ApprovingPAList.aspx.designer.cs">
+      <DependentUpon>ApprovingPAList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ArrangeInterview.aspx.cs">
+      <DependentUpon>ArrangeInterview.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ArrangeInterview.aspx.designer.cs">
+      <DependentUpon>ArrangeInterview.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Config\Schemas\SpringField.cs">
+      <DependentUpon>SpringField.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\CheckoutSurvey.ascx.cs">
+      <DependentUpon>CheckoutSurvey.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\CheckoutSurvey.ascx.designer.cs">
+      <DependentUpon>CheckoutSurvey.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\OnBoardReport.ascx.cs">
+      <DependentUpon>OnBoardReport.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\OnBoardReport.ascx.designer.cs">
+      <DependentUpon>OnBoardReport.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\SurveyDuration.ascx.cs">
+      <DependentUpon>SurveyDuration.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\SurveyDuration.ascx.designer.cs">
+      <DependentUpon>SurveyDuration.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\SurveyGroup.ascx.cs">
+      <DependentUpon>SurveyGroup.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\SurveyGroup.ascx.designer.cs">
+      <DependentUpon>SurveyGroup.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\SurveyOverallView.ascx.cs">
+      <DependentUpon>SurveyOverallView.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\SurveyOverallView.ascx.designer.cs">
+      <DependentUpon>SurveyOverallView.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="MailServiceProvider\Logger.cs" />
+    <Compile Include="MailServiceProvider\MailServiceProvider.cs" />
+    <Compile Include="Modules\Management\UnsentMails.aspx.cs">
+      <DependentUpon>UnsentMails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Management\UnsentMails.aspx.designer.cs">
+      <DependentUpon>UnsentMails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Reports\AllCommentsReport.aspx.cs">
+      <DependentUpon>AllCommentsReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Reports\AllCommentsReport.aspx.designer.cs">
+      <DependentUpon>AllCommentsReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OnBoardAction.aspx.cs">
+      <DependentUpon>OnBoardAction.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OnBoardAction.aspx.designer.cs">
+      <DependentUpon>OnBoardAction.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Management\RoleEdit.aspx.cs">
+      <DependentUpon>RoleEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Management\RoleEdit.aspx.designer.cs">
+      <DependentUpon>RoleEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Management\RoleList.aspx.cs">
+      <DependentUpon>RoleList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Management\RoleList.aspx.designer.cs">
+      <DependentUpon>RoleList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Management\RoleView.aspx.cs">
+      <DependentUpon>RoleView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Management\RoleView.aspx.designer.cs">
+      <DependentUpon>RoleView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Management\UserList.aspx.cs">
+      <DependentUpon>UserList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Management\UserList.aspx.designer.cs">
+      <DependentUpon>UserList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Reports\CandidatesReport.aspx.cs">
+      <DependentUpon>CandidatesReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Reports\CandidatesReport.aspx.designer.cs">
+      <DependentUpon>CandidatesReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ChangeInterviewer.aspx.cs">
+      <DependentUpon>ChangeInterviewer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ChangeInterviewer.aspx.designer.cs">
+      <DependentUpon>ChangeInterviewer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CompletedPAList.aspx.cs">
+      <DependentUpon>CompletedPAList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CompletedPAList.aspx.designer.cs">
+      <DependentUpon>CompletedPAList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Config\Schemas\SpringField.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SpringField.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ApplicantInfoPanel.ascx.cs">
+      <DependentUpon>ApplicantInfoPanel.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\ApplicantInfoPanel.ascx.designer.cs">
+      <DependentUpon>ApplicantInfoPanel.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ApplicantsList.ascx.cs">
+      <DependentUpon>ApplicantsList.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\ApplicantsList.ascx.designer.cs">
+      <DependentUpon>ApplicantsList.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\BasicInfo.ascx.cs">
+      <DependentUpon>BasicInfo.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\BasicInfo.ascx.designer.cs">
+      <DependentUpon>BasicInfo.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\CheckInFormEdit.ascx.cs">
+      <DependentUpon>CheckInFormEdit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\CheckInFormEdit.ascx.designer.cs">
+      <DependentUpon>CheckInFormEdit.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\CheckInFormView.ascx.cs">
+      <DependentUpon>CheckInFormView.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\CheckInFormView.ascx.designer.cs">
+      <DependentUpon>CheckInFormView.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\CollegeSelector.ascx.cs">
+      <DependentUpon>CollegeSelector.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\CollegeSelector.ascx.designer.cs">
+      <DependentUpon>CollegeSelector.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Comment.ascx.cs">
+      <DependentUpon>Comment.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Comment.ascx.designer.cs">
+      <DependentUpon>Comment.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ConfirmPanel.ascx.cs">
+      <DependentUpon>ConfirmPanel.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\ConfirmPanel.ascx.designer.cs">
+      <DependentUpon>ConfirmPanel.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\HiringReport.ascx.cs">
+      <DependentUpon>HiringReport.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\HiringReport.ascx.designer.cs">
+      <DependentUpon>HiringReport.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\IncompleteInterviewList.ascx.cs">
+      <DependentUpon>IncompleteInterviewList.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\IncompleteInterviewList.ascx.designer.cs">
+      <DependentUpon>IncompleteInterviewList.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\InfoSourceGenerator.ascx.cs">
+      <DependentUpon>InfoSourceGenerator.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\InfoSourceGenerator.ascx.designer.cs">
+      <DependentUpon>InfoSourceGenerator.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\InterviewFeedback.ascx.cs">
+      <DependentUpon>InterviewFeedback.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\InterviewFeedback.ascx.designer.cs">
+      <DependentUpon>InterviewFeedback.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\InterviewHistory.ascx.cs">
+      <DependentUpon>InterviewHistory.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\InterviewHistory.ascx.designer.cs">
+      <DependentUpon>InterviewHistory.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\InterviewPanel.ascx.cs">
+      <DependentUpon>InterviewPanel.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\InterviewPanel.ascx.designer.cs">
+      <DependentUpon>InterviewPanel.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\InterviewReport.ascx.cs">
+      <DependentUpon>InterviewReport.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\InterviewReport.ascx.designer.cs">
+      <DependentUpon>InterviewReport.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ManagerApproval.ascx.cs">
+      <DependentUpon>ManagerApproval.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\ManagerApproval.ascx.designer.cs">
+      <DependentUpon>ManagerApproval.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ManagerResult.ascx.cs">
+      <DependentUpon>ManagerResult.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\ManagerResult.ascx.designer.cs">
+      <DependentUpon>ManagerResult.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\MentorResult.ascx.cs">
+      <DependentUpon>MentorResult.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\MentorResult.ascx.designer.cs">
+      <DependentUpon>MentorResult.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\MentorSuggestion.ascx.cs">
+      <DependentUpon>MentorSuggestion.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\MentorSuggestion.ascx.designer.cs">
+      <DependentUpon>MentorSuggestion.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\PerformanceAssessment.ascx.cs">
+      <DependentUpon>PerformanceAssessment.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\PerformanceAssessment.ascx.designer.cs">
+      <DependentUpon>PerformanceAssessment.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\SRChannelSource.ascx.cs">
+      <DependentUpon>SRChannelSource.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\SRChannelSource.ascx.designer.cs">
+      <DependentUpon>SRChannelSource.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\SRDegree.ascx.cs">
+      <DependentUpon>SRDegree.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\SRDegree.ascx.designer.cs">
+      <DependentUpon>SRDegree.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\SRPreferredPosition.ascx.cs">
+      <DependentUpon>SRPreferredPosition.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\SRPreferredPosition.ascx.designer.cs">
+      <DependentUpon>SRPreferredPosition.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\SRResearchGroup.ascx.cs">
+      <DependentUpon>SRResearchGroup.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\SRResearchGroup.ascx.designer.cs">
+      <DependentUpon>SRResearchGroup.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\SRSpecialProgram.ascx.cs">
+      <DependentUpon>SRSpecialProgram.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\SRSpecialProgram.ascx.designer.cs">
+      <DependentUpon>SRSpecialProgram.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\TopMenu.ascx.cs">
+      <DependentUpon>TopMenu.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\TopMenu.ascx.designer.cs">
+      <DependentUpon>TopMenu.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\UploadingManagerApproval.ascx.cs">
+      <DependentUpon>UploadingManagerApproval.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\UploadingManagerApproval.ascx.designer.cs">
+      <DependentUpon>UploadingManagerApproval.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\UploadingMentorSuggestion.ascx.cs">
+      <DependentUpon>UploadingMentorSuggestion.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\UploadingMentorSuggestion.ascx.designer.cs">
+      <DependentUpon>UploadingMentorSuggestion.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EmploymentDecision.aspx.cs">
+      <DependentUpon>EmploymentDecision.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EmploymentDecision.aspx.designer.cs">
+      <DependentUpon>EmploymentDecision.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Error.aspx.cs">
+      <DependentUpon>Error.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Error.aspx.designer.cs">
+      <DependentUpon>Error.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FavoritesList.aspx.cs">
+      <DependentUpon>FavoritesList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FavoritesList.aspx.designer.cs">
+      <DependentUpon>FavoritesList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FeedbackList.aspx.cs">
+      <DependentUpon>FeedbackList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FeedbackList.aspx.designer.cs">
+      <DependentUpon>FeedbackList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HiredCandidates.aspx.cs">
+      <DependentUpon>HiredCandidates.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HiredCandidates.aspx.designer.cs">
+      <DependentUpon>HiredCandidates.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Reports\HireReport.aspx.cs">
+      <DependentUpon>HireReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Reports\HireReport.aspx.designer.cs">
+      <DependentUpon>HireReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Reports\HireReport_New.aspx.cs">
+      <DependentUpon>HireReport_New.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Reports\HireReport_New.aspx.designer.cs">
+      <DependentUpon>HireReport_New.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="InterviewedCandidates.aspx.cs">
+      <DependentUpon>InterviewedCandidates.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="InterviewedCandidates.aspx.designer.cs">
+      <DependentUpon>InterviewedCandidates.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Keyin\ApplicantBasicInfo.aspx.cs">
+      <DependentUpon>ApplicantBasicInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Keyin\ApplicantBasicInfo.aspx.designer.cs">
+      <DependentUpon>ApplicantBasicInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Keyin\ApplicantEduBackground.aspx.cs">
+      <DependentUpon>ApplicantEduBackground.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Keyin\ApplicantEduBackground.aspx.designer.cs">
+      <DependentUpon>ApplicantEduBackground.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Keyin\ApplicantInformationView.aspx.cs">
+      <DependentUpon>ApplicantInformationView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Keyin\ApplicantInformationView.aspx.designer.cs">
+      <DependentUpon>ApplicantInformationView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Keyin\ApplicantPortalMaster.master.cs">
+      <DependentUpon>ApplicantPortalMaster.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Keyin\ApplicantPortalMaster.master.designer.cs">
+      <DependentUpon>ApplicantPortalMaster.master</DependentUpon>
+    </Compile>
+    <Compile Include="Keyin\ApplicantRegister.aspx.cs">
+      <DependentUpon>ApplicantRegister.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Keyin\ApplicantRegister.aspx.designer.cs">
+      <DependentUpon>ApplicantRegister.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Keyin\ApplicantRelatedInfo.aspx.cs">
+      <DependentUpon>ApplicantRelatedInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Keyin\ApplicantRelatedInfo.aspx.designer.cs">
+      <DependentUpon>ApplicantRelatedInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Keyin\ApplicationComplete.aspx.cs">
+      <DependentUpon>ApplicationComplete.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Keyin\ApplicationComplete.aspx.designer.cs">
+      <DependentUpon>ApplicationComplete.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Keyin\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Keyin\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Keyin\Error.aspx.cs">
+      <DependentUpon>Error.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Keyin\Error.aspx.designer.cs">
+      <DependentUpon>Error.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Keyin\RegisterComplete.aspx.cs">
+      <DependentUpon>RegisterComplete.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Keyin\RegisterComplete.aspx.designer.cs">
+      <DependentUpon>RegisterComplete.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Keyin\SetupSpringfield.aspx.cs">
+      <DependentUpon>SetupSpringfield.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Keyin\SetupSpringfield.aspx.designer.cs">
+      <DependentUpon>SetupSpringfield.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Keyin\UserControls\CollegeSelector.ascx.cs">
+      <DependentUpon>CollegeSelector.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Keyin\UserControls\CollegeSelector.ascx.designer.cs">
+      <DependentUpon>CollegeSelector.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Keyin\UserControls\CountrySelector.ascx.cs">
+      <DependentUpon>CountrySelector.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Keyin\UserControls\CountrySelector.ascx.designer.cs">
+      <DependentUpon>CountrySelector.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Keyin\UserControls\InfoSourceGenerator.ascx.cs">
+      <DependentUpon>InfoSourceGenerator.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Keyin\UserControls\InfoSourceGenerator.ascx.designer.cs">
+      <DependentUpon>InfoSourceGenerator.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="LegalNotice.aspx.cs">
+      <DependentUpon>LegalNotice.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LegalNotice.aspx.designer.cs">
+      <DependentUpon>LegalNotice.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Management\ChangeCurrentUser.aspx.cs">
+      <DependentUpon>ChangeCurrentUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Management\ChangeCurrentUser.aspx.designer.cs">
+      <DependentUpon>ChangeCurrentUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Management\CheckInFormConfiguration.aspx.cs">
+      <DependentUpon>CheckInFormConfiguration.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Management\CheckInFormConfiguration.aspx.designer.cs">
+      <DependentUpon>CheckInFormConfiguration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Management\EmailTemplateEditor.aspx.cs">
+      <DependentUpon>EmailTemplateEditor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Management\EmailTemplateEditor.aspx.designer.cs">
+      <DependentUpon>EmailTemplateEditor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Management\MaintainGroup.aspx.cs">
+      <DependentUpon>MaintainGroup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Management\MaintainGroup.aspx.designer.cs">
+      <DependentUpon>MaintainGroup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Management\MaintainUniversity.aspx.cs">
+      <DependentUpon>MaintainUniversity.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Management\MaintainUniversity.aspx.designer.cs">
+      <DependentUpon>MaintainUniversity.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Management\SiteAccessControl.aspx.cs">
+      <DependentUpon>SiteAccessControl.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Management\SiteAccessControl.aspx.designer.cs">
+      <DependentUpon>SiteAccessControl.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Management\SiteRoleManager.aspx.cs">
+      <DependentUpon>SiteRoleManager.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Management\SiteRoleManager.aspx.designer.cs">
+      <DependentUpon>SiteRoleManager.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MentorPA.aspx.cs">
+      <DependentUpon>MentorPA.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MentorPA.aspx.designer.cs">
+      <DependentUpon>MentorPA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Reports\PaperReportForm.aspx.cs">
+      <DependentUpon>PaperReportForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Reports\PaperReportForm.aspx.designer.cs">
+      <DependentUpon>PaperReportForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Temp\PAKeyinToolForm.aspx.cs">
+      <DependentUpon>PAKeyinToolForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Temp\PAKeyinToolForm.aspx.designer.cs">
+      <DependentUpon>PAKeyinToolForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MultiInterview.aspx.cs">
+      <DependentUpon>MultiInterview.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MultiInterview.aspx.designer.cs">
+      <DependentUpon>MultiInterview.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MultiReferral.aspx.cs">
+      <DependentUpon>MultiReferral.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MultiReferral.aspx.designer.cs">
+      <DependentUpon>MultiReferral.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OffLineHiring.aspx.cs">
+      <DependentUpon>OffLineHiring.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OffLineHiring.aspx.designer.cs">
+      <DependentUpon>OffLineHiring.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OperationResult.aspx.cs">
+      <DependentUpon>OperationResult.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OperationResult.aspx.designer.cs">
+      <DependentUpon>OperationResult.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Reports\PAReport.aspx.cs">
+      <DependentUpon>PAReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Reports\PAReport.aspx.designer.cs">
+      <DependentUpon>PAReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Reports\PAReportForHR.aspx.cs">
+      <DependentUpon>PAReportForHR.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Reports\PAReportForHR.aspx.designer.cs">
+      <DependentUpon>PAReportForHR.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Procssing.aspx.cs">
+      <DependentUpon>Procssing.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Procssing.aspx.designer.cs">
+      <DependentUpon>Procssing.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReferApplication.aspx.cs">
+      <DependentUpon>ReferApplication.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ReferApplication.aspx.designer.cs">
+      <DependentUpon>ReferApplication.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ReleaseNotes.aspx.cs">
+      <DependentUpon>ReleaseNotes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ReleaseNotes.aspx.designer.cs">
+      <DependentUpon>ReleaseNotes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ReportGenerator.aspx.cs">
+      <DependentUpon>ReportGenerator.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ReportGenerator.aspx.designer.cs">
+      <DependentUpon>ReportGenerator.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SendEmailRegular.aspx.cs">
+      <DependentUpon>SendEmailRegular.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SendEmailRegular.aspx.designer.cs">
+      <DependentUpon>SendEmailRegular.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ShowApplication.aspx.cs">
+      <DependentUpon>ShowApplication.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ShowApplication.aspx.designer.cs">
+      <DependentUpon>ShowApplication.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Reports\ShowCandidates.aspx.cs">
+      <DependentUpon>ShowCandidates.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Reports\ShowCandidates.aspx.designer.cs">
+      <DependentUpon>ShowCandidates.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Reports\SourcingReport.aspx.cs">
+      <DependentUpon>SourcingReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Reports\SourcingReport.aspx.designer.cs">
+      <DependentUpon>SourcingReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Reports\SourcingReport_New.aspx.cs">
+      <DependentUpon>SourcingReport_New.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Reports\SourcingReport_New.aspx.designer.cs">
+      <DependentUpon>SourcingReport_New.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ShowPA.aspx.cs">
+      <DependentUpon>ShowPA.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ShowPA.aspx.designer.cs">
+      <DependentUpon>ShowPA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SpringfieldMaster.master.cs">
+      <DependentUpon>SpringfieldMaster.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SpringfieldMaster.master.designer.cs">
+      <DependentUpon>SpringfieldMaster.master</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Reports\SurveyReport.aspx.cs">
+      <DependentUpon>SurveyReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Reports\SurveyReport.aspx.designer.cs">
+      <DependentUpon>SurveyReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Reports\SurveyCommentsReport.aspx.cs">
+      <DependentUpon>SurveyCommentsReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Reports\SurveyCommentsReport.aspx.designer.cs">
+      <DependentUpon>SurveyCommentsReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UncompletedPAList.aspx.cs">
+      <DependentUpon>UncompletedPAList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UncompletedPAList.aspx.designer.cs">
+      <DependentUpon>UncompletedPAList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="URReferral.aspx.cs">
+      <DependentUpon>URReferral.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="URReferral.aspx.designer.cs">
+      <DependentUpon>URReferral.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Config\Schemas\SpringField.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>SpringField.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="help_files\themedata.thmx" />
+    <None Include="Properties\PublishProfiles\1.pubxml" />
+    <None Include="Resource\Scripts\tiny_mce\plugins\advlink\js\advlink.js.bak" />
+    <None Include="Resource\Scripts\tiny_mce\utils\form_utils.js.bak" />
+    <Content Include="ApprovingPAList.aspx" />
+    <Content Include="Controls\CheckoutSurvey.ascx" />
+    <Content Include="Controls\OnBoardReport.ascx" />
+    <Content Include="Controls\SurveyDuration.ascx" />
+    <Content Include="Controls\SurveyGroup.ascx" />
+    <Content Include="Controls\SurveyOverallView.ascx" />
+    <Content Include="Modules\Management\UnsentMails.aspx" />
+    <Content Include="Modules\Reports\AllCommentsReport.aspx" />
+    <Content Include="OnBoardAction.aspx" />
+    <Content Include="Index.aspx" />
+    <Content Include="Modules\Management\RoleEdit.aspx" />
+    <Content Include="Modules\Management\RoleList.aspx" />
+    <Content Include="Modules\Management\RoleView.aspx" />
+    <Content Include="Modules\Management\UserList.aspx" />
+    <Content Include="Modules\Reports\PaperReportForm.aspx" />
+    <Content Include="Modules\Reports\Resource\Images\calender\background-1.jpg" />
+    <Content Include="Modules\Reports\Resource\Images\calender\close.gif" />
+    <Content Include="Modules\Reports\Resource\Images\calender\drop1.gif" />
+    <Content Include="Modules\Reports\Resource\Images\calender\drop2.gif" />
+    <Content Include="Modules\Reports\Resource\Images\calender\left1.gif" />
+    <Content Include="Modules\Reports\Resource\Images\calender\left2.gif" />
+    <Content Include="Modules\Reports\Resource\Images\calender\right1.gif" />
+    <Content Include="Modules\Reports\Resource\Images\calender\right2.gif" />
+    <Content Include="Modules\Temp\PAKeyinToolForm.aspx" />
+    <Content Include="NewHirePackage.ashx" />
+    <Content Include="PAPackage.ashx" />
+    <None Include="ReferApplication.aspx.cs.bak" />
+    <None Include="SiteResource.xml.bak" />
+    <Content Include="ProUI\images\square.gif" />
+    <Content Include="Resource\CSS\AppStyle.css" />
+    <Content Include="Resource\Images\addnote.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resource\Images\addnote2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resource\Images\addtofavorite.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resource\Images\addtofavorite_small.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resource\Images\adduser.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resource\Images\approval.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resource\Images\arrow_down.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resource\Images\arrow_up.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resource\Images\back.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resource\Images\backhome.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resource\Images\btn1.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resource\Images\build.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resource\Images\cancel.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resource\Images\checkout.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resource\Images\create.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resource\Images\delete.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resource\Images\deluser.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resource\Images\detail.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resource\Images\edit.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resource\Images\edit_applicant.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resource\Images\empty.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resource\Images\export_excel.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resource\Images\filter.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resource\Images\finish.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resource\Images\forward.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resource\Images\generate.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resource\Images\hiring_mail.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resource\Images\Intern-Tool-Masthead_01.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resource\Images\Intern-Tool-Masthead_02.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resource\Images\Intern-Tool-Masthead_04.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resource\Images\liquid_image.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resource\Images\list.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resource\Images\mail.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resource\Images\microsoft.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resource\Images\mime_empty.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resource\Images\next_step.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resource\Images\NoticeEmail.jpg" />
+    <Content Include="Resource\Images\offer_decline.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resource\Images\onboard.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resource\Images\preview.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resource\Images\Recycle-Empty.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resource\Images\reject.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resource\Images\reject_mail.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resource\Images\remove.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resource\Images\remove_small.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resource\Images\reporthome.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resource\Images\save.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resource\Images\save_new.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resource\Images\schedule.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resource\Images\schedule_cal.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resource\Images\schedule_folder.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resource\Images\schedule_small.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resource\Images\search.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resource\Images\sf.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resource\Images\submit.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resource\Images\update_feedback.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resource\Images\upload_approval.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ShowPA.aspx" />
+    <Content Include="SpringfieldMaster.master" />
+    <Content Include="AccessDeny.htm" />
+    <Content Include="AddNote.aspx" />
+    <Content Include="AddReferral.aspx" />
+    <Content Include="Applicants.aspx" />
+    <Content Include="ArrangeInterview.aspx" />
+    <Content Include="Modules\Reports\CandidatesReport.aspx" />
+    <Content Include="ChangeInterviewer.aspx" />
+    <Content Include="CompletedPAList.aspx" />
+    <Content Include="Default.aspx" />
+    <Content Include="EmploymentDecision.aspx" />
+    <Content Include="Error.aspx" />
+    <Content Include="FavoritesList.aspx" />
+    <Content Include="FeedbackList.aspx" />
+    <Content Include="Resource\CSS\FloatWindow.css" />
+    <Content Include="Help.htm" />
+    <Content Include="HiredCandidates.aspx" />
+    <Content Include="Modules\Reports\HireReport.aspx" />
+    <Content Include="Modules\Reports\HireReport_New.aspx" />
+    <Content Include="InfoSourceMapping.xml" />
+    <Content Include="InterviewedCandidates.aspx" />
+    <Content Include="Keyin\ApplicantPortalMaster.master" />
+    <Content Include="LegalNotice.aspx" />
+    <Content Include="Resource\CSS\master.css" />
+    <Content Include="MentorPA.aspx" />
+    <Content Include="MultiInterview.aspx" />
+    <Content Include="MultiReferral.aspx" />
+    <Content Include="OffLineHiring.aspx" />
+    <Content Include="OnBoardRequestInfo.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="OperationResult.aspx" />
+    <Content Include="Modules\Reports\PAReport.aspx" />
+    <Content Include="Modules\Reports\PAReportForHR.aspx" />
+    <Content Include="PAResource.xml" />
+    <Content Include="Procssing.aspx" />
+    <Content Include="ReferApplication.aspx" />
+    <Content Include="ReleaseNotes.aspx" />
+    <Content Include="ReportGenerator.aspx" />
+    <Content Include="SendEmailRegular.aspx" />
+    <Content Include="ShowApplication.aspx" />
+    <Content Include="Modules\Reports\ShowCandidates.aspx" />
+    <Content Include="SiteResource.xml" />
+    <Content Include="Modules\Reports\SourcingReport.aspx" />
+    <Content Include="Modules\Reports\SourcingReport_New.aspx" />
+    <Content Include="Modules\Reports\SurveyReport.aspx" />
+    <Content Include="Modules\Reports\SurveyCommentsReport.aspx" />
+    <Content Include="UncompletedPAList.aspx" />
+    <Content Include="URReferral.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Components\MSRA.SpringField.Components.csproj">
+      <Project>{1BECC7DF-6E19-439D-9C85-A1FD16E6C1B5}</Project>
+      <Name>MSRA.SpringField.Components</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MSRA.ServerControls\MSRA.SpringField.Controls.csproj">
+      <Project>{F30381FE-9327-4AC3-A5BD-29CF568F3FF2}</Project>
+      <Name>MSRA.SpringField.Controls</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MSRA.SpringField.Foundation\MSRA.SpringField.Foundation.csproj">
+      <Project>{D2CD5A86-127B-4E12-8F64-E8110A981F50}</Project>
+      <Name>MSRA.SpringField.Foundation</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Config\Schemas\SpringField.dbml.layout">
+      <DependentUpon>SpringField.dbml</DependentUpon>
+    </None>
+    <None Include="ResumeCollector\MSRA.ResumeCollector.Installation.msi">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Modules\Applicants\" />
+    <Folder Include="Modules\Common\" />
+    <Folder Include="Modules\Interviews\" />
+    <Folder Include="Modules\Reports\App_LocalResources\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>False</AutoAssignPort>
+          <DevelopmentServerPort>8015</DevelopmentServerPort>
+          <DevelopmentServerVPath>/SpringField/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

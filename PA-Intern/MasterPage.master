@@ -1,0 +1,31 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="zh-CN">
+<head runat="server">
+    <title>Intern Performance Assessment</title>
+    <link href="Style/main.css" rel="stylesheet" type="text/css" />
+</head>
+<body style="background-image: url('images/BG.png'); background-position: bottom;
+    background-repeat: repeat-x; background-color: #e0eff6; text-align: center">
+    <form id="frmMain" runat="server">
+        <div style="background-image: url('images/Banner.jpg'); width: 1200px; height: 83.5px;
+            text-align: right; vertical-align: top">
+            <span onclick="window.showModalDialog('Help.htm','','status:no;resizable:yes;dialogHeight:300px;dialogWidth:460px;unadorne:yes');"
+                style="color: White; text-decoration: underline; cursor:hand">
+                Help</span>
+            &nbsp;&nbsp;&nbsp;&nbsp;</div>
+        <div>
+            <div style="background-color: #e0eff6; width: 1200px; border-bottom: solid 1px #a3c8df;
+                border-left: solid 1px #a3c8df; border-right: solid 1px #a3c8df; text-align: left">
+                <asp:ContentPlaceHolder ID="mainContentPlaceHolder" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+            <div style="width: 1200px; height: 35px; color: White; text-align: right; font-size: 12px;
+                padding-top: 10px">
+                Internal use only, ©2009 Microsoft Research Asia, Uiversity Relation Group. All
+                rights reserved.<img src="images/logo_ms-w.png" /></div>
+        </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,21 @@
+﻿body {
+}
+
+.BasicInfoTable
+{
+    border: solid 1px #999999;
+	padding: 0px;
+	margin: 10 10;
+	font-size: 12px;
+	width: 90%;
+	border-collapse: collapse;
+	border-spacing: 0px; 	
+}
+
+.BasicInfoTable td
+{
+    border: solid 1px #999999;
+	margin: 0px;
+	padding: 5px;
+	word-wrap: break-word;
+}

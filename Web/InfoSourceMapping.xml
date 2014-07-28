@@ -1,0 +1,220 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Info control="DropDownList">
+  
+  <Category ID="Job_Board" text="Job Board" control="DropDownList">
+	  <!--<Source ID="Blank" text="" control="none">
+	  </Source>-->
+    <Source ID="Web_Site" text="Web Site" control="DropDownList">
+      <Channel ID="MSR_Asia_Web" text="MSR Asia Web" control="None"></Channel>
+      <Channel ID="MSR_Web" text="MSR Web" control="None"></Channel>
+      <Channel ID="MS_China_Web" text="MS China Web" control="None"></Channel>
+      <Channel ID="ChinaHR" text="ChinaHR" control="None"></Channel>
+      <Channel ID="MonsterSite" text="Monster.com" control="None"></Channel>
+      <Channel ID="ZhaopinSite" text="Zhaopin.com" control="None"></Channel>
+      <Channel ID="HiallSite" text="Hiall.com" control="None"></Channel>
+      <Channel ID="JoinMS" text="JoinMS" control="None"></Channel>
+      <Channel ID="Other" text="Other" control="TextBox">
+        <Detail ID="WebSiteName" text="Web Site Name or Linkage"></Detail>
+      </Channel>
+    </Source>
+
+    <Source ID="BBS" text="BBS" control="none">
+    </Source>
+
+    <Source ID="Referral" text="Referral" control="DropDownList">
+      <Channel ID="MS_Employee" text="MS Employee" control="TextBox">
+        <Detail ID="Employee_Name" text="Employee's Alias"></Detail>
+      </Channel>
+      <Channel ID="MS_Intern" text="MS Intern" control="TextBox">
+        <Detail ID="Intern_Name" text="Intern's Alias"></Detail>
+      </Channel>
+    </Source>
+
+    <Source ID="Advisor_Recommend" text="My advisor recommend me to MSRA" control="none">
+    </Source>
+
+    <Source ID="Campus_Event" text="Microsoft Campus Event" control="none">
+    </Source>
+
+    <Source ID="Poster_Flyer_Newspaper" text="Poster/Flyer/Newspaper" control="none">
+    </Source>
+
+    <Source ID="Student_Technical_Club" text="Microsoft Student Technical Club" control="none">
+    </Source>
+
+    <Source ID="Talent_Futherance_Program" text="Talent Futherance Program" control="none">
+    </Source>
+
+    <Source ID="Other" text="Other" control="TextBox">
+      <Channel ID="Other_Description" text="Description for [other]" control="None"></Channel>
+    </Source>
+
+    <!--
+    <Source ID="Web_Site" text="Web Site" control="DropDownList">
+      <Channel ID="MSR_Asia_Web" text="MSR Asia Web" control="None"></Channel>
+      <Channel ID="MSR_Web" text="MSR Web" control="None"></Channel>
+      <Channel ID="MS_China_Web" text="MS China Web" control="None"></Channel>
+      <Channel ID="ChinaHR" text="ChinaHR" control="None"></Channel>
+      <Channel ID="MonsterSite" text="Monster.com" control="None"></Channel>
+      <Channel ID="ZhaopinSite" text="Zhaopin.com" control="None"></Channel>
+      <Channel ID="HiallSite" text="Hiall.com" control="None"></Channel>
+      <Channel ID="MS2Site" text="MS2.cn" control="None"></Channel>
+      <Channel ID="Other" text="Other" control="TextBox">
+        <Detail ID="WebSiteName" text="Web Site Name or Linkage"></Detail>
+      </Channel>
+    </Source>
+    
+    <Source ID="BBS" text="BBS" control="DropDownList">
+      <Channel ID="Campus_BBS" text="Campus BBS" control="TextBox">
+        <Detail ID="Campus_BBS_Detail" text="BBS Address or Name"></Detail>
+      </Channel>
+      <Channel ID="Other_BBS" text="Other BBS" control="TextBox">
+        <Detail ID="Other_BBS_Detail" text="BBS Address or Name"></Detail>
+      </Channel>
+    </Source>
+    
+    <Source ID="Newsletter" text="Newsletter" control="TextBox">
+      <Channel ID="NewsletterName" text="Newsletter Name" control="None"></Channel>
+    </Source>
+    
+    <Source ID="Referral" text="Referral" control="DropDownList">
+      <Channel ID="Advisor" text="Advisor" control="TextBox">
+        <Detail ID="Advisor_Name" text="Advisor's Name"></Detail>
+      </Channel>
+      <Channel ID="MS_Employee" text="MS Employee" control="TextBox">
+        <Detail ID="Employee_Name" text="Employee's Alias"></Detail>
+      </Channel>
+      <Channel ID="MS_Intern" text="MS Intern" control="TextBox">
+        <Detail ID="Intern_Name" text="Intern's Alias"></Detail>
+      </Channel>
+      <Channel ID="MS_Manager" text="MS Manager" control="TextBox">
+        <Detail ID="Manager_Name" text="MS Manager's Alias"></Detail>
+      </Channel>
+    </Source>
+    
+    <Source ID="Internship_Program_Flyer" text="Internship Program Flyer" control="TextBox">
+      <Channel ID="Program_Name" text="Internship Program Name"   control="None" />
+    </Source>
+    
+    <Source ID="Campus_Poster" text="Campus Poster" control="TextBox">
+      <Channel ID="Poster_Name" text="Poster info" control="None"></Channel>
+    </Source>
+
+    <Source ID="Prof_Recommendation" text="Prof Recommendation" control="TextBox">
+      <Channel ID="Prof_Name" text="Professor's Name" control="None"></Channel>
+    </Source>
+    
+    <Source ID="Campus_Event" text="Campus Event" control="TextBox">
+      <Channel ID="Event_Theme" text="Event Theme" control="TextBox">
+        <Detail ID="Event_UR_Owner" text="UR Owner"></Detail>
+      </Channel>
+    </Source>
+    
+    <Source ID="Contest" text="Contest" control="TextBox">
+      <Channel ID="Contest_Name" text="Contest Name" control="TextBox">
+        <Detail ID="Contest_UR_Owner" text="UR Owner"></Detail>
+      </Channel>
+    </Source>
+
+    <Source ID="Student_Technical_Club" text="Student Technical Club" control="TextBox">
+      <Channel ID="Club_Name" text="Club Name" control="None"></Channel>
+    </Source>
+
+    <Source ID="UR_Project" text="UR Project" control="TextBox">
+      <Channel ID="Project_Name" text="Project's Name" control="TextBox">
+        <Detail ID="Project_UR_Owner" text="UR Owner"></Detail>
+      </Channel>
+    </Source>
+
+    <Source ID="Campus_Network" text="Campus Network" control="TextBox">
+      <Channel ID="Prof_Name" text="Professor's Name" control="None"></Channel>
+    </Source>
+
+    <Source ID="Bloging" text="Bloging" control="TextBox">
+      <Channel ID="Hyperlink" text="Hyperlink" control="None"></Channel>
+    </Source>
+    
+    <Source ID="Job_Fair" text="Job Fair" control="TextBox">
+      <Channel ID="JobFairDate" text="Job Fair's Date" control="None"></Channel>
+    </Source>
+
+    <Source ID="Recruiting Project" text="Recruiting Project" control="TextBox">
+      <Channel ID="Recruiting_Project_Name" text="Project's Name" control="None"></Channel>
+    </Source>
+    
+    <Source ID="HR_Network" text="HR Network" control="TextBox">
+      <Channel ID="HR_Network_Description" text="Description for HR Network" control="None"></Channel>
+    </Source>
+
+    <Source ID="Rehire" text="Rehire" control="DropDownList">
+      <Channel ID="Center Of Devices And Platforms" text="Center Of Devices And Platforms" control="TextBox">
+        <Detail ID="Mentor_Name" text="Mentor's Name"></Detail>
+      </Channel>
+      <Channel ID="Center Of Devices And Platforms" text="Center Of Devices And Platforms" control="TextBox">
+        <Detail ID="Mentor_Name" text="Mentor's Name"></Detail>
+      </Channel>
+      <Channel ID="Center Of Interaction Design" text="Center Of Interaction Design" control="TextBox">
+        <Detail ID="Mentor_Name" text="Mentor's Name"></Detail>
+      </Channel>
+      <Channel ID="Incubation Group" text="Incubation Group" control="TextBox">
+        <Detail ID="Mentor_Name" text="Mentor's Name"></Detail>
+      </Channel>
+      <Channel ID="Internet Graphic Group" text="Internet Graphic Group" control="TextBox">
+        <Detail ID="Mentor_Name" text="Mentor's Name"></Detail>
+      </Channel>
+      <Channel ID="Internet Media Group" text="Internet Media Group" control="TextBox">
+        <Detail ID="Mentor_Name" text="Mentor's Name"></Detail>
+      </Channel>
+      <Channel ID="Media Communication Group" text="Media Communication Group" control="TextBox">
+        <Detail ID="Mentor_Name" text="Mentor's Name"></Detail>
+      </Channel>
+      <Channel ID="Natural Language Computing Group" text="Natural Language Computing Group" control="TextBox">
+        <Detail ID="Mentor_Name" text="Mentor's Name"></Detail>
+      </Channel>
+      <Channel ID="Search Technology Center" text="Search Technology Center" control="TextBox">
+        <Detail ID="Mentor_Name" text="Mentor's Name"></Detail>
+      </Channel>
+      <Channel ID="Speech Group" text="Speech Group" control="TextBox">
+        <Detail ID="Mentor_Name" text="Mentor's Name"></Detail>
+      </Channel>
+      <Channel ID="System Group" text="System Group" control="TextBox">
+        <Detail ID="Mentor_Name" text="Mentor's Name"></Detail>
+      </Channel>
+      <Channel ID="Technology Transfer Group" text="Technology Transfer Group" control="TextBox">
+        <Detail ID="Mentor_Name" text="Mentor's Name"></Detail>
+      </Channel>
+      <Channel ID="University Relationship Group" text="University Relationship Group" control="TextBox">
+        <Detail ID="Mentor_Name" text="Mentor's Name"></Detail>
+      </Channel>
+      <Channel ID="Visual Computing Group" text="Visual Computing Group" control="TextBox">
+        <Detail ID="Mentor_Name" text="Mentor's Name"></Detail>
+      </Channel>
+      <Channel ID="Web Search and Mining Group" text="Web Search and Mining Group" control="TextBox">
+        <Detail ID="Mentor_Name" text="Mentor's Name"></Detail>
+      </Channel>
+      <Channel ID="Wireless and Networking" text="Wireless and Networking" control="TextBox">
+        <Detail ID="Mentor_Name" text="Mentor's Name"></Detail>
+      </Channel>
+      <Channel ID="Human Resource Group" text="Human Resource Group" control="TextBox">
+        <Detail ID="Mentor_Name" text="Mentor's Name"></Detail>
+      </Channel>
+      <Channel ID="IT Group" text="IT Group" control="TextBox">
+        <Detail ID="Mentor_Name" text="Mentor's Name"></Detail>
+      </Channel>
+      <Channel ID="Operations Group" text="Operations Group" control="TextBox">
+        <Detail ID="Mentor_Name" text="Mentor's Name"></Detail>
+      </Channel>
+      <Channel ID="Public Relationship Group" text="Public Relationship Group" control="TextBox">
+        <Detail ID="Mentor_Name" text="Mentor's Name"></Detail>
+      </Channel>
+      <Channel ID="Other" text="Other" control="TextBox">
+        <Detail ID="Mentor_Name" text="Mentor's Name"></Detail>
+      </Channel>
+    </Source>
+
+    <Source ID="Other" text="Other" control="TextBox">
+      <Channel ID="Other_Description" text="Description for [other]" control="None"></Channel>
+    </Source>
+  -->
+  </Category>
+</Info>

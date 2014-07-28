@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Info control="DropDownList">
+  <Category name="Job_Board" text="Job Board" control="DropDownList">
+    <Source name="Web_Site" text="Web Site" control="DropDownList">
+      <Channel name="MSR_Asia_Web" text="MSR Asia Web"></Channel>
+      <Channel name="MSR_Web" text="MSR Web"></Channel>
+      <Channel name="MS_China_Web" text="MS China Web"></Channel>
+      <Channel name="ChinaHR" text="ChinaHR"></Channel>
+      <Channel name="MonsterSite" text="Monster.com"></Channel>
+      <Channel name="ZhaopinSite" text="Zhaopin.com"></Channel>
+      <Channel name="HiallSite" text="Hiall.com"></Channel>
+      <Channel name="MS2Site" text="MS2.cn"></Channel>
+      <Channel name="Other" text="Other" control="TextBox">
+        <Detail name="WebSiteName" text="Web Site Name/Linkage"></Detail>
+      </Channel>
+    </Source>
+    <Source name="BBS" text="BBS" control="DropDownList">
+      <Channel name="Campus_BBS" text="Campus BBS" control="TextBox">
+        <Detail name="Campus_BBS_Detail" text="BBS Address/Name"></Detail>
+      </Channel>
+      <Channel name="Other_BBS" text="Campus BBS" control="TextBox">
+        <Detail name="Other_BBS_Detail" text="BBS Address/Name"></Detail>
+      </Channel>
+    </Source>
+    <Source name="Newsletter" text="Newsletter" control="TextBox">
+      <Channel name="NewsletterName" text="Newsletter Name"></Channel>
+    </Source>
+  </Category>
+</Info>

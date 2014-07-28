@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Info control="DropDownList">  
+  <Category ID="Job_Board" text="Job Board" control="DropDownList">
+	  <!--<Source ID="Blank" text="" control="none"> 
+	  </Source>-->
+    <Source ID="Web_Site" text="Web Site" control="DropDownList">
+      <Channel ID="MSR_Asia_Web" text="MSR Asia Web" control="None"></Channel>
+      <Channel ID="MSR_Web" text="MSR Web" control="None"></Channel>
+      <Channel ID="MS_China_Web" text="MS China Web" control="None"></Channel>
+      <Channel ID="ChinaHR" text="ChinaHR" control="None"></Channel>
+      <Channel ID="MonsterSite" text="Monster.com" control="None"></Channel>
+      <Channel ID="ZhaopinSite" text="Zhaopin.com" control="None"></Channel>
+      <Channel ID="HiallSite" text="Hiall.com" control="None"></Channel>
+      <Channel ID="JoinMS" text="JoinMS" control="None"></Channel>
+      <Channel ID="Other" text="Other" control="TextBox">
+        <Detail ID="WebSiteName" text="Web Site Name or Linkage"></Detail>
+      </Channel>
+    </Source>
+
+    <Source ID="BBS" text="BBS" control="none">
+    </Source>
+
+    <Source ID="Referral" text="Referral" control="DropDownList">
+      <Channel ID="MS_Employee" text="MS Employee" control="TextBox">
+        <Detail ID="Employee_Name" text="Employee's Alias"></Detail>
+      </Channel>
+      <Channel ID="MS_Intern" text="MS Intern" control="TextBox">
+        <Detail ID="Intern_Name" text="Intern's Alias"></Detail>
+      </Channel>
+    </Source>
+
+    <Source ID="Advisor_Recommend" text="My advisor recommend me to MSRA" control="none">
+    </Source>
+
+    <Source ID="Campus_Event" text="Microsoft Campus Event" control="none">
+    </Source>
+
+    <Source ID="Poster_Flyer_Newspaper" text="Poster/Flyer/Newspaper" control="none">
+    </Source>
+
+    <Source ID="Student_Technical_Club" text="Microsoft Student Technical Club" control="none">
+    </Source>
+
+    <Source ID="Talent_Futherance_Program" text="Talent Futherance Program" control="none">
+    </Source>
+
+    <Source ID="Other" text="Other" control="TextBox">
+      <Channel ID="Other_Description" text="Description for [other]" control="None"></Channel>
+    </Source>
+
+  </Category>
+</Info>

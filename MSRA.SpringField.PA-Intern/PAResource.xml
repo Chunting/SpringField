@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PAResource>
+	<Type name="PaperStatus">
+		<Item name="Unknown" id="0" display="true" />
+		<Item name="Pending for submission" id="1" display="true" />
+		<Item name="Submitted but not published" id="2" display="true" />
+		<Item name="Published" id="3" display="true" />
+	</Type>
+	<Type name="ProjectBasedorFTEPipeline">
+		<Item name="Unknown" id="0" display="true" />
+		<Item name="Project-based" id="1" display="true" />
+		<Item name="FTE pipeline" id="2" display="true" />
+	</Type>
+	<Type name="InternPosition">
+		<Item name="Unknown" id="0" display="true" />
+		<Item name="FullTime" id="1" display="true" />
+		<Item name="PartTime" id="2" display="true" />
+	</Type>
+	<Type name="Department">		
+		<Item name="MSRA" id="1" display="true" />
+		<Item name="STC" id="2" display="true" />
+	</Type>
+</PAResource>
