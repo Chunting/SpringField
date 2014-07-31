@@ -1,0 +1,25 @@
+D:\SpringField-v-chuj\SpringField\Main\Source\codenew\ResumeCollector\bin\Debug\ProjectResource.xml
+D:\SpringField-v-chuj\SpringField\Main\Source\codenew\ResumeCollector\bin\Debug\ResumeMapping.xml
+D:\SpringField-v-chuj\SpringField\Main\Source\codenew\ResumeCollector\bin\Debug\Latest Version of Application Form\Application-12282009.xls
+D:\SpringField-v-chuj\SpringField\Main\Source\codenew\ResumeCollector\bin\Debug\MSRA.SpringField.ResumeCollector.exe.config
+D:\SpringField-v-chuj\SpringField\Main\Source\codenew\ResumeCollector\bin\Debug\MSRA.SpringField.ResumeCollector.exe
+D:\SpringField-v-chuj\SpringField\Main\Source\codenew\ResumeCollector\bin\Debug\MSRA.SpringField.ResumeCollector.pdb
+D:\SpringField-v-chuj\SpringField\Main\Source\codenew\ResumeCollector\bin\Debug\Microsoft.Office.Interop.Excel.dll
+D:\SpringField-v-chuj\SpringField\Main\Source\codenew\ResumeCollector\bin\Debug\Microsoft.Office.Interop.Outlook.dll
+D:\SpringField-v-chuj\SpringField\Main\Source\codenew\ResumeCollector\bin\Debug\MSRA.Springfield.Components.dll
+D:\SpringField-v-chuj\SpringField\Main\Source\codenew\ResumeCollector\bin\Debug\MSRA.SpringField.Foundation.dll
+D:\SpringField-v-chuj\SpringField\Main\Source\codenew\ResumeCollector\bin\Debug\office.dll
+D:\SpringField-v-chuj\SpringField\Main\Source\codenew\ResumeCollector\bin\Debug\Microsoft.Vbe.Interop.dll
+D:\SpringField-v-chuj\SpringField\Main\Source\codenew\ResumeCollector\bin\Debug\MSRA.Springfield.Components.pdb
+D:\SpringField-v-chuj\SpringField\Main\Source\codenew\ResumeCollector\bin\Debug\MSRA.SpringField.Foundation.pdb
+D:\SpringField-v-chuj\SpringField\Main\Source\codenew\ResumeCollector\bin\Debug\Microsoft.Office.Interop.Excel.xml
+D:\SpringField-v-chuj\SpringField\Main\Source\codenew\ResumeCollector\bin\Debug\Microsoft.Office.Interop.Outlook.xml
+D:\SpringField-v-chuj\SpringField\Main\Source\codenew\ResumeCollector\bin\Debug\office.xml
+D:\SpringField-v-chuj\SpringField\Main\Source\codenew\ResumeCollector\obj\Debug\MSRA.SpringField.ResumeCollector.csprojResolveAssemblyReference.cache
+D:\SpringField-v-chuj\SpringField\Main\Source\codenew\ResumeCollector\obj\Debug\ResumeCollector.AboutBox.resources
+D:\SpringField-v-chuj\SpringField\Main\Source\codenew\ResumeCollector\obj\Debug\ResumeCollector.MainForm.resources
+D:\SpringField-v-chuj\SpringField\Main\Source\codenew\ResumeCollector\obj\Debug\MSRA.SpringField.ResumeCollector.Properties.Resources.resources
+D:\SpringField-v-chuj\SpringField\Main\Source\codenew\ResumeCollector\obj\Debug\ResumeCollector.TaskProcessor.resources
+D:\SpringField-v-chuj\SpringField\Main\Source\codenew\ResumeCollector\obj\Debug\MSRA.SpringField.ResumeCollector.csproj.GenerateResource.Cache
+D:\SpringField-v-chuj\SpringField\Main\Source\codenew\ResumeCollector\obj\Debug\MSRA.SpringField.ResumeCollector.exe
+D:\SpringField-v-chuj\SpringField\Main\Source\codenew\ResumeCollector\obj\Debug\MSRA.SpringField.ResumeCollector.pdb

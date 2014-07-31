@@ -1,0 +1,16 @@
+D:\SpringField-v-chuj\SpringField\Main\Source\codenew\MSRA.Springfield.IntegrationTool\bin\Debug\MSRA.Springfield.IntegrationTool.exe.config
+D:\SpringField-v-chuj\SpringField\Main\Source\codenew\MSRA.Springfield.IntegrationTool\bin\Debug\MSRA.Springfield.IntegrationTool.exe
+D:\SpringField-v-chuj\SpringField\Main\Source\codenew\MSRA.Springfield.IntegrationTool\bin\Debug\MSRA.Springfield.IntegrationTool.pdb
+D:\SpringField-v-chuj\SpringField\Main\Source\codenew\MSRA.Springfield.IntegrationTool\bin\Debug\log4net.dll
+D:\SpringField-v-chuj\SpringField\Main\Source\codenew\MSRA.Springfield.IntegrationTool\bin\Debug\MSRA.Springfield.Components.dll
+D:\SpringField-v-chuj\SpringField\Main\Source\codenew\MSRA.Springfield.IntegrationTool\bin\Debug\MSRA.SpringField.Foundation.dll
+D:\SpringField-v-chuj\SpringField\Main\Source\codenew\MSRA.Springfield.IntegrationTool\bin\Debug\MSRA.Springfield.Workflows.dll
+D:\SpringField-v-chuj\SpringField\Main\Source\codenew\MSRA.Springfield.IntegrationTool\bin\Debug\MSRA.Springfield.Components.pdb
+D:\SpringField-v-chuj\SpringField\Main\Source\codenew\MSRA.Springfield.IntegrationTool\bin\Debug\MSRA.SpringField.Foundation.pdb
+D:\SpringField-v-chuj\SpringField\Main\Source\codenew\MSRA.Springfield.IntegrationTool\bin\Debug\MSRA.Springfield.Workflows.pdb
+D:\SpringField-v-chuj\SpringField\Main\Source\codenew\MSRA.Springfield.IntegrationTool\obj\Debug\MSRA.Springfield.IntegrationTool.csprojResolveAssemblyReference.cache
+D:\SpringField-v-chuj\SpringField\Main\Source\codenew\MSRA.Springfield.IntegrationTool\obj\Debug\MSRA.Springfield.IntegrationTool.MainForm.resources
+D:\SpringField-v-chuj\SpringField\Main\Source\codenew\MSRA.Springfield.IntegrationTool\obj\Debug\MSRA.Springfield.IntegrationTool.Properties.Resources.resources
+D:\SpringField-v-chuj\SpringField\Main\Source\codenew\MSRA.Springfield.IntegrationTool\obj\Debug\MSRA.Springfield.IntegrationTool.csproj.GenerateResource.Cache
+D:\SpringField-v-chuj\SpringField\Main\Source\codenew\MSRA.Springfield.IntegrationTool\obj\Debug\MSRA.Springfield.IntegrationTool.exe
+D:\SpringField-v-chuj\SpringField\Main\Source\codenew\MSRA.Springfield.IntegrationTool\obj\Debug\MSRA.Springfield.IntegrationTool.pdb

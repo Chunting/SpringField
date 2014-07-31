@@ -1,0 +1,5 @@
+D:\SpringField-v-dodin\SpringField\Main\Source\codenew\SF_Mail\bin\SF_Mail.dll
+D:\SpringField-v-dodin\SpringField\Main\Source\codenew\SF_Mail\bin\SF_Mail.pdb
+D:\SpringField-v-dodin\SpringField\Main\Source\codenew\SF_Mail\obj\Debug\SF_Mail.csprojResolveAssemblyReference.cache
+D:\SpringField-v-dodin\SpringField\Main\Source\codenew\SF_Mail\obj\Debug\SF_Mail.dll
+D:\SpringField-v-dodin\SpringField\Main\Source\codenew\SF_Mail\obj\Debug\SF_Mail.pdb

@@ -1,0 +1,546 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<resource>
+	<!--Must synchronize with universities list in SiteResource.xml in web portal-->
+	<universities>
+		<continent name="Asia">
+      <country name="Australia">
+        <university>
+          <name>Monash University</name>
+        </university>
+        <university>
+          <name>Royal Melbourne Institute of Technology University</name>
+        </university>
+        <university>
+          <name>The University of Newcastle</name>
+        </university>
+        <university>
+          <name>The University of Sydney</name>
+        </university>
+        <university>
+          <name>University of Auckland</name>
+        </university>
+        <university>
+          <name>University of Melbourne</name>
+        </university>
+        <university>
+          <name>University of New South Wales</name>
+        </university>
+      </country>
+      <country name="China Mainland">
+        <university>
+          <name>Academy of Mathematics and Systems Science, Chinese Academy of Sciences</name>
+        </university>
+        <university>
+          <name>Beijing Film Academy</name>
+        </university>
+        <university>
+          <name>Beijing Foreign Studies University</name>
+        </university>
+        <university>
+          <name>Beijing Information Technology Institute</name>
+        </university>
+        <university>
+          <name>Beijing Institute Of Clothing Technology</name>
+        </university>
+        <university>
+          <name>Beijing Institute of Graphic Communication</name>
+        </university>
+        <university>
+          <name>Beijing Institute of Technology</name>
+        </university>
+        <university>
+          <name>Beijing International Studies University</name>
+        </university>
+        <university>
+          <name>Beijing Jiaotong University</name>
+        </university>
+        <university>
+          <name>Beijing Language and Culture University</name>
+        </university>
+        <university>
+          <name>Beijing Normal University</name>
+        </university>
+        <university>
+          <name>Beijing University of Aeronautics &amp; Astronautics</name>
+        </university>
+        <university>
+          <name>Beijing University of Chemical Technology</name>
+        </university>
+        <university>
+          <name>Beijing University of Posts and Telecommunications</name>
+        </university>
+        <university>
+          <name>Beijing University Of Technology</name>
+        </university>
+        <university>
+          <name>Capital Normal University</name>
+        </university>
+        <university>
+          <name>Capital University of Economics and Business</name>
+        </university>
+        <university>
+          <name>China Agricultural University</name>
+        </university>
+        <university>
+          <name>China Remote Sensing Satellite Ground Station, Chinese Academy of Sciences</name>
+        </university>
+        <university>
+          <name>China University of Mining &amp; Technology</name>
+        </university>
+        <university>
+          <name>Chinese Academy of Sciences</name>
+        </university>
+        <university>
+          <name>Chongqing University</name>
+        </university>
+        <university>
+          <name>Computer Network Information Center, Chinese Academy of Sciences</name>
+        </university>
+        <university>
+          <name>Dalian University of Technology</name>
+        </university>
+        <university>
+          <name>Donghua University</name>
+        </university>
+        <university>
+          <name>East China Normal University</name>
+        </university>
+        <university>
+          <name>East China University of Science &amp; Technology</name>
+        </university>
+        <university>
+          <name>Fudan University</name>
+        </university>
+        <university>
+          <name>Harbin Institute Of Technology</name>
+        </university>
+        <university>
+          <name>Hefei University Of Technology</name>
+        </university>
+        <university>
+          <name>Huazhong University of Science and Technology</name>
+        </university>
+        <university>
+          <name>Institute of Acoustics, Chinese Academy of Sciences</name>
+        </university>
+        <university>
+          <name>Institute of Applied Mathematics, Chinese Academy of Sciences</name>
+        </university>
+        <university>
+          <name>Institute of Automation, Chinese Academy of Sciences</name>
+        </university>
+        <university>
+          <name>Institute of Computing Technology, Chinese Academy of Sciences</name>
+        </university>
+        <university>
+          <name>Institute of Electronics, Chinese Academy of Sciences</name>
+        </university>
+        <university>
+          <name>Institute of High Energy Physics, CAS</name>
+        </university>
+        <university>
+          <name>Institute of Mechanics, Chinese Academy of Sciences</name>
+        </university>
+        <university>
+          <name>Institute Of Psychology, Chinese Academy of Sciences</name>
+        </university>
+        <university>
+          <name>Institute of Semiconductors, Chinese Academy of Sciences</name>
+        </university>
+        <university>
+          <name>Institute of Software, Chinese Academy of Sciences</name>
+        </university>
+        <university>
+          <name>Jilin University</name>
+        </university>
+        <university>
+          <name>Lanzhou University</name>
+        </university>
+        <university>
+          <name>Nanjing University</name>
+        </university>
+        <university>
+          <name>Nankai Univeristy</name>
+        </university>
+        <university>
+          <name>Ningbo University</name>
+        </university>
+        <university>
+          <name>North China Electric Power University</name>
+        </university>
+        <university>
+          <name>Northeastern University</name>
+        </university>
+        <university>
+          <name>Northwestern Polytechnical University</name>
+        </university>
+        <university>
+          <name>Peking University</name>
+        </university>
+        <university>
+          <name>Renmin University of China</name>
+        </university>
+        <university>
+          <name>Shandong University</name>
+        </university>
+        <university>
+          <name>Shanghai Jiao Tong University</name>
+        </university>
+        <university>
+          <name>Shanghai Normal Universtiy</name>
+        </university>
+        <university>
+          <name>Shanghai University</name>
+        </university>
+        <university>
+          <name>Sichuan University</name>
+        </university>
+        <university>
+          <name>South China University of Technology</name>
+        </university>
+        <university>
+          <name>Southeast University</name>
+        </university>
+        <university>
+          <name>Sun Yat-sen University</name>
+        </university>
+        <university>
+          <name>The Central Institute of Fine Arts</name>
+        </university>
+        <university>
+          <name>Tianjin University</name>
+        </university>
+        <university>
+          <name>Tongji University</name>
+        </university>
+        <university>
+          <name>Tsinghua University</name>
+        </university>
+        <university>
+          <name>University Electronic Science and Technology of China</name>
+        </university>
+        <university>
+          <name>University of International Business and Economics</name>
+        </university>
+        <university>
+          <name>University of Science and Technology, Beijing</name>
+        </university>
+        <university>
+          <name>University of Science and Technology, China</name>
+        </university>
+        <university>
+          <name>Wuhan University</name>
+        </university>
+        <university>
+          <name>Xi Dian University</name>
+        </university>
+        <university>
+          <name>Xi'an Jiaotong University</name>
+        </university>
+        <university>
+          <name>Xiangtan University</name>
+        </university>
+        <university>
+          <name>Zhejiang University</name>
+        </university>
+      </country>
+      <country name="Japan">
+        <university>
+          <name>Japan Advanced Institute of Science and Technology</name>
+        </university>
+        <university>
+          <name>Kyoto University</name>
+        </university>
+        <university>
+          <name>Nagova University</name>
+        </university>
+        <university>
+          <name>Nara Institute of Science and Technology</name>
+        </university>
+        <university>
+          <name>Osaka University</name>
+        </university>
+        <university>
+          <name>University of Tokyo</name>
+        </university>
+        <university>
+          <name>Waseda University</name>
+        </university>
+      </country>
+      <country name="Korea">
+        <university>
+          <name>Gwangju Institute of Science</name>
+        </university>
+        <university>
+          <name>Korea Advanced Institute of Science and Technology</name>
+        </university>
+        <university>
+          <name>Korea University</name>
+        </university>
+        <university>
+          <name>Information and Communications University</name>
+        </university>
+        <university>
+          <name>Pohang University of Science and Technology</name>
+        </university>
+        <university>
+          <name>Seoul National University</name>
+        </university>
+        <university>
+          <name>YONSEI University</name>
+        </university>
+      </country>
+      <country name="Singapore">
+        <university>
+          <name>National University of Singapore</name>
+        </university>
+        <university>
+          <name>Nanyang Technological University</name>
+        </university>
+      </country>
+      <country name="Taiwan">
+        <university>
+          <name>National Chiao Tung University</name>
+        </university>
+        <university>
+          <name>National Taiwan University</name>
+        </university>
+        <university>
+          <name>National Tsing Hua University</name>
+        </university>
+      </country>
+      <country name="Hongkong">
+        <university>
+          <name>City University of Hong Kong</name>
+        </university>
+        <university>
+          <name>Hong Kong University of Science and Technology</name>
+        </university>
+        <university>
+          <name>The Chinese University of Hong Kong</name>
+        </university>
+        <university>
+          <name>The Hongkong Polytechnic University</name>
+        </university>
+        <university>
+          <name>University of Hong Kong</name>
+        </university>
+      </country>
+		</continent>
+		<continent name="North American">
+      <country name="Canada">
+        <university>
+          <name>Simon Fraser University</name>
+        </university>
+        <university>
+          <name>University of Montreal</name>
+        </university>
+        <university>
+          <name>University of Saskatchewan</name>
+        </university>
+        <university>
+          <name>University of Toronto</name>
+        </university>
+        <university>
+          <name>York University</name>
+        </university>
+      </country>
+      <country name="USA">
+        <university>
+          <name>Binghamton University</name>
+        </university>
+        <university>
+          <name>California Institute of Technology</name>
+        </university>
+        <university>
+          <name>Carnegie Mellon University</name>
+        </university>
+        <university>
+          <name>Columbia University</name>
+        </university>
+        <university>
+          <name>Cornell University</name>
+        </university>
+        <university>
+          <name>Dartmouth College</name>
+        </university>
+        <university>
+          <name>Drexel University</name>
+        </university>
+        <university>
+          <name>Duke University</name>
+        </university>
+        <university>
+          <name>Florida Institute of Technology</name>
+        </university>
+        <university>
+          <name>Georgia Institute of Technology</name>
+        </university>
+        <university>
+          <name>Harvard University</name>
+        </university>
+        <university>
+          <name>Harvey Mudd University</name>
+        </university>
+        <university>
+          <name>Massachusetts Institute of Technology</name>
+        </university>
+        <university>
+          <name>New York University</name>
+        </university>
+        <university>
+          <name>Northwestern University</name>
+        </university>
+        <university>
+          <name>Princeton University</name>
+        </university>
+        <university>
+          <name>Purdue University West Lafayette</name>
+        </university>
+        <university>
+          <name>Stanford University</name>
+        </university>
+        <university>
+          <name>Texas A&amp;M University</name>
+        </university>
+        <university>
+          <name>The Johns Hopkins University</name>
+        </university>
+        <university>
+          <name>The University of Maryland</name>
+        </university>
+        <university>
+          <name>University of Alabama at Birmingham</name>
+        </university>
+        <university>
+          <name>University of California</name>
+        </university>
+        <university>
+          <name>University of California ,Berkeley,CA</name>
+        </university>
+        <university>
+          <name>University of California Santa Cruz</name>
+        </university>
+        <university>
+          <name>University of California, Los Angeles</name>
+        </university>
+        <university>
+          <name>University of California, Santa Barbara</name>
+        </university>
+        <university>
+          <name>University of California,Davis</name>
+        </university>
+        <university>
+          <name>University of California,Riverside</name>
+        </university>
+        <university>
+          <name>University of Chicago</name>
+        </university>
+        <university>
+          <name>University of Delaware</name>
+        </university>
+        <university>
+          <name>University of Illinois, Chicago</name>
+        </university>
+        <university>
+          <name>University of Illinois-Urbana-Champaign</name>
+        </university>
+        <university>
+          <name>University of Maryland Baltimore</name>
+        </university>
+        <university>
+          <name>University of Massachusetts Amherst</name>
+        </university>
+        <university>
+          <name>University of Michigan-Ann Arbor</name>
+        </university>
+        <university>
+          <name>University of North Texas</name>
+        </university>
+        <university>
+          <name>University of Pennsylvania</name>
+        </university>
+        <university>
+          <name>University of Southern California</name>
+        </university>
+        <university>
+          <name>University of Southern California (Andrew and Erna Viterbi)</name>
+        </university>
+        <university>
+          <name>University of Texas at Austin</name>
+        </university>
+        <university>
+          <name>University of Texas at Dallas</name>
+        </university>
+        <university>
+          <name>University of Virginia</name>
+        </university>
+        <university>
+          <name>University of Washington</name>
+        </university>
+        <university>
+          <name>University of Wisconsin - Milwaukee</name>
+        </university>
+        <university>
+          <name>University of Wisconsin-Madison</name>
+        </university>
+        <university>
+          <name>Virginia Polytechnic Institute and State University</name>
+        </university>
+        <university>
+          <name>Washington University in St.Louis</name>
+        </university>
+        <university>
+          <name>Yale University</name>
+        </university>
+      </country>
+		</continent>
+    <continent name="Europe">
+      <university>
+        <name>Brunel University</name>
+      </university>
+      <university>
+        <name>Delft University of Technology</name>
+      </university>
+      <university>
+        <name>Ecole Polytechnique Fédérale de Lausanne</name>
+      </university>
+      <university>
+        <name>Imperial College London</name>
+      </university>
+      <university>
+        <name>Max-Planck-Institute</name>
+      </university>
+      <university>
+        <name>Newcastle University</name>
+      </university>
+      <university>
+        <name>Swiss Federal institute of Technology (Lausanne)</name>
+      </university>
+      <university>
+        <name>Technical University of Denmark</name>
+      </university>
+      <university>
+        <name>Universitaet München</name>
+      </university>
+      <university>
+        <name>Umei University</name>
+      </university>
+      <university>
+        <name>Universitetet I Oslo</name>
+      </university>
+      <university>
+        <name>University of Birmingham</name>
+      </university>
+      <university>
+        <name>University of Cambridge</name>
+      </university>
+      <university>
+        <name>Warsaw University</name>
+      </university>
+      <university>
+        <name>Warsaw University of Technology</name>
+      </university>
+    </continent>
+	</universities>
+</resource>

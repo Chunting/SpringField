@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 12, 17.25" name="Springfield">
+  <DataContextMoniker Name="/SpringfieldDataContext" />
+  <nestedChildShapes>
+    <classShape Id="8deaddfb-9e8b-48fc-94a8-fae6ed8e11a1" absoluteBounds="6.75, 0.75, 2, 1.7708968098958329">
+      <DataClassMoniker Name="/SpringfieldDataContext/ImportLog" />
+      <nestedChildShapes>
+        <elementListCompartment Id="614fc7dc-9d57-4345-8c75-bf1930066e18" absoluteBounds="6.765, 1.21, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="0ce6476e-8bdc-454d-9a5f-df3bf43eb9be" absoluteBounds="0.75, 6.75, 2, 6.9630354817708318">
+      <DataClassMoniker Name="/SpringfieldDataContext/PERSONHuman" />
+      <nestedChildShapes>
+        <elementListCompartment Id="40274f37-22bc-444f-96a5-737e12e03685" absoluteBounds="0.765, 7.21, 1.9700000000000002, 6.403035481770833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="37b0e295-545b-49c3-ad18-b1796692a77b" absoluteBounds="3.625, 0.5, 2, 4.8477197265625">
+      <DataClassMoniker Name="/SpringfieldDataContext/aspnet_Membership" />
+      <nestedChildShapes>
+        <elementListCompartment Id="24a05107-cfda-4377-99fe-1fc1530aed1a" absoluteBounds="3.6399999999999997, 0.96, 1.9700000000000002, 4.2877197265625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="6935679a-40bb-4a81-aec9-f9760d099ac7" absoluteBounds="0.75, 0.75, 2, 4.2708154296875">
+      <DataClassMoniker Name="/SpringfieldDataContext/BasicInfo" />
+      <nestedChildShapes>
+        <elementListCompartment Id="02e99212-3291-4958-8d32-0c4e022f8887" absoluteBounds="0.765, 1.21, 1.9700000000000002, 3.7108154296875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="25e34c99-91b7-488d-bae9-e65ab352869c" absoluteBounds="9.75, 0.75, 2, 4.8477197265624987">
+      <DataClassMoniker Name="/SpringfieldDataContext/EduBackground" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f4d035f7-7073-477e-8bdf-ecef88491ac9" absoluteBounds="9.765, 1.21, 1.9700000000000002, 4.2877197265625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="e5d34170-2ab8-4f1b-9fbf-cbaa4c7b66f6" absoluteBounds="4.125, 7, 2, 10.0398583984375">
+      <DataClassMoniker Name="/SpringfieldDataContext/sf_PerformanceAssessment" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f917fd70-16de-4e3b-9cba-dfba5efd7993" absoluteBounds="4.14, 7.46, 1.9700000000000002, 9.4798583984375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

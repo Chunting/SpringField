@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ResumeMappingSchema" targetNamespace="http://tempuri.org/ResumeMappingSchema.xsd" elementFormDefault="qualified" xmlns="http://tempuri.org/ResumeMappingSchema.xsd" xmlns:mstns="http://tempuri.org/ResumeMappingSchema.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="Applicant" type="xs:string">
+  </xs:element>
+  <xs:element name="ApplicantBasicInfo" type="xs:string">
+  </xs:element>
+</xs:schema>

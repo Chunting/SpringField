@@ -12,6 +12,9 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MSRA.SpringField.ResumeCollector", "ResumeCollector\MSRA.SpringField.ResumeCollector.csproj", "{BE6280F1-C2A3-43AD-8F50-6F184BF49C04}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MSRA.SpringField.Application", "MSRA.SpringField.Application\MSRA.SpringField.Application.csproj", "{EC5ED30B-8F90-4DF6-8CF8-B67CA98E8731}"
+	ProjectSection(ProjectDependencies) = postProject
+		{0CAA4225-AE2D-477B-AC0F-996551438007} = {0CAA4225-AE2D-477B-AC0F-996551438007}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MSRA.SpringField.Foundation", "MSRA.SpringField.Foundation\MSRA.SpringField.Foundation.csproj", "{D2CD5A86-127B-4E12-8F64-E8110A981F50}"
 EndProject

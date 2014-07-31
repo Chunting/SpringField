@@ -23,7 +23,7 @@
     <UpgradeBackupLocation>
     </UpgradeBackupLocation>
     <OldToolsVersion>3.5</OldToolsVersion>
-    <UseIISExpress>false</UseIISExpress>
+    <UseIISExpress>true</UseIISExpress>
     <IISExpressSSLPort />
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
@@ -1344,7 +1344,7 @@
       <SubType>Designer</SubType>
     </None>
     <None Include="help_files\themedata.thmx" />
-    <None Include="Properties\PublishProfiles\1.pubxml" />
+    <None Include="Properties\PublishProfiles\springfield.pubxml" />
     <None Include="Resource\Scripts\tiny_mce\plugins\advlink\js\advlink.js.bak" />
     <None Include="Resource\Scripts\tiny_mce\utils\form_utils.js.bak" />
     <Content Include="ApprovingPAList.aspx" />
@@ -1647,12 +1647,11 @@
     <VisualStudio>
       <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
         <WebProjectProperties>
-          <UseIIS>False</UseIIS>
+          <UseIIS>True</UseIIS>
           <AutoAssignPort>False</AutoAssignPort>
           <DevelopmentServerPort>8015</DevelopmentServerPort>
           <DevelopmentServerVPath>/SpringField/</DevelopmentServerVPath>
-          <IISUrl>
-          </IISUrl>
+          <IISUrl>http://localhost:8015/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

@@ -36,14 +36,15 @@ namespace MSRA.SpringField.PA_Intern
         {
             get
             {
-                if (Session["ApplicantId"] != null)
-                {
-                    Guid Id = new Guid(Session["ApplicantId"].ToString());
-                    return Id;
-                }
-                else if (Request.QueryString["ApplicantId"] != null)
+               
+                if (Request.QueryString["ApplicantId"] != null)
                 {
                     Guid Id = new Guid(Request.QueryString["ApplicantId"]);
+                    return Id;
+                }
+                else if (Session["ApplicantId"] != null)
+                {
+                    Guid Id = new Guid(Session["ApplicantId"].ToString());
                     return Id;
                 }
                 else
@@ -62,8 +63,16 @@ namespace MSRA.SpringField.PA_Intern
         {
             get
             {
+                DataSet dsPA = PerformanceAssessment.GetPerformanceAssessmentByApplicantId(ApplicantId);
+              //  Console.WriteLine("Mode: " + Session["Mode"].ToString());
+             //   Console.WriteLine("PAID: " + dsPA.Tables[0].Rows[0]["id"].ToString());
                 if (Session["Mode"] != null)
                     return Session["Mode"].ToString();
+                else if (dsPA.Tables[0].Rows.Count > 0 && dsPA.Tables[0].Rows[0]["id"].ToString() != null)
+                {  
+                    return "Insert";
+                }
+             
                 else
                     return "Unknown";
             }
@@ -92,7 +101,14 @@ namespace MSRA.SpringField.PA_Intern
         {
             get
             {
-                if (Session["PerformanceAssessmentId"] != null)
+                DataSet dsPA = PerformanceAssessment.GetPerformanceAssessmentByApplicantId(ApplicantId);
+                if (dsPA.Tables[0].Rows.Count > 0 && dsPA.Tables[0].Rows[0]["id"].ToString() != null)
+                {
+                    Guid Id = new Guid(dsPA.Tables[0].Rows[0]["id"].ToString());
+                    return Id;
+
+                }
+                else if (Session["PerformanceAssessmentId"] != null)
                 {
                     Guid Id = new Guid(Session["PerformanceAssessmentId"].ToString());
                     return Id;
@@ -115,6 +131,11 @@ namespace MSRA.SpringField.PA_Intern
              * @Author: Yin.P
              * @Date: 2009-12-08
              */
+            Console.Write("*************************************Defaul.aspx************************************** " );
+            Console.Write("Mode: " + Mode.ToString());
+            Console.Write("PAID: " + PerformanceAssessmentId.ToString());
+            Console.Write("PAID: " + ApplicantId.ToString());
+            Console.Write("*************************************Defaul.aspx************************************** ");
             if (this.tbEmail.Attributes["onblur"] != null)
             {
                 this.tbEmail.Attributes.Remove("onblur");
@@ -384,6 +405,8 @@ namespace MSRA.SpringField.PA_Intern
             if (tb != null && tb.Rows.Count > 0)
             {
                 lbName.Text = tb.Rows[0]["InternName"].ToString();
+               // lbName.Text = "CHUNTING";
+
                 tbPhone.Text = tb.Rows[0]["InternPhone"].ToString();
                 tbEmail.Text = tb.Rows[0]["InternEmail"].ToString();
                 if (!String.IsNullOrEmpty(tb.Rows[0]["GroupId"].ToString()))
@@ -450,15 +473,17 @@ namespace MSRA.SpringField.PA_Intern
                 }
 
                 PerformanceAssessment pa;
+                DataSet padata;
                 if (Mode == "Edit")
                 {
                     pa = PerformanceAssessment.GetPerformanceAssessmentById(PerformanceAssessmentId);
+                 
                 }
                 else //insert
                 {
                     pa = new PerformanceAssessment();
                 }
-
+                
                 pa.ApplicantId = ApplicantId;
                 pa.InternName = lbName.Text.Trim();
                 //pa.InternChineseName = lbName.Text.Trim();
@@ -487,8 +512,8 @@ namespace MSRA.SpringField.PA_Intern
                 {
                     PerformanceAssessmentId = pa.Insert();//这里会返回一个guid,好像是插入数据库时的一个value , TODO
                 }
-
-                Response.Redirect("InputPA.aspx", false);
+                String nexturl = "InputPA.aspx?ApplicantId=" + ApplicantId.ToString() + "&id=" + PerformanceAssessmentId.ToString();
+                Response.Redirect(nexturl, false);
             }
             else
             {

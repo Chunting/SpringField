@@ -1,0 +1,10 @@
+D:\SpringField-v-dodin\SpringField\Main\Source\codenew\MSRA.ServerControls\bin\Debug\MSRA.SpringField.Controls.dll
+D:\SpringField-v-dodin\SpringField\Main\Source\codenew\MSRA.ServerControls\bin\Debug\MSRA.SpringField.Controls.pdb
+D:\SpringField-v-dodin\SpringField\Main\Source\codenew\MSRA.ServerControls\obj\Debug\MSRA.SpringField.Controls.csprojResolveAssemblyReference.cache
+D:\SpringField-v-dodin\SpringField\Main\Source\codenew\MSRA.ServerControls\obj\Debug\MSRA.SpringField.Controls.dll
+D:\SpringField-v-dodin\SpringField\Main\Source\codenew\MSRA.ServerControls\obj\Debug\MSRA.SpringField.Controls.pdb
+D:\SpringField-v-chuj\SpringField\Main\Source\codenew\MSRA.ServerControls\bin\Debug\MSRA.SpringField.Controls.dll
+D:\SpringField-v-chuj\SpringField\Main\Source\codenew\MSRA.ServerControls\bin\Debug\MSRA.SpringField.Controls.pdb
+D:\SpringField-v-chuj\SpringField\Main\Source\codenew\MSRA.ServerControls\obj\Debug\MSRA.SpringField.Controls.csprojResolveAssemblyReference.cache
+D:\SpringField-v-chuj\SpringField\Main\Source\codenew\MSRA.ServerControls\obj\Debug\MSRA.SpringField.Controls.dll
+D:\SpringField-v-chuj\SpringField\Main\Source\codenew\MSRA.ServerControls\obj\Debug\MSRA.SpringField.Controls.pdb

@@ -41,7 +41,7 @@ namespace MSRA.SpringField.Application.Controls
                 BindRadioButtonList();
                 BindPAList();
 
-                //这里导致所有人都能显示（权限失效），因为paid是所有网页里都有的
+            
                 if (Request.Params["PAID"] != null)//always TRUE
                 {
                     Guid PAId = new Guid(Request.Params["PAID"].ToString());

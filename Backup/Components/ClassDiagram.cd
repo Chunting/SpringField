@@ -1,0 +1,447 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="MSRA.SpringField.Components.BizObjects.Advisor" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAEAAACBAAIAgAACAAAAAAAAAQAAAAAAgCAAAIAg=</HashCode>
+      <FileName>BizObjects\Advisor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MSRA.SpringField.Components.BizObjects.Applicant" Collapsed="true">
+    <Position X="2.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EERAIEBAAIABQCAABAAAAAgAAABAQAAIEQAIChACAAA=</HashCode>
+      <FileName>BizObjects\Applicant.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MSRA.SpringField.Components.BizObjects.ApplicantBasicInfo" Collapsed="true">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IGQACGAEAKRCgBCkAAAQwIAAAEKAQBICAAACCEAgCAg=</HashCode>
+      <FileName>BizObjects\ApplicantBasicInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MSRA.SpringField.Components.BizObjects.ApplicantEduBackground" Collapsed="true">
+    <Position X="5.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CEQFAEwAAUIBAABIAAAAgAAQAQIAUABAAQAhQgkQJAo=</HashCode>
+      <FileName>BizObjects\ApplicantEduBackground.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MSRA.SpringField.Components.BizObjects.ApplicantRelatedInfo" Collapsed="true">
+    <Position X="7.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEQAAEIQBAAEMAAAAABAAAKAAEAAQAAARAhEUEQIAFA=</HashCode>
+      <FileName>BizObjects\ApplicantRelatedInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MSRA.SpringField.Components.BizObjects.CashedApplicantInfo" Collapsed="true">
+    <Position X="9.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>BizObjects\CashedApplicantInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MSRA.SpringField.Components.BizObjects.CheckInForm" Collapsed="true">
+    <Position X="11" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACQgAkAkAAAgBAAAAAAUAAAAFCCgAAAggAgAAAAIMAI=</HashCode>
+      <FileName>BizObjects\CheckInForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MSRA.SpringField.Components.BizObjects.Comment" Collapsed="true">
+    <Position X="4" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAEAAAAAAAAAgBBAAAAEAAgAkQAAgAAAAEQAAChA=</HashCode>
+      <FileName>BizObjects\Comment.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MSRA.SpringField.Components.BizObjects.Document" Collapsed="true">
+    <Position X="9.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEQCAUAAAAIAAAQAAAACAAIAAAAAQAAAAAIAAAACBAE=</HashCode>
+      <FileName>BizObjects\Document.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MSRA.SpringField.Components.BizObjects.Email" Collapsed="true">
+    <Position X="11" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgSAmEKAQCQAAAAcAoABIAqAASAJQACAAAAAAAAAgJA=</HashCode>
+      <FileName>BizObjects\Email.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MSRA.SpringField.Components.BizObjects.EmailTemplate" Collapsed="true">
+    <Position X="2.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AhQAGAIAAAAAAAAYAIABIAiAAQAIAACAAAAAAAAAAAA=</HashCode>
+      <FileName>BizObjects\EmailTemplate.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MSRA.SpringField.Components.BizObjects.Favorite" Collapsed="true">
+    <Position X="5.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEwAAGMIAAAgAIAAAAAAAAAAAAAAQAAAAAAAIAAAAAA=</HashCode>
+      <FileName>BizObjects\Favorite.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MSRA.SpringField.Components.BizObjects.Feedback" Collapsed="true">
+    <Position X="7.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AUSAAEAAACACwCgggAgAAIAAABAAQAAIAAAICIMCoAA=</HashCode>
+      <FileName>BizObjects\Feedback.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MSRA.SpringField.Components.BizObjects.InternPublication" Collapsed="true">
+    <Position X="2.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAKEJBAAAAUAAAAAAIgAQAAEIAQAAAQAAABBAAAAA=</HashCode>
+      <FileName>BizObjects\InternPublication.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MSRA.SpringField.Components.BizObjects.Interview" Collapsed="true">
+    <Position X="4" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>Q1wEAGQEQAUGAIpCMCSQQCCgAgkQUACAoAKABFMAAwU=</HashCode>
+      <FileName>BizObjects\Interview.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MSRA.SpringField.Components.BizObjects.PerformanceAssessment" Collapsed="true">
+    <Position X="11" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QR4iKHxXgKYBlAAEDQ3azi4BFHYIQgaiCF1YKVcAqmg=</HashCode>
+      <FileName>BizObjects\PerformanceAssessment.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MSRA.SpringField.Components.BizObjects.Referral" Collapsed="true">
+    <Position X="0.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gGQAAEAAAAAAAAAAIAAAACAACAABQggAgQAAAIAgAAA=</HashCode>
+      <FileName>BizObjects\Referral.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MSRA.SpringField.Components.BizObjects.RelatedReferrer" Collapsed="true">
+    <Position X="2.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACQAAEAAACBgAACgAAAAkAAAAAAACAAAAAgACAAgACg=</HashCode>
+      <FileName>BizObjects\RelatedReferrer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MSRA.SpringField.Components.BizObjects.SiteContext" Collapsed="true">
+    <Position X="2.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAoAAAAAAAACAABAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BizObjects\SiteContext.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MSRA.SpringField.Components.BizObjects.SiteGeneralInfo" Collapsed="true">
+    <Position X="4" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIABAAAACAAAICAgEAAQJABAAAgAAQAYACAAGACAA=</HashCode>
+      <FileName>BizObjects\SiteGeneralInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MSRA.SpringField.Components.BizObjects.SiteUser" Collapsed="true">
+    <Position X="7.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAMAAggKKAIAAYAIBCCEgAAIAKAIBAACAEAAAoAABAE=</HashCode>
+      <FileName>BizObjects\SiteUser.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MSRA.Springfield.Components.BizObjects.CheckoutSurvey" Collapsed="true">
+    <Position X="2.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>+BcCIHmUNSQpohUQiApBIFIgYKTEZwsKIEkwAQdiZ1Q=</HashCode>
+      <FileName>BizObjects\CheckoutSurvey.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MSRA.SpringField.Components.CheckInFormResourceManager" Collapsed="true">
+    <Position X="0.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AARAQAEAAAAgQAAAIAAAABAAAAAAAAIEACAAEAAIAAA=</HashCode>
+      <FileName>CheckInFormResourceManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MSRA.SpringField.Components.EnumHelper" Collapsed="true">
+    <Position X="4" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAgAIAAAAAAAAAAAAAAAQAAAAAAAEAAAAAAAAIAAA=</HashCode>
+      <FileName>EnumHelper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MSRA.SpringField.Components.FilterGenerator" Collapsed="true">
+    <Position X="9.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAEAAAAEIIgAIACAAAQQAgAAAIAAAUIASAAAAI=</HashCode>
+      <FileName>FilterGenerator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MSRA.SpringField.Components.GlobalHelper" Collapsed="true">
+    <Position X="11" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAABAAAIAAQAAAAAAAAAEAAAAgAAAE=</HashCode>
+      <FileName>GlobalHelper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MSRA.SpringField.Components.InfoSourceMapping" Collapsed="true">
+    <Position X="0.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>InfoSourceMapping.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MSRA.SpringField.Components.JSUtility" Collapsed="true">
+    <Position X="5.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAABAAAAAAAAAAAAQAAAAAABAAAAAgAEAAAgAAAAI=</HashCode>
+      <FileName>JSUtility.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MSRA.SpringField.Components.MailHelper" Collapsed="true">
+    <Position X="7.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>YAACAAkgAAJgAAAAAAAAAAoACCASIIAIBBAgAoEAAiA=</HashCode>
+      <FileName>MailHelper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MSRA.SpringField.Components.PAResourceManager" Collapsed="true">
+    <Position X="9.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAQAEAAAAgQAAAIAAAABAAAAAAAAIEACAAAAAAAAA=</HashCode>
+      <FileName>PAResourceManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MSRA.SpringField.Components.ResourceManager" Collapsed="true">
+    <Position X="5.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAgCAAEAJCZAgJAAABAgBIAAAwAAMAAACQAEAIIBA=</HashCode>
+      <FileName>ResourceManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MSRA.SpringField.Components.SiteCache" Collapsed="true">
+    <Position X="9.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAFAAAAAAAABCAAAABAAgAAAAAAAAAAAAAABAAAA=</HashCode>
+      <FileName>SiteCache.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MSRA.SpringField.Components.StaticData" Collapsed="true">
+    <Position X="9.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAAAEACQAAQgAAAGAAACAogAIAAgACACAEYAMI=</HashCode>
+      <FileName>StaticData.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MSRA.SpringField.Components.Configuration.DataProviderConfiguration" Collapsed="true">
+    <Position X="5.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQUAAAEABAAAAgAAAAAAAA=</HashCode>
+      <FileName>Configuration\DataProviderConfiguration.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MSRA.SpringField.Components.Configuration.SiteConfiguration" Collapsed="true">
+    <Position X="11" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>hIEAEAAAARAAAAAIIAIAACAAAACAAAAAiAAAAAyBAQA=</HashCode>
+      <FileName>Configuration\SiteConfiguration.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MSRA.SpringField.Components.Configuration.SiteConfigurationHandler" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="0.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAA=</HashCode>
+      <FileName>Configuration\SiteConfigurationHandler.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="MSRA.SpringField.Components.Configuration.DataProviderFactory" Collapsed="true">
+    <Position X="7.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DataProvider\DataProviderFactory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MSRA.SpringField.Components.Configuration.EmailQueueProvider" Collapsed="true">
+    <Position X="0.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DataProvider\EmailQueueProvider.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MSRA.SpringField.Components.Exceptions.ResourceNotExist" Collapsed="true">
+    <Position X="7.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAABAAAAAAAAAAAAAAQAAAAAAAAAAAAgAAAACAA=</HashCode>
+      <FileName>Exceptions\CustomException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MSRA.SpringField.Components.Exceptions.ResourceAlreadyExist" Collapsed="true">
+    <Position X="4" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAABAAAAAAAAAAAAAAQAAAAAAAAAAAAgAAAACAA=</HashCode>
+      <FileName>Exceptions\CustomException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MSRA.SpringField.Components.HttpModule.SiteSecurityModule" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="5.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAASAAAABAA=</HashCode>
+      <FileName>HttpModule\SiteSecurityModule.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Interface Name="MSRA.SpringField.Components.Configuration.IDataProvider" Collapsed="true">
+    <Position X="0.5" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>GpBEIB4Uwaxj4CgAPIyU3GugQDxKRhbiwkBoJJYGGgA=</HashCode>
+      <FileName>DataProvider\IDataProvider.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="MSRA.SpringField.Components.Enumerations.ApplicationStatusEnum" Collapsed="true">
+    <Position X="0.5" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ECgAACAgAAQAIAAAAAAAAABAAAAAAAFAAAAAAAAAAAA=</HashCode>
+      <FileName>Enumerations\ApplicationStatus.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="MSRA.SpringField.Components.Enumerations.CollegeEnum" Collapsed="true">
+    <Position X="2.25" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>WrxTKZKsEJNb0aJKQ6x9PlfBLXJ/f1gd84XIK39hr2I=</HashCode>
+      <FileName>Enumerations\CollegeEnum.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="MSRA.SpringField.Components.Enumerations.CountryEnum" Collapsed="true">
+    <Position X="4" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAABAAAAABwAAAABAAAAAAIAAAAAAAAAAAAEA=</HashCode>
+      <FileName>Enumerations\CountryEnum.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="MSRA.SpringField.Components.Enumerations.DegreeEnum" Collapsed="true">
+    <Position X="5.75" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAAAAAAAAAAABAAAAAAAAABAAAIAAAAEAAYAA=</HashCode>
+      <FileName>Enumerations\DegreeEnum.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="MSRA.SpringField.Components.Enumerations.DocumentEnum" Collapsed="true">
+    <Position X="7.5" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAA=</HashCode>
+      <FileName>Enumerations\DocumentType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="MSRA.SpringField.Components.Enumerations.EmailFormatEnum" Collapsed="true">
+    <Position X="9.25" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAFAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Enumerations\EmailFormatEnum.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="MSRA.SpringField.Components.Enumerations.FeedbackSuggestionEnum" Collapsed="true">
+    <Position X="11" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAIA=</HashCode>
+      <FileName>Enumerations\FeedbackSuggestionEnum.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="MSRA.SpringField.Components.Enumerations.GenderEnum" Collapsed="true">
+    <Position X="0.5" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAABA=</HashCode>
+      <FileName>Enumerations\GenderEnum.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="MSRA.SpringField.Components.Enumerations.IsOfflineEnum" Collapsed="true">
+    <Position X="11" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAgAEAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Enumerations\GenderEnum.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="MSRA.SpringField.Components.Enumerations.GroupsEnum" Collapsed="true">
+    <Position X="2.25" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAADAIAAAAqAggAAIAIAABBRIBAAAAIAAAACAAA=</HashCode>
+      <FileName>Enumerations\GroupsEnum.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="MSRA.SpringField.Components.Enumerations.InfoSourceDetailEnum" Collapsed="true">
+    <Position X="4" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAgAAAAAAEBAAIABAAQAAAACIBAAAAAAAAAQAAA=</HashCode>
+      <FileName>Enumerations\InfoSourceDetailEnum.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="MSRA.SpringField.Components.Enumerations.InfoSourceEnum" Collapsed="true">
+    <Position X="5.75" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAgAAAAAABAAAAAAAAAAAAAAAAAAAAAIAAQAA=</HashCode>
+      <FileName>Enumerations\InfoSourceEnum.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="MSRA.SpringField.Components.Enumerations.InternshipTypeEnum" Collapsed="true">
+    <Position X="7.5" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAIACAAAAAAAAAAAAAABA=</HashCode>
+      <FileName>Enumerations\InternshipType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="MSRA.SpringField.Components.Enumerations.InterviewStatusEnum" Collapsed="true">
+    <Position X="9.25" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgAAQAAAAAAAAAIAAAAAAAACFAgAAIAAAAAAA=</HashCode>
+      <FileName>Enumerations\InterviewStatusEnum.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="MSRA.SpringField.Components.Enumerations.MailType" Collapsed="true">
+    <Position X="0.5" Y="9.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ggABABQAAAAAAwBBGAAAQBAgEAAEgAAAgACQRAAAAAA=</HashCode>
+      <FileName>Enumerations\MailType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="MSRA.SpringField.Components.Enumerations.MajorCategoryEnum" Collapsed="true">
+    <Position X="2.25" Y="9.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BgBAAQAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAI=</HashCode>
+      <FileName>Enumerations\MajorCategoryType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="MSRA.SpringField.Components.Enumerations.PositionTypeEnum" Collapsed="true">
+    <Position X="4" Y="9.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAABA=</HashCode>
+      <FileName>Enumerations\PositionTypeEnum.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="MSRA.SpringField.Components.Enumerations.RankEnum" Collapsed="true">
+    <Position X="5.75" Y="9.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>NAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAA=</HashCode>
+      <FileName>Enumerations\RankEnum.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="MSRA.SpringField.Components.Enumerations.ReferralType" Collapsed="true">
+    <Position X="7.5" Y="9.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAAAAAgAAAQAAAAAAAAAAAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>Enumerations\ReferralType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="MSRA.SpringField.Components.Enumerations.ResearchApproachEnum" Collapsed="true">
+    <Position X="9.25" Y="9.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAgAAAAAAACAAAAAAAAAAA=</HashCode>
+      <FileName>Enumerations\ResearchApproachType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="MSRA.SpringField.Components.Enumerations.RoleType" Collapsed="true">
+    <Position X="11" Y="9.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAkJEAAAAAAAAgAAAAAAAAASACAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>Enumerations\RoleType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

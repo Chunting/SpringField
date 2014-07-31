@@ -81,7 +81,8 @@ namespace MSRA.SpringField.Components.BizObjects
         public void Insert()
         {
             IDataProvider dp = DataProviderFactory.GetDataProvider();
-            emailId = dp.InsertEmail(this);
+           // To skip the step of sending email. By Chunting 2014.07.28
+          //  emailId = dp.InsertEmail(this);
         }
 
         public void Update()

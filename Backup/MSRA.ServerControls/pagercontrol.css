@@ -1,0 +1,67 @@
+
+.pages {
+	CLEAR: left; 
+	PADDING-RIGHT: 1em; 
+	PADDING-LEFT: 1em; 
+	font-family:arial, helvetica, sans-serif;
+	font-size:12px;	 
+	PADDING-BOTTOM: 1em; 
+	MARGIN: 1em 0px; 
+	PADDING-TOP: 1em
+}
+.pages a {
+	BORDER-RIGHT: #fff 1px solid; 
+	PADDING-RIGHT: 0.5em; 
+	BORDER-TOP: #fff 1px solid; 
+	DISPLAY: block; 
+	PADDING-LEFT: 0.5em; 
+	BACKGROUND: #fff; 
+	FLOAT: left; 
+	PADDING-BOTTOM: 0.2em; 
+	BORDER-LEFT: #fff 1px solid; 
+	MARGIN-RIGHT: 0.1em; 
+	PADDING-TOP: 0.2em; 
+	BORDER-BOTTOM: #fff 1px solid
+}
+.pages SPAN {
+	BORDER-RIGHT: #fff 1px solid; 
+	PADDING-RIGHT: 0.5em;
+	BORDER-TOP: #fff 1px solid; 
+	DISPLAY: block; 
+	PADDING-LEFT: 0.5em;
+	BACKGROUND: #fff; 
+	FLOAT: left; 
+	PADDING-BOTTOM: 0.2em;
+	BORDER-LEFT: #fff 1px solid; 
+	MARGIN-RIGHT: 0.1em; 
+	PADDING-TOP: 0.2em; 
+	BORDER-BOTTOM: #fff 1px solid
+}
+.pages SPAN.current {
+	BORDER-RIGHT: #2e6ab1 1px solid; BORDER-TOP: #2e6ab1 1px solid; FONT-WEIGHT: bold; BACKGROUND: #4bb12e; BORDER-LEFT: #2e6ab1 1px solid; COLOR: #ffffff; BORDER-BOTTOM: #2e6ab1 1px solid
+}
+.pages A {
+	BORDER-RIGHT: #9de59a 1px solid; 
+	BORDER-TOP: #9de59a 1px solid; 
+	BORDER-LEFT: #9de59a 1px solid; 
+	BORDER-BOTTOM: #9de59a 1px solid; 
+	TEXT-DECORATION: none;
+	color:#26c900;
+}
+.pages A:hover {
+	BORDER-LEFT-COLOR: #2e6ab1; BORDER-BOTTOM-COLOR: #2e6ab1; BORDER-TOP-COLOR: #2e6ab1; BORDER-RIGHT-COLOR: #2e6ab1
+}
+.pages A.nextprev {
+	FONT-WEIGHT: bold
+}
+.pages SPAN.nextprev {
+	COLOR: #666
+}
+.pages SPAN.nextprev {
+	BORDER-RIGHT: #ddd 1px solid; BORDER-TOP: #ddd 1px solid; BORDER-LEFT: #ddd 1px solid; COLOR: #999; BORDER-BOTTOM: #ddd 1px solid
+}
+#btn
+{
+	BORDER-RIGHT: #9aafe5 1px solid; BORDER-TOP: #9aafe5 1px solid; BORDER-LEFT: #9aafe5 1px solid; BORDER-BOTTOM: #9aafe5 1px solid; TEXT-DECORATION: none;
+	background-color:#4bb12e;
+}

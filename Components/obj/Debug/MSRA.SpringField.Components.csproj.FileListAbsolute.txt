@@ -1,0 +1,10 @@
+D:\SpringField-v-dodin\SpringField\Main\Source\codenew\Components\bin\Debug\MSRA.Springfield.Components.dll
+D:\SpringField-v-dodin\SpringField\Main\Source\codenew\Components\bin\Debug\MSRA.Springfield.Components.pdb
+D:\SpringField-v-dodin\SpringField\Main\Source\codenew\Components\obj\Debug\MSRA.SpringField.Components.csprojResolveAssemblyReference.cache
+D:\SpringField-v-dodin\SpringField\Main\Source\codenew\Components\obj\Debug\MSRA.Springfield.Components.dll
+D:\SpringField-v-dodin\SpringField\Main\Source\codenew\Components\obj\Debug\MSRA.Springfield.Components.pdb
+D:\SpringField-v-chuj\SpringField\Main\Source\codenew\Components\bin\Debug\MSRA.Springfield.Components.dll
+D:\SpringField-v-chuj\SpringField\Main\Source\codenew\Components\bin\Debug\MSRA.Springfield.Components.pdb
+D:\SpringField-v-chuj\SpringField\Main\Source\codenew\Components\obj\Debug\MSRA.SpringField.Components.csprojResolveAssemblyReference.cache
+D:\SpringField-v-chuj\SpringField\Main\Source\codenew\Components\obj\Debug\MSRA.Springfield.Components.dll
+D:\SpringField-v-chuj\SpringField\Main\Source\codenew\Components\obj\Debug\MSRA.Springfield.Components.pdb

@@ -20,7 +20,12 @@ public partial class InputPA : System.Web.UI.Page
     {
         get
         {
-            if (Session["PerformanceAssessmentId"] != null)
+            if (Request.QueryString["id"] != null)
+            {
+                Guid Id = new Guid(Request.QueryString["id"]);
+                return Id;
+            }
+            else if (Session["PerformanceAssessmentId"] != null)
             {
                 Guid Id = new Guid(Session["PerformanceAssessmentId"].ToString());
                 return Id;
@@ -29,6 +34,8 @@ public partial class InputPA : System.Web.UI.Page
             {
                 return Guid.Empty;
             }
+
+          
         }
         set
         {
@@ -40,15 +47,24 @@ public partial class InputPA : System.Web.UI.Page
     {
         get
         {
-            if (Session["ApplicantId"] != null)
+
+            if (Request.QueryString["ApplicantId"] != null)
+            {
+                Guid Id = new Guid(Request.QueryString["ApplicantId"]);
+                return Id;
+            }
+            else if (Session["ApplicantId"] != null)
             {
                 Guid Id = new Guid(Session["ApplicantId"].ToString());
                 return Id;
             }
             else
             {
+                //Guid TestApplicant = new Guid("2d83ed78-444a-4041-ae7b-c0d03bbb986d");// for Test 9b35c9cb-048e-4b07-8663-8900fc037dd5
+                //return TestApplicant;
                 return Guid.Empty;
             }
+
         }
         set
         {
@@ -58,6 +74,11 @@ public partial class InputPA : System.Web.UI.Page
 
     protected void Page_Load(object sender, EventArgs e)
     {
+        Console.WriteLine("*************************************InputPA.aspx************************************** ");
+        
+        Console.WriteLine("PAID: " + PerformanceAssessmentId.ToString());
+        Console.WriteLine("PAID: " + ApplicantId.ToString());
+        Console.WriteLine("*************************************InputPA.aspx************************************** ");
         if (ApplicantId != null && ApplicantId != Guid.Empty)
         {
             this.ApptID.Text = ApplicantId.ToString();
@@ -80,6 +101,9 @@ public partial class InputPA : System.Web.UI.Page
                 gvPublicationBindData();
             }
             PerformanceAssessment pa = PerformanceAssessment.GetPerformanceAssessmentById(PerformanceAssessmentId);
+
+            DataSet dsPA = PerformanceAssessment.GetPerformanceAssessmentByApplicantId(ApplicantId);
+          
             if (pa.IsApproved != 5 && pa.IsApproved != 0)
             {
                 btnSummit.Enabled = false;
@@ -91,9 +115,19 @@ public partial class InputPA : System.Web.UI.Page
                 tbNewPublication.Enabled = false;
                 tbnSummitNewPublication.Enabled = false;
             }
-            tbObjective.Text = pa.Objective;
-            tbSelfEvaluation.Text = pa.SelfEvaluation;
-            tbStengthsAndWeaknesses.Text = pa.StrengthsAndWeaknesses;
+            
+            // Modified by Chunting 2014-07-28
+            // Get the values from DB, not from Session.
+            if (dsPA.Tables[0].Rows.Count > 0 && dsPA.Tables[0].Rows[0]["Objective"].ToString() != null)
+                tbObjective.Text = dsPA.Tables[0].Rows[0]["Objective"].ToString();
+            if (dsPA.Tables[0].Rows.Count > 0 && dsPA.Tables[0].Rows[0]["SelfEvaluation"].ToString() != null)
+                tbSelfEvaluation.Text = dsPA.Tables[0].Rows[0]["SelfEvaluation"].ToString();
+            if (dsPA.Tables[0].Rows.Count > 0 && dsPA.Tables[0].Rows[0]["StrengthsAndWeaknesses"].ToString() != null)
+                tbStengthsAndWeaknesses.Text = dsPA.Tables[0].Rows[0]["StrengthsAndWeaknesses"].ToString();
+           // tbObjective.Text = pa.Objective;
+            
+           // tbSelfEvaluation.Text = pa.SelfEvaluation;
+          //  tbStengthsAndWeaknesses.Text = pa.StrengthsAndWeaknesses;
         }
 
         //gvPublicationBindData();
@@ -149,11 +183,11 @@ public partial class InputPA : System.Web.UI.Page
         }
 
 
-        //send email ·¢ÓÊ¼þ£¡
-        MailHelper mailHelper = new MailHelper();
-        mailHelper.AddPerformanceAssessmentVariables(pa.Id);
-        mailHelper.SendMail(MailType.PAReminder);
-        mailHelper.SendMail(MailType.CheckOutReminder);
+        //Skip the sending email step.in local. By Chunting 
+     //   MailHelper mailHelper = new MailHelper();
+     //   mailHelper.AddPerformanceAssessmentVariables(pa.Id);
+     //   mailHelper.SendMail(MailType.PAReminder);
+     //   mailHelper.SendMail(MailType.CheckOutReminder);
         Response.Write("<script>alert('Performance Assessment successfully summited!'); window.close();</script>");
 
         btnSummit.Text = "Submit";

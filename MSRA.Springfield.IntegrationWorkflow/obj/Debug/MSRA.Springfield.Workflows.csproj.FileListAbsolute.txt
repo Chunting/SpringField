@@ -1,0 +1,11 @@
+D:\SpringField-v-chuj\SpringField\Main\Source\codenew\MSRA.Springfield.IntegrationWorkflow\bin\Debug\MSRA.Springfield.Workflows.dll.config
+D:\SpringField-v-chuj\SpringField\Main\Source\codenew\MSRA.Springfield.IntegrationWorkflow\bin\Debug\MSRA.Springfield.Workflows.dll
+D:\SpringField-v-chuj\SpringField\Main\Source\codenew\MSRA.Springfield.IntegrationWorkflow\bin\Debug\MSRA.Springfield.Workflows.pdb
+D:\SpringField-v-chuj\SpringField\Main\Source\codenew\MSRA.Springfield.IntegrationWorkflow\bin\Debug\log4net.dll
+D:\SpringField-v-chuj\SpringField\Main\Source\codenew\MSRA.Springfield.IntegrationWorkflow\bin\Debug\MSRA.Springfield.Components.dll
+D:\SpringField-v-chuj\SpringField\Main\Source\codenew\MSRA.Springfield.IntegrationWorkflow\bin\Debug\MSRA.SpringField.Foundation.dll
+D:\SpringField-v-chuj\SpringField\Main\Source\codenew\MSRA.Springfield.IntegrationWorkflow\bin\Debug\MSRA.Springfield.Components.pdb
+D:\SpringField-v-chuj\SpringField\Main\Source\codenew\MSRA.Springfield.IntegrationWorkflow\bin\Debug\MSRA.SpringField.Foundation.pdb
+D:\SpringField-v-chuj\SpringField\Main\Source\codenew\MSRA.Springfield.IntegrationWorkflow\obj\Debug\MSRA.Springfield.Workflows.csprojResolveAssemblyReference.cache
+D:\SpringField-v-chuj\SpringField\Main\Source\codenew\MSRA.Springfield.IntegrationWorkflow\obj\Debug\MSRA.Springfield.Workflows.dll
+D:\SpringField-v-chuj\SpringField\Main\Source\codenew\MSRA.Springfield.IntegrationWorkflow\obj\Debug\MSRA.Springfield.Workflows.pdb

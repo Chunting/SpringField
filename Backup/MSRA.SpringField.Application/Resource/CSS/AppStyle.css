@@ -1,0 +1,121 @@
+﻿/*
+* Tool Bar Style
+* @Author: Yin.P
+* @Date: 2009-11-12
+*/
+.toolbar
+{
+	float:none;
+	padding:10 0; 
+	margin:10 0;
+	background-color:#F4F4F4;
+	height:40;
+	border:solid 1px #ccc;
+	vertical-align:middle;
+	text-align:center	
+}
+
+/*
+* Small Tool Bar Style
+* @Author: Yin.P
+* @Date: 2009-11-26
+*/
+.toolbar_small
+{
+	float:none;
+	padding:5 0; 
+	margin:8 0;
+	background-color:#F4F4F4;
+	height:30;
+	border:solid 1px #ccc;
+	vertical-align:absmiddle;
+	text-align:center	
+}
+
+/*
+* Information Bar Style
+* @Author: Yin.P
+* @Date: 2009-11-12
+*/
+.infobar
+{
+	background-color:#FFFFE1;
+	border:solid 1px #FEC951;
+	height:50;
+	vertical-align:middle;
+	margin:5 0;
+	text-align:left
+}
+
+/*
+* Status Bar Style
+* @Author: Yin.P
+* @Date: 2009-11-12
+*/
+.statusbar
+{
+	background-color:#FFFFE1;
+	border:solid 1px #FEC951;
+	height:30;
+	vertical-align:middle;
+	margin:5 0;
+	text-align:left	
+}
+
+/*
+* View Lable Style
+* @Author: Yin.P
+* @Date: 2009-11-26
+*/
+.viewlabel
+{	
+	text-decoration: underline;
+}
+
+/*
+* Field Label Style
+* @Author: Yin.P
+* @Date: 2009-11-26
+*/
+.fieldlable
+{
+	width:110px;
+	font-weight:bold;
+}
+
+/*
+* Portal Part Style
+* @Author: Yin.P
+* @Date: 2009-11-26
+*/
+.portal_part
+{
+	margin: 0px;
+	padding: 5 5;
+	text-align: left;
+	border: 1px solid #999999;
+	border-top: 0px;
+	font-size: 10pt;
+	overflow: auto;
+	width: 100%;
+	position:relative;
+}
+
+/*
+* Portal Header Style
+* @Author: Yin.P
+* @Date: 2009-11-26
+*/
+.portal_part_header{
+	margin: 0px;
+	padding: 0px;
+	text-align: center;
+	height: 20px;
+	background: url("images/arrow_down.gif") #eeeeee no-repeat 8px;
+	border: 1px solid #999999;
+	color: #528f52;
+	font-size: 12pt;
+	font-weight: bold;
+	cursor: hand;
+	width: 100%;
+}

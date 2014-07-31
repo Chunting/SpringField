@@ -1,0 +1,243 @@
+ <%@ Master Language="C#" AutoEventWireup="true" Inherits="MSRA.SpringField.Application.SpringfieldMaster" Codebehind="SpringfieldMaster.master.cs" %>
+
+<?xml version="1.0" encoding="utf-8"?>
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="zh-CN">
+<head id="Head1" runat="server">
+	<title> SpringField </title>
+	<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+	<meta http-equiv="Content-Language" content="zh-CN" />
+	<meta content="all" name="robots" />
+	<meta name="title" content="Springfield" />
+	<meta name="author" content="ChenYuan" /> 
+	<meta name="subject" content="Springfield" />
+	<meta name="language" content="zh-CN" />
+	<meta name="keywords" content="Springfield,ChenYuan" />
+	
+	<link rel="stylesheet" href="Resource/CSS/global.css" type="text/css" media="all"  />
+	<link rel="stylesheet" href="Resource/CSS/AppStyle.css" type="text/css" media="all"  />
+	<link rel="stylesheet" href="Resource/CSS/FloatWindow.css" type="text/css" media="all"  />
+	<%--<link rel="stylesheet" href="Resource/CSS/master.css" type="text/css" media="all"  />--%>
+	
+    <script language="JavaScript" type="text/javascript" src="Resource/Scripts/master.js"></script>
+    <script language="JavaScript" src="Resource/Scripts/popcalendar.js" type="text/javascript"></script>
+    <script language="JavaScript" src="Resource/Scripts/FloatWindow.js" type="text/javascript"></script>
+    
+    <script language="javascript" type="text/javascript">
+        function SwitchMenuItem(currentItem) {
+            var items = document.getElementsByName("menuitem");
+            for (var i = 0; i < items.length; i++) {
+                if (items[i] === currentItem) {
+                    items[i].style.fontWeight = "bold";
+                }
+                else {
+                    items[i].style.fontWeight = "normal";
+                }
+            }
+        }
+
+        function SwitchMiniOpBar() {
+            var opBar = document.getElementById("minibar");
+            //var btn = document.getElementById("opbtn");
+            var menuObj = document.getElementById("tdMenu");
+
+            if (menuObj.style.display == "block") {
+                menuObj.style.display = "none";
+                //opBar.innerHTML = "->";
+            }
+            else {
+                menuObj.style.display = "block";
+                //opBar.innerHTML = "<-";
+            }
+        }
+    </script>
+</head>
+<body>
+<form id="frmMain" runat="server">
+<asp:ScriptManager runat="server" ID="sm1"></asp:ScriptManager>
+<div style="width:100%;height:100%;vertical-align:top">
+<table id="container" style="width:100%;height:900" cellpadding="0" cellspacing="0">
+<tr>
+    <td colspan="3" style="height:50">
+        <table border="0" cellpadding="0" cellspacing="0" class="header_table">
+	    <tr>
+		    <td><asp:Image ID="imgTitleLog" ImageUrl="~/ProUI/images/Intern-Tool-Masthead_01.jpg" runat="server"/></td>
+		    <td>&nbsp;</td>
+		    <td align="right"><asp:Image ID="imgTitlePic" runat="server" ImageUrl="~/ProUI/images/Intern-Tool-Masthead_02.jpg" /></td>
+	    </tr>
+	    <tr>
+		    <td colspan="3">
+			    <table border="0" cellpadding="0" cellspacing="0" style="width:100%">
+				    <tr>
+					    <td style="width:auto;nowrap:true">Welcome to Springfield</td>					    
+					    <td align="right"><asp:Image ID="imgTitleBar" runat="server"  ImageUrl="~/ProUI/images/Intern-Tool-Masthead_04.jpg" /></td>
+					    <td style="width: auto; background: #666666;text-align:right">
+					        <div style="color:#fff;margin-right:10px"><asp:Label ID="lbWelcome" runat="server" Text=""></asp:Label></div>
+					    </td>
+				    </tr> 
+			    </table>
+		    </td>
+	    </tr>
+	    </table>
+    </td> 
+</tr>
+<tr> 
+    <td style="width:20%;vertical-align:top;height:100%;display:block" id="tdMenu">
+        <div id="menu" style="position:relative;width:100%;height:100%;padding-right:5px;white-space:nowrap">
+    <%--<div class="parent_menu">(Welcome:<asp:Label ID="lbWelcome" runat="server" Text=""></asp:Label>)</div>--%>
+	<div class="parent_menu" style="white-space:nowrap">
+	    <asp:HyperLink ID="lnkGeneralInfo" NavigateUrl="~/Default.aspx?mi=SpringField Today&contrid=item_lnkGeneralInfo" runat="server">
+	        <span id="item_lnkGeneralInfo">SpringField Today</span>
+	    </asp:HyperLink>
+	</div>
+	<input type="hidden" id="menuPos" value=""/>
+	<div class="parent_menu">Applicants</div>
+	    <div class="child_menu"><asp:HyperLink ID="lnkApplicants" NavigateUrl="~/Applicants.aspx?mi=Applicants,Applicants Pool&contrid=item_lnkApplicants" runat="server">
+	        <span id="item_lnkApplicants">Applicants Pool</span></asp:HyperLink></div>	        
+	    <div class="child_menu">
+	        <asp:HyperLink ID="lnkFavoritesList" NavigateUrl="~/FavoritesList.aspx?listtype=fav&mi=Applicants,Favorite Applicants&contrid=item_lnkFavoritesList" runat="server">
+	        <span id="item_lnkFavoritesList">Favorite Applicants</span></asp:HyperLink></div>
+	    
+	    <div class="child_menu">
+	        <asp:HyperLink ID="lnkKeyReferral" NavigateUrl="~/ReferApplication.aspx?mi=Applicants,Key Referral&contrid=item_lnkKeyReferral" runat="server">
+	        <span id="item_lnkKeyReferral">Key Referral</span></asp:HyperLink></div>
+	    <div class="child_menu">
+	        <asp:HyperLink ID="lnkURReferral" NavigateUrl="~/URReferral.aspx?mi=Applicants,UR Referral&contrid=item_lnkURReferral" Visible="false" runat="server">
+	        <span id="item_lnkURReferral">UR Referral</span></asp:HyperLink></div>		    
+	    <div class="child_menu">
+	        <asp:HyperLink ID="lnkKeyin" NavigateUrl="~/Keyin/Default.aspx?mi=Interview,Key In&contrid=item_lnkKeyin" runat="server" Visible="false">
+	        <span id="item_lnkKeyin">Key in</span></asp:HyperLink></div>
+	    <%--<div class="child_menu">
+	        <asp:HyperLink ID="lnkPersonKeyin" NavigateUrl="~/OffLineHiring.aspx?mi=Interview,Keyin&contrid=item_lnkPersonKeyin" Visible="false" runat="server">
+	        <span id="item_lnkPersonKeyin">Keyin</span></asp:HyperLink></div>--%>
+	        
+	<div class="parent_menu">Interview</div>	    
+	    <div class="child_menu">
+	        <asp:HyperLink ID="lnkProcssing" NavigateUrl="~/Procssing.aspx?status=processing&mi=Applicants,Applicants In Progress&contrid=item_lnkProcssing" runat="server">
+	        <span id="item_lnkProcssing">Applicants In Process</span></asp:HyperLink></div>	    
+	    <div class="child_menu"><asp:HyperLink ID="lnkOffLineHring" NavigateUrl="~/OffLineHiring.aspx?mi=Interview,Off-line Hiring&contrid=item_lnkOffLineHring" runat="server">
+	        <span id="item_lnkOffLineHring">Off-line Hiring</span></asp:HyperLink></div>
+	        
+    <div class="parent_menu" runat="server" visible="false" id="onboardmenu">On-Board</div>
+        <div class="child_menu">
+	        <asp:HyperLink ID="lnkApprovalEmail" NavigateUrl="~/InterviewedCandidates.aspx?mi=Interview,Uploading Approval Email&contrid=item_lnkApprovalEmail" runat="server" Visible="false">
+	        <span id="item_lnkApprovalEmail">Uploading Approval Email</span></asp:HyperLink></div>
+	    <div class="child_menu">
+	        <asp:HyperLink ID="lnkHiredCandidates" NavigateUrl="~/HiredCandidates.aspx?mi=Interview,Hired Candidates List&contrid=item_lnkHiredCandidates" runat="server" Visible="false">
+	        <span id="item_lnkHiredCandidates">Hired Candidates List</span></asp:HyperLink></div>
+	    <div class="child_menu">
+	        <asp:HyperLink ID="lnkDecision" NavigateUrl="~/EmploymentDecision.aspx?mi=Applicants,Pending Applicants&contrid=item_lnkDecision" Visible="False" runat="server">
+	        <span id="item_lnkDecision">Pending Applicants</span></asp:HyperLink></div>
+	    <div class="child_menu"><asp:HyperLink ID="lnkPAReport" 
+	        NavigateUrl="~/Modules/Reports/PAReport.aspx?BeginDate=&EndDate=&contrid=item_lnkPAReport" runat="server" Visible="false">
+	    <span id="item_lnkPAReport">PA Report</span></asp:HyperLink></div>
+
+	<div class="parent_menu"><asp:Label ID="lnkPA" runat="server">Performance Assessment(PA)</asp:Label></div>	    
+	    <div class="child_menu"><asp:HyperLink Visible="false" ID="lnkUncompletedPA" NavigateUrl="~/UncompletedPAList.aspx?mi=Performance Assessment,Uncompleted Assessments&contrid=item_lnkUncompletedPA" runat="server">
+	    <span id="item_lnkUncompletedPA">PA in Process</span></asp:HyperLink></div>
+	    <div class="child_menu"><asp:HyperLink Visible="false" ID="lnkCompletedPA" NavigateUrl="~/CompletedPAList.aspx?mi=Performance Assessment,Completed Assessments&contrid=item_lnkCompletedPA" runat="server">
+	    <span id="item_lnkCompletedPA">PA Completed</span></asp:HyperLink></div>
+	    <div class="child_menu"><asp:HyperLink ID="lnkApprovingPA" Visible="true" NavigateUrl="~/ApprovingPAList.aspx?mi=Performance Assessment,Approving Assessments&contrid=item_lnkApprovingPA" runat="server">
+	    <span id="item_lnkApprovingPA">PA List</span></asp:HyperLink></div>
+	
+	<div class="parent_menu"><asp:Label ID="lblReport" Visible="true" runat="server">Reports</asp:Label></div>
+	    <div class="child_menu"><asp:HyperLink ID="lnkCandidatesReport" 
+	        NavigateUrl="~/Modules/Reports/CandidatesReport.aspx?StartDate=&EndDate=&contrid=item_lnkCandidatesReport" runat="server" Visible="true">
+	    <span id="item_lnkCandidatesReport">Candidates Report</span></asp:HyperLink></div>
+	    
+	    <div class="child_menu"><asp:HyperLink ID="lnkSourcingReport" 
+	        NavigateUrl="~/Modules/Reports/SourcingReport_New.aspx?StartDate=&EndDate=&contrid=item_lnkSourcingReport" runat="server" Visible="true">
+	    <span id="item_lnkSourcingReport">Sourcing Report</span></asp:HyperLink></div>
+	    
+	    <div class="child_menu"><asp:HyperLink ID="lnkHiringReport" 
+	        NavigateUrl="~/Modules/Reports/HireReport_New.aspx?StartDate=&EndDate=&contrid=item_lnkHiringReport" runat="server" Visible="false">
+	    <span id="item_lnkHiringReport">Hiring Report</span></asp:HyperLink></div>
+	    
+	    <div class="child_menu"><asp:HyperLink ID="lnkPAReportForHR" 
+	        NavigateUrl="~/Modules/Reports/PAReportForHR.aspx?BeginDate=&EndDate=&contrid=item_lnkPAReportForHR" runat="server" Visible="false">
+	    <span id="item_lnkPAReportForHR">HR PA Report</span></asp:HyperLink></div>
+	    
+	    <div class="child_menu"><asp:HyperLink ID="lnkPaperReport" 
+	        NavigateUrl="~/Modules/Reports/PaperReportForm.aspx?contrid=item_lnkPaperReport" runat="server" Visible="false">
+	    <span id="item_lnkPaperReport">Paper Report</span></asp:HyperLink></div>
+	    
+	    <%--Add "Survey Report" By Yuanqin,2011.6.6--%>
+	    <div class="child_menu"><asp:HyperLink ID="lnkSurveyReport" 
+	        NavigateUrl="~/Modules/Reports/SurveyReport.aspx?contrid=item_lnkSurveyReport" runat="server" Visible="false">
+	    <span id="item_lnkSurveyReport">Survey Report</span></asp:HyperLink></div>
+	    
+	<div class="parent_menu"><asp:Label ID="lbManagement" Visible="false" runat="server">Management</asp:Label></div>	    
+	    <div class="child_menu"><asp:HyperLink ID="lnkSiteAccessControl" NavigateUrl="~/Modules/Management/SiteAccessControl.aspx?contrid=item_lnkSiteAccessControl" runat="server" Visible="false">
+	    <span id="item_lnkSiteAccessControl">Site Access</span></asp:HyperLink></div>
+	    <div class="child_menu"><asp:HyperLink ID="lnkSiteRoleManager" NavigateUrl="~/Modules/Management/SiteRoleManager.aspx?Management,SiteRoleManager&contrid=item_lnkSiteRoleManager" runat="server" Visible="false">
+	    <span id="item_lnkSiteRoleManager">Role</span></asp:HyperLink></div>
+	    <div class="child_menu"><asp:HyperLink ID="lnkEmailTemplateEditor" NavigateUrl="~/Modules/Management/EmailTemplateEditor.aspx?Management,Email Template&contrid=item_lnkEmailTemplateEditor" runat="server" Visible="false">
+	    <span id="item_lnkEmailTemplateEditor">Email Template</span></asp:HyperLink></div>
+	    <div class="child_menu"><asp:HyperLink ID="lnkCheckInFormConfiguration" NavigateUrl="~/Modules/Management/CheckInformConfiguration.aspx?mi=Management,Check-in Form&contrid=item_lnkCheckInFormConfiguration" runat="server" Visible="false">
+	    <span id="item_lnkCheckInFormConfiguration">Check-in Form</span></asp:HyperLink></div>
+	    <div class="child_menu"><asp:HyperLink ID="lnkGroupManagement" NavigateUrl="~/Modules/Management/MaintainGroup.aspx?mi=Management,Group&contrid=item_lnkGroupManagement" runat="server" Visible="false">
+	    <span id="item_lnkGroupManagement">Group</span></asp:HyperLink></div>
+	    <div class="child_menu"><asp:HyperLink ID="lnkUniversityManagement" NavigateUrl="~/Modules/Management/MaintainUniversity.aspx?mi=Management,University&contrid=item_lnkUniversityManagement" runat="server" Visible="false">
+	    <span id="item_lnkUniversityManagement">University</span></asp:HyperLink></div>
+	    
+	    <%--Add "Unsent Mails" By Mingming Lou,2012.7.17--%>
+	    <div class="child_menu"><asp:HyperLink ID="lnkUnsentMails" NavigateUrl="~/Modules/Management/UnsentMails.aspx" runat="server" Visible="false">
+	    <span id="Span1">Unsent Mails</span></asp:HyperLink></div>
+	    
+	<div class="parent_menu"><asp:HyperLink ID="lnkPAKeyinTool" 
+	    NavigateUrl="~/Modules/Temp/PAKeyinToolForm.aspx?contrid=item_lnkPAKeyinTool" runat="server" Visible="false">
+	    <span id="item_lnkPAKeyinTool">PA Keyin Tool</span></asp:HyperLink></div>
+	    
+	<div class="parent_menu"><asp:HyperLink ID="lnkHelp" NavigateUrl="~/Help.htm?mi=Help&contrid=item_lnkHelp" runat="server"><span id="item_lnkHelp">Help</span></asp:HyperLink></div>	
+	
+</div>
+    </td>    
+    <td align="left" valign="top">        
+        <div style="padding:5 3; margin:5 5;width:100%">
+            <asp:ContentPlaceHolder ID="mainPlaceHolder" runat="server"></asp:ContentPlaceHolder>	    
+        </div>        
+    </td>
+</tr>
+<tr>
+    <td colspan="3">
+        <div id="footer" style="padding:3 5; margin:4 5">
+            <%--<div style="text-align:right;font-size:12"><a href="#">Top</a></div>--%>      
+	        <hr class="line" />
+	        <div style="width:100%;text-align:center;vertical-align:middle; margin:5 0;padding:3 0">
+	            <asp:HyperLink ID="lnkLegal" runat="server" Text="Legal Notice" NavigateUrl="~/LegalNotice.aspx?mi=Legal Notice&contrid=item_lnkLegal" />&nbsp;&nbsp;|&nbsp;&nbsp;
+	            <asp:HyperLink ID="lnkReleaseNotes" runat="server" NavigateUrl="~/ReleaseNotes.aspx?mi=Release Notes&contrid=item_lnkReleaseNotes" Text="Release Notes"></asp:HyperLink>&nbsp;&nbsp;|&nbsp;&nbsp;
+	            <a href="mailto:jizou@microsoft.com">Contact us</a>
+	        </div>
+            <%--	Powered by Compass team in MS^2.3 Program (Yuan Chen, Xuejin Chen, Jiansong Zhang, Chao Zhang, Congxing Cai, Mei Guo, Yong Lu)<br />
+	        Special thanks Xin Zou, Steven Huang, Hongwei Hua, Wen Chen, Heng Luo<br />--%>
+    	    
+	        Copyright MSR Asia &copy;2006-2008 All right reserved. 
+        </div>
+    </td>
+</tr>
+</table>
+</div>
+<script language="JavaScript" type="text/javascript">
+<!--
+var hdl = null;
+
+function SetLeftHeight()
+{
+    var menu = document.getElementById("menu");
+    var container = document.getElementById("container");
+    //alert(container.clientHeight);
+    menu.style.height = container.clientHeight;
+    if( hdl != null )
+    {
+        clearInterval(hdl);
+    }
+}
+//SetLeftHeight();
+
+//hdl = setInterval(SetLeftHeight,1000);
+//-->
+</script>
+<%--</div>--%>
+</form>
+</body>
+</html>

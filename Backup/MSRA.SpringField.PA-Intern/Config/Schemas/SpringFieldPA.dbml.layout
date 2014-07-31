@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 18, 20.875" name="SpringFieldPA">
+  <DataContextMoniker Name="/SpringFieldPADataContext" />
+  <nestedChildShapes>
+    <classShape Id="dbc9fef0-1465-4ef4-a591-bf8ed6ab3b8f" absoluteBounds="0.75, 0.75, 2, 1.9631982421875">
+      <DataClassMoniker Name="/SpringFieldPADataContext/sf_Advisor" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f0157cc6-a9d3-4355-898d-b8ac78e541bf" absoluteBounds="0.765, 1.21, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="a8414763-9f0d-41b6-8e5e-c5ded5ba991a" absoluteBounds="3.75, 0.75, 2, 1.9631982421875">
+      <DataClassMoniker Name="/SpringFieldPADataContext/sf_RelatedReferrer" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ddd06659-6bd9-421b-85eb-e095e3768e0b" absoluteBounds="3.765, 1.21, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="ebc1ab54-05d8-486d-80a2-fc011cffcaa0" absoluteBounds="0.75, 3.75, 2, 4.2708154296874987">
+      <DataClassMoniker Name="/SpringFieldPADataContext/sf_ApplicantBasicInfo" />
+      <nestedChildShapes>
+        <elementListCompartment Id="07ce2288-ffd8-44a1-943a-f3ecaf40e19f" absoluteBounds="0.765, 4.21, 1.9700000000000002, 3.7108154296875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="a1d3624a-8e0a-4209-b432-6c7f699a0afe" absoluteBounds="3.75, 3.75, 2, 4.8477197265624987">
+      <DataClassMoniker Name="/SpringFieldPADataContext/sf_ApplicantEduBackground" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a212c094-31d2-4ae0-ad1e-8c790a9028cb" absoluteBounds="3.765, 4.21, 1.9700000000000002, 4.2877197265625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="44616da4-adc6-4fa7-ab97-128b42a6a8d1" absoluteBounds="6.75, 0.75, 2, 3.1170068359375005">
+      <DataClassMoniker Name="/SpringFieldPADataContext/sf_ApplicantRelatedInfo" />
+      <nestedChildShapes>
+        <elementListCompartment Id="178c0245-44e9-40cd-a007-31610201d8d0" absoluteBounds="6.765, 1.21, 1.9700000000000002, 2.5570068359375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="15fa094d-d4a4-40a8-bd47-175dcb9a6f6e" absoluteBounds="6.75, 4.75, 2, 10.424461263020831">
+      <DataClassMoniker Name="/SpringFieldPADataContext/sf_CashedApplicantInfo" />
+      <nestedChildShapes>
+        <elementListCompartment Id="84afd4e8-ccd3-47b0-a27a-fb8019911f28" absoluteBounds="6.765, 5.21, 1.9700000000000002, 9.8644612630208321" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="b91cd64a-f670-40b6-b61f-78fa75240e4f" absoluteBounds="9.75, 0.75, 2, 2.7324039713541666">
+      <DataClassMoniker Name="/SpringFieldPADataContext/sf_CheckInForm" />
+      <nestedChildShapes>
+        <elementListCompartment Id="4d1593ad-b3fe-4d4d-988c-3ae51e273dea" absoluteBounds="9.765, 1.21, 1.9700000000000002, 2.1724039713541665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="a33b8ae3-e1a8-4f5c-89ee-0171e03bc1c1" absoluteBounds="0.75, 9.75, 2, 1.9631982421874987">
+      <DataClassMoniker Name="/SpringFieldPADataContext/sf_Comment" />
+      <nestedChildShapes>
+        <elementListCompartment Id="8a6be02b-98b6-4591-aaab-87423be37ab3" absoluteBounds="0.765, 10.21, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="a98ac236-6c86-403c-9307-b8b275b2ad74" absoluteBounds="9.75, 4.75, 2, 1.7708968098958327">
+      <DataClassMoniker Name="/SpringFieldPADataContext/sf_Document" />
+      <nestedChildShapes>
+        <elementListCompartment Id="05169c54-eb21-4a8c-aad4-1a7b3bd18355" absoluteBounds="9.765, 5.21, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="399ed18a-6016-4a45-b8fb-001748ba6fcf" absoluteBounds="9.75, 7.75, 2, 3.3093082682291666">
+      <DataClassMoniker Name="/SpringFieldPADataContext/sf_Email" />
+      <nestedChildShapes>
+        <elementListCompartment Id="99439fb6-ed69-4df2-ad24-25f888b5e83c" absoluteBounds="9.765, 8.21, 1.9700000000000002, 2.7493082682291665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="e41ce02a-1b7d-49ec-a387-7cde3a59940c" absoluteBounds="12.75, 0.75, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/SpringFieldPADataContext/sf_EmailTemplate" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f888db4b-9c14-4e72-9fd7-7495cf904ee6" absoluteBounds="12.765, 1.21, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="029dc27d-5b60-475a-b2e4-1c8b6f629fc5" absoluteBounds="0.75, 12.75, 2, 1.3862939453124987">
+      <DataClassMoniker Name="/SpringFieldPADataContext/sf_Favorite" />
+      <nestedChildShapes>
+        <elementListCompartment Id="89c4030e-307e-484b-bfda-f27ed68078d9" absoluteBounds="0.765, 13.21, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="3da82660-2553-4563-a103-429cd4db3ecd" absoluteBounds="12.75, 3.75, 2, 2.7324039713541666">
+      <DataClassMoniker Name="/SpringFieldPADataContext/sf_Feedback" />
+      <nestedChildShapes>
+        <elementListCompartment Id="0dbde2f1-0fc0-46e8-90f6-06b9b3e569b3" absoluteBounds="12.765, 4.21, 1.9700000000000002, 2.1724039713541665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="f12be85b-4bb9-4df8-b8f8-0bf9cc638711" absoluteBounds="12.75, 7.75, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/SpringFieldPADataContext/sf_InternPublication" />
+      <nestedChildShapes>
+        <elementListCompartment Id="0e3a72bb-1099-4059-b5a3-cd3cedfe4d48" absoluteBounds="12.765, 8.21, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="d4d25bbb-e668-434a-81e2-713346b149ff" absoluteBounds="9.75, 12.75, 2, 4.4631168619791666">
+      <DataClassMoniker Name="/SpringFieldPADataContext/sf_Interview" />
+      <nestedChildShapes>
+        <elementListCompartment Id="8078509e-4758-490d-bfce-88343f805da8" absoluteBounds="9.765, 13.21, 1.9700000000000002, 3.903116861979167" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="6e75d6ff-a52c-43c6-be03-469ebad2861d" absoluteBounds="12.75, 10.75, 2, 9.84755696614583">
+      <DataClassMoniker Name="/SpringFieldPADataContext/sf_PerformanceAssessment" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c52ead73-148a-49d5-9da8-4a91b6a1bb43" absoluteBounds="12.765, 11.21, 1.9700000000000002, 9.2875569661458321" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="c476cec5-4635-40ed-8084-ff164960729e" absoluteBounds="15.75, 0.75, 2, 1.7708968098958329">
+      <DataClassMoniker Name="/SpringFieldPADataContext/sf_Referral" />
+      <nestedChildShapes>
+        <elementListCompartment Id="40b38893-5298-4259-87e8-451d72124302" absoluteBounds="15.765, 1.21, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

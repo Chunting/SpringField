@@ -1,0 +1,82 @@
+﻿.float_window
+{
+    background: white;
+    position: absolute;
+    top: 200px;
+    left: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding: 0px;
+    display: block;
+    width: 500px;
+}
+
+.window_title_expand{
+	margin: 0px;
+	padding: 0px;
+	text-align: left;
+	height: 20px;
+	background: url("images/arrow_down.gif") #cccccc no-repeat 8px;
+	border: 1px solid #999999;
+	color: #528f52;
+	font-size: 12pt;
+	font-weight: bold;
+	cursor: hand;
+	width: 100%;
+}
+
+.window_title_close{
+	margin: 0px;
+	padding: 0px;
+	text-align: left;
+	height: 20px;
+	background: url("images/arrow_up.gif") #ffffff no-repeat 8px;
+	border: 1px solid #999999;
+	color: #333333;
+	font-size: 12pt;
+	font-weight: bold;
+	cursor: hand;
+	width: 100%;
+}
+
+.window_content{
+	margin: 0px;
+	padding: 0px;
+	text-align: left;
+	border: 1px solid #999999;
+	border-top: 0px;
+	font-size: 10pt;
+	overflow: auto;
+	width: 100%;
+}
+
+.window_title_text
+{
+    margin: 0px;
+	padding: 0px;
+	text-align: center;
+	width: 80%;
+	float: left;
+}
+
+.window_title_button
+{
+    float:right;
+    margin: 0px;
+	padding: 0px;
+	text-align: right;
+	width: 20%;
+}
+
+.window_title_button img
+{
+    padding: 0px;
+    margin: 0px;
+    margin-top: 4px;
+    margin-right: 10px;
+    border: 0px;
+    height: 10px;
+    width: 10px;
+}
